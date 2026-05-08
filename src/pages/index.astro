@@ -1,11 +1,53 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<MainLayout title="Olle Rönn | Portfolio">
+  <section class="hero">
+    <p class="eyebrow">IT · Cloud · Cybersecurity · Infrastructure</p>
+
+    <h1>Jag bygger projekt inom säker, optimerad och automatiserad infrastruktur.</h1>
+
+    <p class="lead">
+      Jag är IT-ingenjörsstudent med inriktning mot cybersäkerhet och digital infrastruktur.
+      Här dokumenterar jag mina projekt, min lärandeprocess och min utveckling inom cloud,
+      homelab, automation, HPCS och AI infrastructure.
+    </p>
+
+    <div class="buttons">
+      <a class="button" href="/projects">Se projekt</a>
+      <a class="button secondary" href="/learning-log">Lärandelogg</a>
+      <a class="button secondary" href="https://github.com/ollernn" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Fokusområden</h2>
+
+    <div class="grid">
+      <article class="card">
+        <span class="tag">01</span>
+        <h3>Cloud & Infrastruktur</h3>
+        <p>Projekt inom Azure, Linux, nätverk, servrar, deployment och säker åtkomst.</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">02</span>
+        <h3>Cybersäkerhet</h3>
+        <p>Fokus på IAM, least privilege, loggning, övervakning och säkra systemmiljöer.</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">03</span>
+        <h3>Homelab</h3>
+        <p>En praktisk labbmiljö där jag testar NAS, backup, automation, monitoring och säkerhet.</p>
+      </article>
+
+      <article class="card">
+        <span class="tag">04</span>
+        <h3>AI Infrastructure & HPCS</h3>
+        <p>Framtida projekt kopplade till prestanda, optimering, containers och AI-infrastruktur.</p>
+      </article>
+    </div>
+  </section>
+</MainLayout>
