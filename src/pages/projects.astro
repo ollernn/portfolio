@@ -3,30 +3,181 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="Projekt | Olle Rönn">
-  <h1>Projekt</h1>
+  <section class="hero">
+    <p class="eyebrow">Projekt</p>
+    <h1>Projekt</h1>
 
-  <p class="lead">
-    Här samlar jag projekt som visar mitt lärande inom cloud, cybersäkerhet,
-    infrastruktur, homelab och AI infrastructure.
-  </p>
+    <p class="lead">
+      Här samlar jag projekt inom IT-infrastruktur, cloud, cybersäkerhet,
+      IAM, automation, homelab och systemnära teknik. Sidan innehåller både
+      projekt jag bygger just nu, större tidigare projekt och mindre lärandeprojekt.
+    </p>
+  </section>
 
-  <div class="grid">
-    <article class="card">
-      <span class="tag">Projekt 0</span>
-      <h3>Portfolio-hemsida</h3>
-      <p>Status: Pågående. Bygger en personlig portfolio med Astro, GitHub och Vercel/Netlify.</p>
-    </article>
+  <section>
+    <h2>Aktiva roadmap-projekt</h2>
 
-    <article class="card">
-      <span class="tag">Projekt 1</span>
-      <h3>Secure Homelab</h3>
-      <p>Status: Planerad. En säker labbmiljö för NAS, backup, nätverk och övervakning.</p>
-    </article>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Projekt 0 · Pågående</span>
+        <h3>Portfolio Website</h3>
+        <p>
+          En personlig portfolio byggd med Astro, GitHub och modern webbutveckling.
+          Målet är att dokumentera projekt, lärande och teknisk utveckling på ett
+          strukturerat och offentligt sätt.
+        </p>
+        <p>
+          <strong>Tekniker:</strong> Astro, HTML, CSS, GitHub, Markdown, Vercel/Netlify.
+        </p>
+      </article>
 
-    <article class="card">
-      <span class="tag">Projekt 2</span>
-      <h3>Secure Azure Environment</h3>
-      <p>Status: Planerad. Azure-miljö med IAM, logging, monitoring och säker åtkomst.</p>
-    </article>
-  </div>
+      <article class="card">
+        <span class="tag">Projekt 1 · Planerad</span>
+        <h3>Secure Homelab</h3>
+        <p>
+          En säker lokal labbmiljö för att bygga praktisk erfarenhet inom nätverk,
+          Linux, NAS, backup, rättigheter, loggning, monitoring och säker fjärråtkomst.
+        </p>
+        <p>
+          <strong>Tekniker:</strong> Linux, NAS, Docker, nätverk, backup, monitoring.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Projekt 2 · Planerad</span>
+        <h3>Secure Azure Environment</h3>
+        <p>
+          En molnbaserad miljö i Azure med fokus på säker åtkomst, IAM, logging,
+          monitoring, storage och kostnadskontroll.
+        </p>
+        <p>
+          <strong>Tekniker:</strong> Azure, Entra ID, IAM, logging, monitoring, cloud security.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Projekt 3 · Planerad</span>
+        <h3>Automation & Infrastructure as Code</h3>
+        <p>
+          Projekt där infrastruktur skapas och hanteras med kod för att minska
+          manuella fel och skapa ett mer professionellt arbetssätt.
+        </p>
+        <p>
+          <strong>Tekniker:</strong> Terraform, Ansible, GitHub Actions, PowerShell.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Projekt 4 · Planerad</span>
+        <h3>Monitoring / Mini-SOC Dashboard</h3>
+        <p>
+          En dashboard för loggning, övervakning och larm från lokala system,
+          cloud-resurser eller labbmiljöer.
+        </p>
+        <p>
+          <strong>Tekniker:</strong> Grafana, Prometheus, logs, alerts, security monitoring.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Projekt 5 · Planerad</span>
+        <h3>AI Infrastructure Lab</h3>
+        <p>
+          Ett framtida projekt kopplat till HPCS och AI infrastructure, med fokus
+          på prestanda, containers, resursanvändning, latency och optimering.
+        </p>
+        <p>
+          <strong>Tekniker:</strong> Docker, cloud, performance testing, AI infrastructure, HPCS.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Större tidigare projekt</h2>
+
+    <div class="grid">
+      <article class="card">
+        <span class="tag">C# · WPF · MVVM · Genomförd</span>
+        <h3>Sport Club Management System</h3>
+        <p>
+          Ett större C#- och WPF-projekt där vi byggde ett sportklubbssystem med
+          separata vyer för medlemmar, tränare och administratörer. Systemet stödjer
+          registrering, inloggning, bokning och avbokning av träningspass, profilhantering,
+          historik, poäng, kalorier och utrustningshantering.
+        </p>
+        <p>
+          Projektet byggdes med MVVM och tydlig lagerindelning med presentationslager,
+          affärslager, datalager och entitetslager. Systemet använde serviceklasser,
+          repositories och Unit of Work för att hantera affärslogik och databasåtkomst.
+        </p>
+        <p>
+          <strong>Tekniker:</strong> C#, WPF, MVVM, Entity Framework, SQL Server,
+          Repository Pattern, Unit of Work, GitHub Projects.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">IoT & Cloud · Genomförd</span>
+        <h3>Smart Security System</h3>
+        <p>
+          Designade och implementerade en säkerhetslösning med kamera, sensor
+          och molntjänster. Lösningen använde händelsestyrd automation där
+          videodata sparades i Azure baserat på dörrsensorhändelser.
+        </p>
+        <p>
+          <strong>Tekniker:</strong> Azure, Home Assistant, IoT, kamera, sensor, automation.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Infrastructure & IAM · Genomförd</span>
+        <h3>Enterprise Network & Active Directory Environment</h3>
+        <p>
+          Simulerade en företagsmiljö med flera servrar och klienter.
+          Projektet omfattade användare, behörigheter, policys, Active Directory,
+          Group Policy, DHCP, delade resurser, brandväggsregler, redundans och failover.
+        </p>
+        <p>
+          <strong>Tekniker:</strong> Active Directory, GPO, DHCP, firewall rules,
+          Windows Server, redundancy, failover.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Cybersecurity · Genomförd</span>
+        <h3>Network Traffic & Threat Analysis</h3>
+        <p>
+          Analyserade PCAP-filer i Wireshark för att undersöka nätverksaktivitet,
+          identifiera misstänkt trafik, analysera dataexfiltration och tolka
+          säkerhetsrelaterade händelser.
+        </p>
+        <p>
+          <strong>Tekniker:</strong> Wireshark, PCAP, VirusTotal, CyberChef, threat analysis.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Mini learning projects</h2>
+
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Python · Flask · API Security · Learning project</span>
+        <h3>Simple API Security Demo</h3>
+        <p>
+          Ett mindre Flask-projekt som demonstrerar hur en API-endpoint kan skyddas
+          med en API-nyckel via request headers och miljövariabler.
+        </p>
+        <p>
+          Projektet används som ett lärandeprojekt för att förstå grundläggande
+          API-säkerhet, hantering av miljövariabler och enkel åtkomstkontroll.
+        </p>
+        <p>
+          <strong>Fokus:</strong> Flask, API keys, environment variables, basic access control.
+        </p>
+      </article>
+    </div>
+  </section>
 </MainLayout>

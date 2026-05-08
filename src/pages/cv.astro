@@ -3,22 +3,212 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="CV | Olle Rönn">
-  <h1>CV</h1>
+  <section class="hero">
+    <p class="eyebrow">CV</p>
+    <h1>CV</h1>
 
-  <div class="grid">
-    <section class="card">
-      <h3>Utbildning</h3>
-      <p>IT-ingenjör med inriktning mot cybersäkerhet och digital infrastruktur.</p>
-    </section>
+    <p class="lead">
+      IT-ingenjörsstudent med inriktning mot digital infrastruktur och cybersäkerhet.
+      Jag har praktisk erfarenhet av Identity & Access Management, Active Directory,
+      Entra ID, Azure och PowerShell-automatisering, samt en stark grund inom nätverk
+      och cybersäkerhet.
+    </p>
+  </section>
 
-    <section class="card">
-      <h3>Tekniska områden</h3>
-      <p>Linux, nätverk, GitHub, cloud, säkerhet, infrastruktur, automation och webbutveckling.</p>
-    </section>
+  <section>
+    <h2>Relevant erfarenhet</h2>
 
-    <section class="card">
-      <h3>Erfarenhet</h3>
-      <p>Här kommer arbetslivserfarenhet, projekt och relevanta roller att fyllas på.</p>
-    </section>
-  </div>
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Nov 2025 – Jan 2026</span>
+        <h3>Stena Group IT</h3>
+        <p><strong>Identity & Access Management · Göteborg</strong></p>
+        <p>
+          Arbetade med IAM i en större företagsmiljö med hantering av användare,
+          behörigheter och privilegierade konton i Active Directory, Entra ID och Azure.
+        </p>
+        <p>
+          Utförde accessgranskningar och kontoanalyser för att bidra till säker och
+          korrekt behörighetsstyrning. Använde även PowerShell för datainsamling,
+          automatisering och processstöd.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Sep 2018</span>
+        <h3>Telia Company AB</h3>
+        <p><strong>IT-service · Göteborg</strong></p>
+        <p>
+          Assisterade inom IT-service och support.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Utbildning</h2>
+
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Aug 2026 – Jun 2028</span>
+        <h3>Chalmers tekniska högskola</h3>
+        <p><strong>Masterprogram i High Performance Computer Systems, 120 hp</strong></p>
+        <p>
+          Fördjupning inom högpresterande datorsystem, parallell programmering,
+          systemarkitektur och distribuerade system.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Aug 2023 – Jun 2026</span>
+        <h3>Högskolan i Borås</h3>
+        <p><strong>IT-ingenjör – Digital infrastruktur och cybersäkerhet, 180 hp</strong></p>
+        <p>
+          Treårig ingenjörsutbildning med fokus på digital infrastruktur, nätverk,
+          system och cybersäkerhet.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Aug 2019 – Jun 2022</span>
+        <h3>Lindholmens Tekniska Gymnasium</h3>
+        <p>
+          Information och media med inriktning mot design, programmering
+          och datorkunskap.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tekniska kunskaper</h2>
+
+    <div class="grid">
+      <article class="card">
+        <h3>IT-infrastruktur & nätverk</h3>
+        <p>
+          Windows-miljöer, systemadministration, TCP/IP, routing, switching,
+          nätverksfelsökning och nätverksgrunder på CCNA-nivå.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Identity & Access Management</h3>
+        <p>
+          Active Directory, Entra ID, Azure, användarhantering, behörigheter,
+          privilegierade konton, accessgranskningar och kontoanalyser.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Cybersäkerhet</h3>
+        <p>
+          Säkerhetsgrunder, analys av attackmetoder, nätverkstrafikanalys,
+          Wireshark, PCAP, säkerhetsövervakning och incidenthantering på grundnivå.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Scripting & automation</h3>
+        <p>
+          PowerShell för administration, automatisering och datainsamling.
+          Grundläggande kunskaper i Python och SQL.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Verktyg & teknologier</h3>
+        <p>
+          Azure, Wireshark, Kali Linux, CyberChef, GitHub och grundläggande molntjänster.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Standarder & ramverk</h3>
+        <p>
+          Grundläggande förståelse för NIS2 och ISO/IEC 27001.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certifikat</h2>
+
+    <div class="grid">
+      <article class="card">
+        <h3>Cisco</h3>
+        <p>
+          Cisco IT Essentials, Cisco Introduction to Cybersecurity,
+          Cisco Cybersecurity Essentials, Cisco CCNA ITN, SRWE och ENSA,
+          Cisco Ethical Hacker samt Cisco CyberOps Associate.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Körkort & behörigheter</h3>
+        <p>
+          Körkort B och truckkort A1–A4, B1–B3.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kurser</h2>
+
+    <div class="card">
+      <p>
+        Nätverk, operativsystem, serversystem och infrastruktur, databaser och dataanalys,
+        IoT och molntjänster, cybersäkerhet för uppkopplade enheter, Python-programmering,
+        projektledning, teknisk rapportering, taktisk cybersäkerhet och incidenthantering.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Övrig erfarenhet</h2>
+
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Sep 2024 – Nuvarande</span>
+        <h3>OnePartnerGroup</h3>
+        <p>
+          Lagerarbete inklusive truckkörning, godshantering och förberedelse av leveranser.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Apr 2023 – Nuvarande</span>
+        <h3>Göteborgs Stad</h3>
+        <p>
+          Stöd till ungdomar i strukturerade dagliga aktiviteter med fokus på digitalt engagemang.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Maj 2022 – Jun 2023</span>
+        <h3>Bauhaus</h3>
+        <p>
+          Säljare inom bygg och VVS samt godshantering med truck och lyftutrustning.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Språk</h2>
+
+    <div class="grid">
+      <article class="card">
+        <h3>Svenska</h3>
+        <p>Modersmål</p>
+      </article>
+
+      <article class="card">
+        <h3>Engelska</h3>
+        <p>Flytande i tal och skrift</p>
+      </article>
+    </div>
+  </section>
 </MainLayout>

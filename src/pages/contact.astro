@@ -3,27 +3,49 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="Kontakt | Olle Rönn">
-  <h1>Kontakt</h1>
+  <section class="hero">
+    <p class="eyebrow">Kontakt</p>
+    <h1>Kontakt</h1>
 
-  <p class="lead">
-    Hör gärna av dig om projekt, praktik, extrajobb eller möjligheter inom IT,
-    cloud, cybersäkerhet och infrastruktur.
-  </p>
+    <p class="lead">
+      Hör gärna av dig om projekt, extrajobb, praktik, juniora roller eller möjligheter
+      inom IT-infrastruktur, cloud, cybersäkerhet, IAM, automation och systemnära teknik.
+    </p>
+  </section>
 
-  <div class="grid">
-    <article class="card">
-      <h3>E-post</h3>
-      <p>olle.d.ronn@gmail.com</p>
-    </article>
+  <section>
+    <h2>Kontaktuppgifter</h2>
 
-    <article class="card">
-      <h3>GitHub</h3>
-      <p><a href="https://github.com/ollernn" target="_blank">github.com/ollernn</a></p>
-    </article>
+    <div class="grid">
+      <article class="card">
+        <h3>E-post</h3>
+        <p>
+          <a href="mailto:olle.d.ronn@gmail.com">olle.d.ronn@gmail.com</a>
+        </p>
+      </article>
 
-    <article class="card">
-      <h3>Plats</h3>
-      <p>Göteborg, Sverige</p>
-    </article>
+      <article class="card">
+        <h3>Plats</h3>
+        <p>Göteborg, Sverige</p>
+      </article>
+    </div>
+  </section>
+
+ <section>
+  <h2>Länkar</h2>
+
+  <div class="buttons">
+    <a class="button" href="https://github.com/ollernn" target="_blank">
+      GitHub
+    </a>
+
+    <a class="button" href="https://www.linkedin.com/in/olle-r%C3%B6nn-81822b278/" target="_blank">
+      LinkedIn
+    </a>
+
+    <a class="button" href="https://www.credly.com/users/olle-ronn" target="_blank">
+      Credly
+    </a>
   </div>
+</section>
 </MainLayout>

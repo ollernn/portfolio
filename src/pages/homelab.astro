@@ -3,27 +3,157 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="Homelab | Olle Rönn">
-  <h1>Homelab</h1>
+  <section class="hero">
+    <p class="eyebrow">Homelab</p>
+    <h1>Secure Homelab</h1>
 
-  <p class="lead">
-    Min homelab-sektion kommer att dokumentera hur jag bygger en säker,
-    optimerad och automatiserad infrastruktur hemma och i molnet.
-  </p>
+    <p class="lead">
+      Min homelab är en planerad labbmiljö där jag bygger, testar och dokumenterar
+      praktiska lösningar inom IT-infrastruktur, nätverk, Linux, säkerhet, backup,
+      automation och cloud.
+    </p>
+  </section>
 
-  <div class="grid">
-    <article class="card">
-      <h3>Mål</h3>
-      <p>Bygga praktisk erfarenhet inom nätverk, Linux, NAS, backup, monitoring och säkerhet.</p>
-    </article>
+  <section>
+    <h2>Syfte</h2>
 
-    <article class="card">
-      <h3>Planerade tekniker</h3>
-      <p>Linux, Docker, Azure, GitHub, Terraform, monitoring och säker fjärråtkomst.</p>
-    </article>
+    <div class="card">
+      <p>
+        Syftet med homelabbet är att skapa en praktisk miljö där jag kan lära mig
+        hur moderna IT-miljöer byggs, säkras, övervakas och automatiseras.
+        Målet är att koppla ihop lokal infrastruktur med molntjänster och samtidigt
+        dokumentera varje steg på GitHub och i min lärandelogg.
+      </p>
+    </div>
+  </section>
 
-    <article class="card">
-      <h3>Kommande projekt</h3>
-      <p>Secure Homelab, backup-struktur, loggning, monitoring och mini-SOC-dashboard.</p>
-    </article>
-  </div>
+  <section>
+    <h2>Planerade delar</h2>
+
+    <div class="grid">
+      <article class="card">
+        <span class="tag">01</span>
+        <h3>NAS, lagring & backup</h3>
+        <p>
+          Strukturera lagring, användare, rättigheter och backupflöden.
+          Detta blir grunden för säker datahantering i labbmiljön.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">02</span>
+        <h3>Linux & servrar</h3>
+        <p>
+          Sätta upp Linux-baserade servrar eller virtuella maskiner för att testa
+          tjänster, säkerhetsinställningar och serveradministration.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">03</span>
+        <h3>Nätverk & säker åtkomst</h3>
+        <p>
+          Arbeta med nätverksstruktur, brandväggsregler, segmentering,
+          fjärråtkomst och grundläggande säkerhetsprinciper.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">04</span>
+        <h3>Docker & containers</h3>
+        <p>
+          Köra tjänster i containers för att förstå modern applikationsdrift,
+          isolering och deployment.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">05</span>
+        <h3>Monitoring & loggning</h3>
+        <p>
+          Samla in loggar och metrics från labbmiljön för att skapa dashboards,
+          alerts och bättre insyn i systemens hälsa.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">06</span>
+        <h3>Cloud-koppling</h3>
+        <p>
+          Koppla delar av homelabbet till Azure för backup, logging, monitoring
+          eller säkra molnresurser.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Tekniker jag vill använda</h2>
+
+    <div class="grid">
+      <article class="card">
+        <h3>Infrastruktur</h3>
+        <p>Linux, Windows Server, NAS, nätverk, DNS, DHCP, brandvägg och backup.</p>
+      </article>
+
+      <article class="card">
+        <h3>Cloud & automation</h3>
+        <p>Azure, GitHub, PowerShell, Bash, Terraform, Ansible och GitHub Actions.</p>
+      </article>
+
+      <article class="card">
+        <h3>Monitoring & säkerhet</h3>
+        <p>Loggning, alerts, dashboards, säker fjärråtkomst och least privilege.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Koppling till framtida projekt</h2>
+
+    <div class="grid">
+      <article class="card">
+        <h3>Secure Azure Environment</h3>
+        <p>
+          Homelabbet kan senare kopplas till Azure för att testa säker molninfrastruktur,
+          IAM, logging och monitoring.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Automation & Infrastructure as Code</h3>
+        <p>
+          Delar av labbmiljön kan automatiseras med Terraform, Ansible,
+          GitHub Actions och scriptning.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>Monitoring / Mini-SOC Dashboard</h3>
+        <p>
+          Homelabbet blir en bra källa för loggar och säkerhetshändelser som senare
+          kan visualiseras i en dashboard.
+        </p>
+      </article>
+
+      <article class="card">
+        <h3>AI Infrastructure & HPCS</h3>
+        <p>
+          På längre sikt kan labbmiljön användas för enklare tester inom containers,
+          prestandamätning, resursanvändning och systemnära optimering.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Status</h2>
+
+    <div class="card">
+      <p>
+        Status: Planerad. Nästa steg är att dokumentera nuvarande utrustning,
+        välja första tekniska mål och skapa en tydlig startarkitektur för homelabbet.
+      </p>
+    </div>
+  </section>
 </MainLayout>

@@ -2,21 +2,98 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Lärandelogg | Olle Rönn">
-  <h1>Lärandelogg</h1>
+<MainLayout title="Olle Rönn | Lärandelogg">
+  <section class="hero">
+    <p class="eyebrow">Lärandelogg</p>
+    <h1>Lärandelogg</h1>
 
-  <p class="lead">
-    Här dokumenterar jag vad jag lär mig när jag bygger mina projekt.
-  </p>
+    <p class="lead">
+      Här skriver jag korta sammanfattningar av vad jag bygger, vad jag lär mig
+      och hur mina projekt utvecklas över tid.
+    </p>
+  </section>
 
-  <div class="grid">
-    <article class="card">
-      <span class="tag">2026-05-08</span>
-      <h3>Startade portfolio-projektet</h3>
+  <section>
+    <h2>Logg</h2>
+
+    <div class="grid">
+      <article class="card">
+        <span class="tag">2026-05-08</span>
+        <h3>Byggde första versionen av portfolio-hemsidan med Astro</h3>
+
+        <p>
+          Idag byggde jag den första riktiga versionen av min portfolio-hemsida med Astro.
+          Jag skapade sidor för startsida, Om mig, CV, projekt, lärandelogg, homelab
+          och kontakt.
+        </p>
+
+        <p>
+          I koden har jag lärt mig hur Astro använder filer i <strong>src/pages</strong>
+          för att skapa olika sidor på hemsidan. Till exempel blir
+          <strong>projects.astro</strong> projektsidan och <strong>cv.astro</strong>
+          CV-sidan.
+        </p>
+
+        <p>
+          Jag har också börjat förstå hur en <strong>.astro-fil</strong> är uppbyggd.
+          Överst kan man importera komponenter, till exempel
+          <strong>MainLayout</strong>, och längre ner skriver man HTML-liknande kod
+          för sidans innehåll.
+        </p>
+
+        <p>
+          Vi skapade en gemensam <strong>MainLayout</strong> som används av alla sidor.
+          Där finns grundstrukturen för sidan, till exempel navigation, main-innehåll,
+          footer och global CSS. Genom att lägga sidans innehåll inuti
+          <strong>&lt;MainLayout&gt;</strong> får alla sidor samma struktur.
+        </p>
+
+        <p>
+          Jag har även lärt mig vad <strong>&lt;slot /&gt;</strong> gör i Astro.
+          Det fungerar som en plats i layouten där innehållet från varje enskild sida
+          placeras.
+        </p>
+
+        <p>
+          Vi skapade också separata komponenter för <strong>Navbar</strong> och
+          <strong>Footer</strong>. Det gör att navigationen och sidfoten bara behöver
+          skrivas på ett ställe, men kan återanvändas på alla sidor.
+        </p>
+
+        <p>
+          I själva sidinnehållet har jag arbetat med vanliga HTML-element som
+          <strong>section</strong>, <strong>h1</strong>, <strong>h2</strong>,
+          <strong>p</strong>, <strong>article</strong>, <strong>a</strong> och
+          <strong>div</strong>. Jag har också börjat förstå hur klasser som
+          <strong>hero</strong>, <strong>grid</strong>, <strong>card</strong> och
+          <strong>button</strong> kopplas till CSS för att strukturera innehållet.
+        </p>
+
+        <p>
+          <strong>Lärt mig:</strong> Jag har fått en bättre förståelse för hur Astro,
+          HTML-struktur, komponenter, layouts, routes och CSS-klasser hänger ihop i
+          ett riktigt webbprojekt.
+        </p>
+
+        <p>
+          <strong>Nästa steg:</strong> Fortsätta förbättra koden genom att göra
+          komponenterna mer återanvändbara, lägga till bättre projektstruktur och
+          senare skapa mer dynamiskt innehåll för projekt och lärandelogg.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Nuvarande fokus</h2>
+
+    <div class="card">
       <p>
-        Satte upp Git, Node.js, npm, GitHub och Astro. Klonade repot på flera datorer
-        och startade projektet lokalt.
+        Just nu fokuserar jag på att färdigställa grunden för portfolion och förstå
+        hur Astro-projektet är uppbyggt kodmässigt. Nästa steg är att förbättra
+        strukturen ytterligare och sedan börja planera första större tekniska projektet:
+        Secure Homelab.
       </p>
-    </article>
-  </div>
+    </div>
+  </section>
 </MainLayout>
