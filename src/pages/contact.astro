@@ -2,50 +2,206 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Kontakt | Olle Rönn">
-  <section class="hero">
+<MainLayout title="Olle Rönn | Kontakt">
+  <section class="hero contact-hero">
     <p class="eyebrow">Kontakt</p>
+
     <h1>Kontakt</h1>
 
     <p class="lead">
-      Hör gärna av dig om projekt, extrajobb, praktik, juniora roller eller möjligheter
-      inom IT-infrastruktur, cloud, cybersäkerhet, IAM, automation och systemnära teknik.
+      Hör gärna av dig om projekt, extrajobb, praktik, juniora roller eller
+      möjligheter inom IT-infrastruktur, cloud, cybersäkerhet, IAM, automation
+      och systemnära teknik.
     </p>
   </section>
 
   <section>
-    <h2>Kontaktuppgifter</h2>
+    <div class="contact-layout">
+      <article class="card contact-card">
+        <p class="eyebrow">Kontaktuppgifter</p>
+        <h2>Ta kontakt</h2>
 
-    <div class="grid">
-      <article class="card">
-        <h3>E-post</h3>
         <p>
-          <a href="mailto:olle.d.ronn@gmail.com">olle.d.ronn@gmail.com</a>
+          Jag är främst intresserad av möjligheter där jag får arbeta praktiskt
+          med IT, infrastruktur, säkerhet, cloud, automation eller tekniska
+          systemmiljöer.
         </p>
+
+        <div class="contact-details">
+          <div>
+            <span>E-post</span>
+            <a href="mailto:olle.d.ronn@gmail.com">olle.d.ronn@gmail.com</a>
+          </div>
+
+          <div>
+            <span>Plats</span>
+            <p>Göteborg, Sverige</p>
+          </div>
+        </div>
       </article>
 
-      <article class="card">
-        <h3>Plats</h3>
-        <p>Göteborg, Sverige</p>
-      </article>
+      <aside class="card links-card">
+        <p class="eyebrow">Länkar</p>
+        <h2>Profiler</h2>
+
+        <p>
+          Här hittar du mina projekt, professionella profil och certifikat.
+        </p>
+
+        <div class="profile-links">
+          <a class="button secondary" href="https://github.com/ollernn" target="_blank">
+  GitHub
+</a>
+
+          <a class="button secondary" href="https://www.linkedin.com/in/olle-r%C3%B6nn-81822b278/" target="_blank">
+            LinkedIn
+          </a>
+
+          <a class="button secondary" href="https://www.credly.com/users/olle-ronn" target="_blank">
+            Credly
+          </a>
+        </div>
+      </aside>
     </div>
   </section>
 
- <section>
-  <h2>Länkar</h2>
+  <section class="contact-focus">
+    <div>
+      <p class="eyebrow">Intresseområden</p>
+      <h2>Områden jag gärna pratar mer om</h2>
+    </div>
 
-  <div class="buttons">
-    <a class="button" href="https://github.com/ollernn" target="_blank">
-      GitHub
-    </a>
+    <div class="interest-grid">
+      <article class="interest-item">
+        <span>01</span>
+        <p>IT-infrastruktur och drift</p>
+      </article>
 
-    <a class="button" href="https://www.linkedin.com/in/olle-r%C3%B6nn-81822b278/" target="_blank">
-      LinkedIn
-    </a>
+      <article class="interest-item">
+        <span>02</span>
+        <p>Cybersäkerhet och IAM</p>
+      </article>
 
-    <a class="button" href="https://www.credly.com/users/olle-ronn" target="_blank">
-      Credly
-    </a>
-  </div>
-</section>
+      <article class="interest-item">
+        <span>03</span>
+        <p>Cloud och automation</p>
+      </article>
+
+      <article class="interest-item">
+        <span>04</span>
+        <p>Homelab, HPCS och systemnära teknik</p>
+      </article>
+    </div>
+  </section>
 </MainLayout>
+
+<style>
+  .contact-hero h1 {
+    font-size: clamp(2.4rem, 5.2vw, 4.2rem);
+  }
+
+  .contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.8fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .contact-card h2,
+  .links-card h2 {
+    margin-bottom: 0.75rem;
+  }
+
+  .contact-details {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .contact-details div {
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .contact-details span {
+    display: block;
+    color: var(--accent);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+
+  .contact-details a {
+    color: var(--text);
+    font-weight: 750;
+  }
+
+  .contact-details a:hover {
+    color: var(--accent);
+  }
+
+  .contact-details p {
+    margin: 0;
+    color: var(--text-soft);
+  }
+
+  .profile-links {
+    display: grid;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .profile-links .button {
+    width: 100%;
+  }
+
+  .contact-focus {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 1.5rem;
+    align-items: start;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.018)),
+      var(--surface);
+  }
+
+  .interest-grid {
+    display: grid;
+    gap: 0.75rem;
+  }
+
+  .interest-item {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 0.75rem;
+    align-items: center;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .interest-item:last-child {
+    border-bottom: none;
+  }
+
+  .interest-item span {
+    color: var(--accent);
+    font-weight: 850;
+  }
+
+  .interest-item p {
+    margin: 0;
+    color: var(--text-soft);
+  }
+
+  @media (max-width: 860px) {
+    .contact-layout,
+    .contact-focus {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

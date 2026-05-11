@@ -3,97 +3,234 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="Olle Rönn | Lärandelogg">
-  <section class="hero">
+  <section class="hero learning-hero">
     <p class="eyebrow">Lärandelogg</p>
+
     <h1>Lärandelogg</h1>
 
     <p class="lead">
-      Här skriver jag korta sammanfattningar av vad jag bygger, vad jag lär mig
-      och hur mina projekt utvecklas över tid.
+      Här sammanfattar jag kort vad jag har gjort i mina projekt, vad jag har
+      lärt mig och vad nästa steg är. Loggen fungerar som en enkel dagbok över
+      min tekniska utveckling.
     </p>
   </section>
 
   <section>
-    <h2>Logg</h2>
+    <div class="section-heading">
+      <p class="eyebrow">Logg</p>
+      <h2>Senaste sessioner</h2>
+      <p>
+        Korta sammanfattningar av arbetet med portfolion och kommande tekniska projekt.
+      </p>
+    </div>
 
-    <div class="grid">
-      <article class="card">
-        <span class="tag">2026-05-08</span>
-        <h3>Byggde första versionen av portfolio-hemsidan med Astro</h3>
+    <div class="log-list">
+      <article class="log-entry current">
+        <div class="log-date">
+          <span>2026-05-11</span>
+          <p>Session 2</p>
+        </div>
 
-        <p>
-          Idag byggde jag den första riktiga versionen av min portfolio-hemsida med Astro.
-          Jag skapade sidor för startsida, Om mig, CV, projekt, lärandelogg, homelab
-          och kontakt.
-        </p>
+        <div class="log-content">
+          <h3>Finslipade design och innehåll på portfolion</h3>
 
-        <p>
-          I koden har jag lärt mig hur Astro använder filer i <strong>src/pages</strong>
-          för att skapa olika sidor på hemsidan. Till exempel blir
-          <strong>projects.astro</strong> projektsidan och <strong>cv.astro</strong>
-          CV-sidan.
-        </p>
+          <p>
+            Idag arbetade jag vidare med att göra portfolion mer färdig och
+            professionell. Fokus låg på att förbättra helhetskänslan, göra designen
+            mer minimalistisk och stilren samt se till att sidorna hänger ihop bättre.
+          </p>
 
-        <p>
-          Jag har också börjat förstå hur en <strong>.astro-fil</strong> är uppbyggd.
-          Överst kan man importera komponenter, till exempel
-          <strong>MainLayout</strong>, och längre ner skriver man HTML-liknande kod
-          för sidans innehåll.
-        </p>
+          <p>
+            Jag uppdaterade flera undersidor, bland annat startsidan, Om mig, CV,
+            Projekt, Homelab och Kontakt. Sidorna fick tydligare struktur, bättre
+            innehåll och mer konsekvent presentation av min profil, mina projekt
+            och min tekniska riktning.
+          </p>
 
-        <p>
-          Vi skapade en gemensam <strong>MainLayout</strong> som används av alla sidor.
-          Där finns grundstrukturen för sidan, till exempel navigation, main-innehåll,
-          footer och global CSS. Genom att lägga sidans innehåll inuti
-          <strong>&lt;MainLayout&gt;</strong> får alla sidor samma struktur.
-        </p>
+          <p>
+            <strong>Lärt mig:</strong> Jag har fått bättre förståelse för hur innehåll,
+            layout, komponenter och CSS samverkar i Astro för att skapa en mer
+            professionell och sammanhängande portfolio.
+          </p>
 
-        <p>
-          Jag har även lärt mig vad <strong>&lt;slot /&gt;</strong> gör i Astro.
-          Det fungerar som en plats i layouten där innehållet från varje enskild sida
-          placeras.
-        </p>
+          <p>
+            <strong>Nästa steg:</strong> Kontrollera mobilvyn, göra sista designjusteringar
+            och förbereda hemsidan för deploy.
+          </p>
+        </div>
+      </article>
 
-        <p>
-          Vi skapade också separata komponenter för <strong>Navbar</strong> och
-          <strong>Footer</strong>. Det gör att navigationen och sidfoten bara behöver
-          skrivas på ett ställe, men kan återanvändas på alla sidor.
-        </p>
+      <article class="log-entry">
+        <div class="log-date">
+          <span>2026-05-08</span>
+          <p>Session 1</p>
+        </div>
 
-        <p>
-          I själva sidinnehållet har jag arbetat med vanliga HTML-element som
-          <strong>section</strong>, <strong>h1</strong>, <strong>h2</strong>,
-          <strong>p</strong>, <strong>article</strong>, <strong>a</strong> och
-          <strong>div</strong>. Jag har också börjat förstå hur klasser som
-          <strong>hero</strong>, <strong>grid</strong>, <strong>card</strong> och
-          <strong>button</strong> kopplas till CSS för att strukturera innehållet.
-        </p>
+        <div class="log-content">
+          <h3>Startade portfolio-projektet med Astro</h3>
 
-        <p>
-          <strong>Lärt mig:</strong> Jag har fått en bättre förståelse för hur Astro,
-          HTML-struktur, komponenter, layouts, routes och CSS-klasser hänger ihop i
-          ett riktigt webbprojekt.
-        </p>
+          <p>
+            Jag satte upp grunden för portfolio-hemsidan med Astro och skapade
+            de viktigaste sidorna: startsida, Om mig, CV, Projekt, Lärandelogg,
+            Homelab och Kontakt.
+          </p>
 
-        <p>
-          <strong>Nästa steg:</strong> Fortsätta förbättra koden genom att göra
-          komponenterna mer återanvändbara, lägga till bättre projektstruktur och
-          senare skapa mer dynamiskt innehåll för projekt och lärandelogg.
-        </p>
+          <p>
+            Jag började även bygga en gemensam struktur med layout, navigation,
+            footer och återanvändbara delar, så att sidan kan växa med fler projekt
+            och mer dokumentation över tid.
+          </p>
+
+          <p>
+            <strong>Lärt mig:</strong> Jag fick en tydligare bild av hur Astro-projekt
+            är uppbyggda med sidor, layouts, komponenter och HTML-liknande struktur
+            i `.astro`-filer.
+          </p>
+
+          <p>
+            <strong>Nästa steg:</strong> Fortsätta förbättra designen och anpassa
+            innehållet så att portfolion bättre visar vem jag är och vad jag bygger.
+          </p>
+        </div>
       </article>
     </div>
   </section>
 
-  <section>
-    <h2>Nuvarande fokus</h2>
+  <section class="learning-focus">
+  <div>
+    <p class="eyebrow">Nuvarande fokus</p>
+    <h2>Vad jag arbetar med just nu</h2>
+    <p>
+      Just nu bygger jag upp första versionen av portfolion och använder den för
+      att samla mina projekt, mitt CV och min lärandeprocess. När sidan utvecklas
+      vidare kommer nya projekt och tekniska förbättringar dokumenteras här.
+    </p>
+  </div>
 
-    <div class="card">
-      <p>
-        Just nu fokuserar jag på att färdigställa grunden för portfolion och förstå
-        hur Astro-projektet är uppbyggt kodmässigt. Nästa steg är att förbättra
-        strukturen ytterligare och sedan börja planera första större tekniska projektet:
-        Secure Homelab.
-      </p>
-    </div>
-  </section>
+  <a class="focus-card" href="/projects">
+    <span class="tag">Aktuellt projektområde</span>
+    <h3>Portfolio och tekniska projekt</h3>
+    <p>
+      Se roadmap, tidigare projekt och planerade projekt inom homelab,
+      cloud, säkerhet, automation och systemnära teknik.
+    </p>
+  </a>
+</section>
+
 </MainLayout>
+
+<style>
+  .learning-hero h1 {
+    font-size: clamp(2.4rem, 5.2vw, 4.2rem);
+  }
+
+  .log-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .log-entry {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 1.5rem;
+    padding: 1.35rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
+      var(--surface);
+    transition:
+      transform 160ms ease,
+      border-color 160ms ease,
+      background 160ms ease;
+  }
+
+  .log-entry:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-hover);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
+      var(--surface-soft);
+  }
+
+  .log-entry.current {
+    border-color: var(--border-hover);
+  }
+
+  .log-date span {
+    display: block;
+    color: var(--accent);
+    font-size: 0.95rem;
+    font-weight: 850;
+    margin-bottom: 0.25rem;
+  }
+
+  .log-date p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .log-content h3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .log-content p {
+    max-width: 780px;
+  }
+
+  .learning-focus {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.8fr);
+    gap: 1rem;
+    align-items: stretch;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.018)),
+      var(--surface);
+  }
+
+  .learning-focus p {
+    max-width: 720px;
+    color: var(--muted);
+  }
+
+  .focus-card {
+  display: block;
+  padding: 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.025);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.focus-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-hover);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.focus-card p {
+  color: var(--muted);
+}
+
+  @media (max-width: 860px) {
+    .log-entry {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    .learning-focus {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

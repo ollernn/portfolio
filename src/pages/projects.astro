@@ -2,9 +2,10 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Projekt | Olle Rönn">
-  <section class="hero">
+<MainLayout title="Olle Rönn | Projekt">
+  <section class="hero projects-hero">
     <p class="eyebrow">Projekt</p>
+
     <h1>Projekt</h1>
 
     <p class="lead">
@@ -15,169 +16,427 @@ import MainLayout from "../layouts/MainLayout.astro";
   </section>
 
   <section>
-    <h2>Aktiva roadmap-projekt</h2>
+    <div class="section-heading">
+      <p class="eyebrow">Roadmap</p>
+      <h2>Aktiva och planerade projekt</h2>
+      <p>
+        Dessa projekt bygger min långsiktiga tekniska profil inom infrastruktur,
+        säkerhet, cloud, automation och framtida AI infrastructure.
+      </p>
+    </div>
 
-    <div class="grid">
-      <article class="card">
-        <span class="tag">Projekt 0 · Pågående</span>
+    <div class="project-grid">
+      <article class="project-card featured">
+        <div class="project-top">
+          <span class="tag">Projekt 0 · Pågående</span>
+          <span class="project-status">Aktiv</span>
+        </div>
+
         <h3>Portfolio Website</h3>
+
         <p>
-          En personlig portfolio byggd med Astro, GitHub och modern webbutveckling.
+          En personlig portfolio byggd med Astro och modern webbutveckling.
           Målet är att dokumentera projekt, lärande och teknisk utveckling på ett
           strukturerat och offentligt sätt.
         </p>
-        <p>
-          <strong>Tekniker:</strong> Astro, HTML, CSS, GitHub, Markdown, Vercel/Netlify.
-        </p>
+
+        <div class="tech-list">
+          <span>Astro</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>GitHub</span>
+          <span>Dokumentation</span>
+        </div>
       </article>
 
-      <article class="card">
-        <span class="tag">Projekt 1 · Planerad</span>
+      <article class="project-card">
+        <div class="project-top">
+          <span class="tag">Projekt 1 · Planerad</span>
+          <span class="project-status planned">Nästa</span>
+        </div>
+
         <h3>Secure Homelab</h3>
+
         <p>
           En säker lokal labbmiljö för att bygga praktisk erfarenhet inom nätverk,
           Linux, NAS, backup, rättigheter, loggning, monitoring och säker fjärråtkomst.
         </p>
-        <p>
-          <strong>Tekniker:</strong> Linux, NAS, Docker, nätverk, backup, monitoring.
-        </p>
+
+        <div class="tech-list">
+          <span>Linux</span>
+          <span>NAS</span>
+          <span>Docker</span>
+          <span>Backup</span>
+          <span>Monitoring</span>
+        </div>
       </article>
 
-      <article class="card">
-        <span class="tag">Projekt 2 · Planerad</span>
+      <article class="project-card">
+        <div class="project-top">
+          <span class="tag">Projekt 2 · Planerad</span>
+          <span class="project-status planned">Planerad</span>
+        </div>
+
         <h3>Secure Azure Environment</h3>
+
         <p>
           En molnbaserad miljö i Azure med fokus på säker åtkomst, IAM, logging,
           monitoring, storage och kostnadskontroll.
         </p>
-        <p>
-          <strong>Tekniker:</strong> Azure, Entra ID, IAM, logging, monitoring, cloud security.
-        </p>
+
+        <div class="tech-list">
+          <span>Azure</span>
+          <span>Entra ID</span>
+          <span>IAM</span>
+          <span>Logging</span>
+          <span>Cloud Security</span>
+        </div>
       </article>
 
-      <article class="card">
-        <span class="tag">Projekt 3 · Planerad</span>
+      <article class="project-card">
+        <div class="project-top">
+          <span class="tag">Projekt 3 · Planerad</span>
+          <span class="project-status planned">Planerad</span>
+        </div>
+
         <h3>Automation & Infrastructure as Code</h3>
+
         <p>
           Projekt där infrastruktur skapas och hanteras med kod för att minska
           manuella fel och skapa ett mer professionellt arbetssätt.
         </p>
-        <p>
-          <strong>Tekniker:</strong> Terraform, Ansible, GitHub Actions, PowerShell.
-        </p>
+
+        <div class="tech-list">
+          <span>Terraform</span>
+          <span>Ansible</span>
+          <span>GitHub Actions</span>
+          <span>PowerShell</span>
+        </div>
       </article>
 
-      <article class="card">
-        <span class="tag">Projekt 4 · Planerad</span>
+      <article class="project-card">
+        <div class="project-top">
+          <span class="tag">Projekt 4 · Planerad</span>
+          <span class="project-status planned">Planerad</span>
+        </div>
+
         <h3>Monitoring / Mini-SOC Dashboard</h3>
+
         <p>
           En dashboard för loggning, övervakning och larm från lokala system,
           cloud-resurser eller labbmiljöer.
         </p>
-        <p>
-          <strong>Tekniker:</strong> Grafana, Prometheus, logs, alerts, security monitoring.
-        </p>
+
+        <div class="tech-list">
+          <span>Grafana</span>
+          <span>Prometheus</span>
+          <span>Logs</span>
+          <span>Alerts</span>
+          <span>Security Monitoring</span>
+        </div>
       </article>
 
-      <article class="card">
-        <span class="tag">Projekt 5 · Planerad</span>
+      <article class="project-card">
+        <div class="project-top">
+          <span class="tag">Projekt 5 · Planerad</span>
+          <span class="project-status planned">Planerad</span>
+        </div>
+
         <h3>AI Infrastructure Lab</h3>
+
         <p>
           Ett framtida projekt kopplat till HPCS och AI infrastructure, med fokus
           på prestanda, containers, resursanvändning, latency och optimering.
         </p>
-        <p>
-          <strong>Tekniker:</strong> Docker, cloud, performance testing, AI infrastructure, HPCS.
-        </p>
+
+        <div class="tech-list">
+          <span>Docker</span>
+          <span>Cloud</span>
+          <span>Performance</span>
+          <span>AI Infrastructure</span>
+          <span>HPCS</span>
+        </div>
       </article>
     </div>
   </section>
 
   <section>
-    <h2>Större tidigare projekt</h2>
+    <div class="section-heading">
+      <p class="eyebrow">Tidigare projekt</p>
+      <h2>Större tidigare projekt</h2>
+      <p>
+        Projekt från studier och tidigare arbete som visar praktisk erfarenhet av
+        system, nätverk, säkerhet, cloud och programmering.
+      </p>
+    </div>
 
-    <div class="grid">
-      <article class="card">
-        <span class="tag">C# · WPF · MVVM · Genomförd</span>
-        <h3>Sport Club Management System</h3>
-        <p>
-          Ett större C#- och WPF-projekt där vi byggde ett sportklubbssystem med
-          separata vyer för medlemmar, tränare och administratörer. Systemet stödjer
-          registrering, inloggning, bokning och avbokning av träningspass, profilhantering,
-          historik, poäng, kalorier och utrustningshantering.
-        </p>
-        <p>
-          Projektet byggdes med MVVM och tydlig lagerindelning med presentationslager,
-          affärslager, datalager och entitetslager. Systemet använde serviceklasser,
-          repositories och Unit of Work för att hantera affärslogik och databasåtkomst.
-        </p>
-        <p>
-          <strong>Tekniker:</strong> C#, WPF, MVVM, Entity Framework, SQL Server,
-          Repository Pattern, Unit of Work, GitHub Projects.
-        </p>
+    <div class="project-list">
+      <article class="project-row">
+        <div>
+          <span class="tag">C# · WPF · MVVM</span>
+          <h3>Sport Club Management System</h3>
+        </div>
+
+        <div>
+          <p>
+            Ett större C#- och WPF-projekt där vi byggde ett sportklubbssystem med
+            separata vyer för medlemmar, tränare och administratörer. Systemet stödjer
+            registrering, inloggning, bokning och avbokning av träningspass,
+            profilhantering, historik, poäng, kalorier och utrustningshantering.
+          </p>
+
+          <p>
+            Projektet byggdes med MVVM och tydlig lagerindelning med presentationslager,
+            affärslager, datalager och entitetslager. Systemet använde serviceklasser,
+            repositories och Unit of Work för att hantera affärslogik och databasåtkomst.
+          </p>
+
+          <div class="tech-list">
+            <span>C#</span>
+            <span>WPF</span>
+            <span>MVVM</span>
+            <span>Entity Framework</span>
+            <span>SQL Server</span>
+            <span>Repository Pattern</span>
+            <span>Unit of Work</span>
+          </div>
+        </div>
       </article>
 
-      <article class="card">
-        <span class="tag">IoT & Cloud · Genomförd</span>
-        <h3>Smart Security System</h3>
-        <p>
-          Designade och implementerade en säkerhetslösning med kamera, sensor
-          och molntjänster. Lösningen använde händelsestyrd automation där
-          videodata sparades i Azure baserat på dörrsensorhändelser.
-        </p>
-        <p>
-          <strong>Tekniker:</strong> Azure, Home Assistant, IoT, kamera, sensor, automation.
-        </p>
+      <article class="project-row">
+        <div>
+          <span class="tag">IoT & Cloud</span>
+          <h3>Smart Security System</h3>
+        </div>
+
+        <div>
+          <p>
+            Designade och implementerade en säkerhetslösning med kamera, sensor
+            och molntjänster. Lösningen använde händelsestyrd automation där
+            videodata sparades i Azure baserat på dörrsensorhändelser.
+          </p>
+
+          <div class="tech-list">
+            <span>Azure</span>
+            <span>Home Assistant</span>
+            <span>IoT</span>
+            <span>Kamera</span>
+            <span>Sensor</span>
+            <span>Automation</span>
+          </div>
+        </div>
       </article>
 
-      <article class="card">
-        <span class="tag">Infrastructure & IAM · Genomförd</span>
-        <h3>Enterprise Network & Active Directory Environment</h3>
-        <p>
-          Simulerade en företagsmiljö med flera servrar och klienter.
-          Projektet omfattade användare, behörigheter, policys, Active Directory,
-          Group Policy, DHCP, delade resurser, brandväggsregler, redundans och failover.
-        </p>
-        <p>
-          <strong>Tekniker:</strong> Active Directory, GPO, DHCP, firewall rules,
-          Windows Server, redundancy, failover.
-        </p>
+      <article class="project-row">
+        <div>
+          <span class="tag">Infrastructure & IAM</span>
+          <h3>Enterprise Network & Active Directory Environment</h3>
+        </div>
+
+        <div>
+          <p>
+            Simulerade en företagsmiljö med flera servrar och klienter.
+            Projektet omfattade användare, behörigheter, policys, Active Directory,
+            Group Policy, DHCP, delade resurser, brandväggsregler, redundans och failover.
+          </p>
+
+          <div class="tech-list">
+            <span>Active Directory</span>
+            <span>GPO</span>
+            <span>DHCP</span>
+            <span>Firewall Rules</span>
+            <span>Windows Server</span>
+            <span>Failover</span>
+          </div>
+        </div>
       </article>
 
-      <article class="card">
-        <span class="tag">Cybersecurity · Genomförd</span>
-        <h3>Network Traffic & Threat Analysis</h3>
-        <p>
-          Analyserade PCAP-filer i Wireshark för att undersöka nätverksaktivitet,
-          identifiera misstänkt trafik, analysera dataexfiltration och tolka
-          säkerhetsrelaterade händelser.
-        </p>
-        <p>
-          <strong>Tekniker:</strong> Wireshark, PCAP, VirusTotal, CyberChef, threat analysis.
-        </p>
+      <article class="project-row">
+        <div>
+          <span class="tag">Cybersecurity</span>
+          <h3>Network Traffic & Threat Analysis</h3>
+        </div>
+
+        <div>
+          <p>
+            Analyserade PCAP-filer i Wireshark för att undersöka nätverksaktivitet,
+            identifiera misstänkt trafik, analysera dataexfiltration och tolka
+            säkerhetsrelaterade händelser.
+          </p>
+
+          <div class="tech-list">
+            <span>Wireshark</span>
+            <span>PCAP</span>
+            <span>VirusTotal</span>
+            <span>CyberChef</span>
+            <span>Threat Analysis</span>
+          </div>
+        </div>
       </article>
     </div>
   </section>
 
   <section>
-    <h2>Mini learning projects</h2>
+    <div class="section-heading">
+      <p class="eyebrow">Learning projects</p>
+      <h2>Mini learning projects</h2>
+      <p>
+        Mindre projekt som används för att testa tekniker, förstå säkerhetskoncept
+        och bygga praktisk erfarenhet steg för steg.
+      </p>
+    </div>
 
-    <div class="grid">
-      <article class="card">
-        <span class="tag">Python · Flask · API Security · Learning project</span>
+    <div class="project-grid compact">
+      <article class="project-card">
+        <div class="project-top">
+          <span class="tag">Python · Flask · API Security</span>
+          <span class="project-status learning">Learning</span>
+        </div>
+
         <h3>Simple API Security Demo</h3>
+
         <p>
           Ett mindre Flask-projekt som demonstrerar hur en API-endpoint kan skyddas
           med en API-nyckel via request headers och miljövariabler.
         </p>
+
         <p>
           Projektet används som ett lärandeprojekt för att förstå grundläggande
           API-säkerhet, hantering av miljövariabler och enkel åtkomstkontroll.
         </p>
-        <p>
-          <strong>Fokus:</strong> Flask, API keys, environment variables, basic access control.
-        </p>
+
+        <div class="tech-list">
+          <span>Flask</span>
+          <span>API Keys</span>
+          <span>Environment Variables</span>
+          <span>Access Control</span>
+        </div>
       </article>
     </div>
   </section>
 </MainLayout>
+
+<style>
+  .projects-hero h1 {
+    font-size: clamp(2.4rem, 5.2vw, 4.2rem);
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .project-grid.compact {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 720px;
+  }
+
+  .project-card,
+  .project-row {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
+      var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.35rem;
+    transition:
+      transform 160ms ease,
+      border-color 160ms ease,
+      background 160ms ease;
+  }
+
+  .project-card:hover,
+  .project-row:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-hover);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
+      var(--surface-soft);
+  }
+
+  .project-card.featured {
+    border-color: var(--border-hover);
+  }
+
+  .project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-status {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0.25rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(34, 197, 94, 0.12);
+    color: #86efac;
+    font-size: 0.72rem;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .project-status.planned {
+    background: rgba(147, 197, 253, 0.12);
+    color: var(--accent);
+  }
+
+  .project-status.learning {
+    background: rgba(250, 204, 21, 0.12);
+    color: #fde68a;
+  }
+
+  .project-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .project-row {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.65fr) minmax(0, 1.35fr);
+    gap: 1.5rem;
+  }
+
+  .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 1rem;
+  }
+
+  .tech-list span {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0.28rem 0.58rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text-soft);
+    background: rgba(255, 255, 255, 0.025);
+    font-size: 0.78rem;
+    font-weight: 650;
+  }
+
+  @media (max-width: 900px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .project-row {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    .project-top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
+</style>

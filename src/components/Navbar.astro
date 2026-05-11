@@ -1,14 +1,104 @@
-<nav class="navbar">
-  <a href="/" class="logo">Olle Rönn</a>
+<header class="navbar-wrap">
+  <nav class="navbar">
+    <a href="/" class="logo">
+      <span class="logo-mark">OR</span>
+      <span>Olle Rönn</span>
+    </a>
 
-  <div class="nav-links">
-    <a href="/">Hem</a>
-    <a href="/about">Om mig</a>
-    <a href="/cv">CV</a>
-    <a href="/projects">Projekt</a>
-    <a href="/learning-log">Lärandelogg</a>
-    <a href="/homelab">Homelab</a>
-    <a href="/contact">Kontakt</a>
-  </div>
-</nav>
+    <div class="nav-links">
+      <a href="/">Hem</a>
+      <a href="/about">Om mig</a>
+      <a href="/cv">CV</a>
+      <a href="/projects">Projekt</a>
+      <a href="/learning-log">Lärandelogg</a>
+      <a href="/homelab">Homelab</a>
+      <a href="/contact">Kontakt</a>
+    </div>
+  </nav>
+</header>
 
+<style>
+  .navbar-wrap {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(10, 15, 28, 0.82);
+    backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(148, 163, 184, 0.14);
+  }
+
+  .navbar {
+    width: min(1080px, 92%);
+    margin: 0 auto;
+    padding: 0.95rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    color: #f8fafc;
+    font-size: 0.95rem;
+    font-weight: 750;
+    white-space: nowrap;
+  }
+
+  .logo-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: #f8fafc;
+    color: #020617;
+    font-size: 0.72rem;
+    font-weight: 850;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.15rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-links a {
+    padding: 0.45rem 0.65rem;
+    border-radius: 999px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition:
+      color 150ms ease,
+      background 150ms ease;
+  }
+
+  .nav-links a:hover {
+    color: #f8fafc;
+    background: rgba(255, 255, 255, 0.055);
+  }
+
+  @media (max-width: 860px) {
+    .navbar {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .nav-links {
+      justify-content: flex-start;
+      gap: 0.25rem;
+    }
+
+    .nav-links a {
+      padding-left: 0;
+      padding-right: 0.75rem;
+    }
+  }
+</style>

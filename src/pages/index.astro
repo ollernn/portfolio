@@ -3,173 +3,458 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout title="Olle Rönn | Portfolio">
-  <section class="hero">
-  <p class="eyebrow">Portfolio · Projekt · Lärande</p>
+  <section class="hero home-hero">
+    <div class="hero-content">
+      <p class="eyebrow">Portfolio · Projekt · Lärande</p>
 
-  <h1>Olle Rönn</h1>
+      <h1>
+        Olle Rönn
+        <span class="hero-line text-glow">IT, säkerhet och systemnära teknik.</span>
+      </h1>
 
-  <p class="lead">
-    Jag bygger, dokumenterar och utvecklas inom IT-infrastruktur,
-    cybersäkerhet, cloud och systemnära teknik.
-  </p>
+      <p class="hero-subtitle">
+        IT-ingenjörsstudent med fokus på cybersäkerhet, digital infrastruktur,
+        cloud och högpresterande datorsystem.
+      </p>
 
-  <p class="lead">
-    Välkommen till min portfolio. Här samlar jag information om mig, mitt CV,
-    mina projekt och min lärandeprocess inom IT-infrastruktur, cloud,
-    cybersäkerhet, homelab, automation och framtida AI infrastructure.
-  </p>
-
-  <p class="lead">
-    Syftet med sidan är att visa vad jag bygger, vad jag lär mig och hur jag
-    steg för steg utvecklar min tekniska profil genom praktiska projekt.
-  </p>
-
-  <div class="buttons">
-    <a class="button" href="/projects">Se projekt</a>
-    <a class="button" href="/learning-log">Följ lärandeloggen</a>
-    <a class="button" href="/cv">Se CV</a>
-    <a class="button" href="/contact">Kontakta mig</a>
-  </div>
-</section>
-
-  <section>
-    <h2>Vad du hittar här</h2>
-
-    <div class="grid">
-      <article class="card">
-        <span class="tag">01</span>
-        <h3>Om mig</h3>
-        <p>
-          En mer personlig introduktion till vem jag är, vad jag studerar,
-          vad jag är intresserad av och vad jag vill utvecklas inom.
-        </p>
-      </article>
-
-      <article class="card">
-        <span class="tag">02</span>
-        <h3>CV</h3>
-        <p>
-          En sammanfattning av min utbildning, relevanta erfarenhet, tekniska
-          kunskaper, certifikat, kurser och övriga erfarenheter.
-        </p>
-      </article>
-
-      <article class="card">
-        <span class="tag">03</span>
-        <h3>Projekt</h3>
-        <p>
-          Projekt inom cloud, cybersäkerhet, IAM, homelab, automation,
-          C#, WPF, nätverk och säkerhet.
-        </p>
-      </article>
-
-      <article class="card">
-        <span class="tag">04</span>
-        <h3>Lärandelogg</h3>
-        <p>
-          En plats där jag dokumenterar vad jag lär mig, vilka problem jag löser
-          och hur mina projekt utvecklas över tid.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <section>
-    <h2>Fokusområden</h2>
-
-    <div class="grid">
-      <article class="card">
-        <span class="tag">Cloud & Infrastruktur</span>
-        <h3>Säkra och strukturerade IT-miljöer</h3>
-        <p>
-          Jag vill utvecklas inom moderna IT-miljöer med fokus på servrar,
-          nätverk, cloud, identitet, åtkomst och drift.
-        </p>
-      </article>
-
-      <article class="card">
-        <span class="tag">Cybersäkerhet</span>
-        <h3>Säkerhet som en naturlig del av systemen</h3>
-        <p>
-          Jag är intresserad av IAM, behörigheter, least privilege, loggning,
-          monitoring, incidenthantering och säkerhetsanalys.
-        </p>
-      </article>
-
-      <article class="card">
-        <span class="tag">Homelab</span>
-        <h3>Praktiskt lärande genom egna miljöer</h3>
-        <p>
-          Jag planerar att bygga en egen labbmiljö med NAS, backup, Linux,
-          Docker, monitoring, säker fjärråtkomst och koppling till Azure.
-        </p>
-      </article>
-
-      <article class="card">
-        <span class="tag">HPCS & AI Infrastructure</span>
-        <h3>Prestanda, optimering och systemnära teknik</h3>
-        <p>
-          Min kommande master inom High Performance Computer Systems kopplar
-          till mitt intresse för optimering, systemarkitektur, containers,
-          distribuerade system och AI infrastructure.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <section>
-    <h2>Nuvarande roadmap</h2>
-
-    <div class="grid">
-      <article class="card">
-        <span class="tag">Steg 1 · Pågående</span>
-        <h3>Portfolio Website</h3>
-        <p>
-          Bygga grunden för hemsidan med sidor för CV, projekt, lärandelogg,
-          homelab och kontakt. Målet är att skapa en tydlig plats där allt
-          framtida lärande kan dokumenteras.
-        </p>
-      </article>
-
-      <article class="card">
-        <span class="tag">Steg 2 · Nästa projekt</span>
-        <h3>Secure Homelab</h3>
-        <p>
-          Dokumentera nuvarande utrustning, planera första arkitekturen och
-          börja bygga en lokal labbmiljö för infrastruktur, säkerhet, backup
-          och monitoring.
-        </p>
-      </article>
-
-      <article class="card">
-        <span class="tag">Steg 3 · Planerad</span>
-        <h3>Secure Azure Environment</h3>
-        <p>
-          Skapa en säker Azure-miljö med fokus på IAM, Entra ID, logging,
-          monitoring, storage, kostnadskontroll och säker åtkomst.
-        </p>
-      </article>
-    </div>
-  </section>
-
-  <section>
-    <h2>Följ min utveckling</h2>
-
-    <div class="card">
-      <p>
-        Den här hemsidan kommer att växa över tid. När jag bygger nya projekt
-        kommer jag att lägga till dokumentation, lärdomar, tekniker, problem
-        jag stött på och hur jag löst dem. Målet är att portfolion inte bara
-        ska visa färdiga resultat, utan även min utveckling och mitt sätt att
-        tänka tekniskt.
+      <p class="lead">
+        Här samlar jag mina projekt, mitt CV och min lärandeprocess. Målet med
+        portfolion är att visa hur jag bygger, dokumenterar och utvecklas genom
+        praktiska projekt inom infrastruktur, säkerhet, homelab, automation och
+        framtida AI infrastructure.
       </p>
 
       <div class="buttons">
-        <a class="button" href="/projects">Projekt</a>
-        <a class="button" href="/homelab">Homelab</a>
-        <a class="button" href="/learning-log">Lärandelogg</a>
-        <a class="button" href="/contact">Kontakt</a>
+        <a class="button" href="/projects">Se projekt</a>
+        <a class="button secondary" href="/learning-log">Följ lärandeloggen</a>
+        <a class="button secondary" href="/cv">Se CV</a>
+        <a class="button secondary" href="/contact">Kontakt</a>
       </div>
+    </div>
+
+    <aside class="hero-card">
+      <p class="hero-card-label">Nuvarande fokus</p>
+      <h2>Portfolio Website</h2>
+      <p>
+        Jag bygger just nu grunden för min portfolio innan jag går vidare till
+        nästa större projekt: Secure Homelab.
+      </p>
+
+      <div class="status-row">
+        <span>Status</span>
+        <strong>Pågående</strong>
+      </div>
+
+      <div class="mini-list">
+        <span>Astro</span>
+        <span>HTML/CSS</span>
+        <span>Komponenter</span>
+        <span>Dokumentation</span>
+      </div>
+    </aside>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <p class="eyebrow">Översikt</p>
+      <h2>Vad du hittar här</h2>
+      <p>
+        Portfolion är uppdelad i tydliga delar: vem jag är, vad jag kan,
+        vad jag har byggt och vad jag lär mig längs vägen.
+      </p>
+    </div>
+
+    <div class="overview-grid">
+      <a class="overview-card" href="/about">
+        <span>01</span>
+        <div>
+          <h3>Om mig</h3>
+          <p>En personlig introduktion till mig, mina studier och mina tekniska intressen.</p>
+        </div>
+      </a>
+
+      <a class="overview-card" href="/cv">
+        <span>02</span>
+        <div>
+          <h3>CV</h3>
+          <p>Utbildning, erfarenhet, tekniska kunskaper, certifikat och relevanta kurser.</p>
+        </div>
+      </a>
+
+      <a class="overview-card" href="/projects">
+        <span>03</span>
+        <div>
+          <h3>Projekt</h3>
+          <p>Roadmap-projekt, tidigare skolprojekt och mindre lärandeprojekt.</p>
+        </div>
+      </a>
+
+      <a class="overview-card" href="/learning-log">
+        <span>04</span>
+        <div>
+          <h3>Lärandelogg</h3>
+          <p>Korta sammanfattningar av vad jag bygger, lär mig och förbättrar.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <p class="eyebrow">Fokusområden</p>
+      <h2>Teknisk riktning</h2>
+      <p>
+        Mina projekt och min utveckling rör sig framför allt kring säkra,
+        strukturerade och effektiva IT-miljöer.
+      </p>
+    </div>
+
+    <div class="focus-grid">
+      <article class="focus-card">
+        <span class="tag">Infrastructure</span>
+        <h3>IT-infrastruktur & cloud</h3>
+        <p>
+          Servrar, nätverk, Azure, identitet, åtkomst, drift och strukturerade IT-miljöer.
+        </p>
+      </article>
+
+      <article class="focus-card">
+        <span class="tag">Security</span>
+        <h3>Cybersäkerhet & IAM</h3>
+        <p>
+          Behörigheter, least privilege, Active Directory, Entra ID, logging och säkerhetsanalys.
+        </p>
+      </article>
+
+      <article class="focus-card">
+        <span class="tag">Homelab</span>
+        <h3>Praktiskt lärande</h3>
+        <p>
+          NAS, Linux, Docker, backup, monitoring, scriptning och säkra labbmiljöer.
+        </p>
+      </article>
+
+      <article class="focus-card">
+        <span class="tag">HPCS</span>
+        <h3>Prestanda & optimering</h3>
+        <p>
+          Systemarkitektur, distribuerade system, containers, optimering och AI infrastructure.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <p class="eyebrow">Roadmap</p>
+      <h2>Projekt framåt</h2>
+      <p>
+        Portfolion är första steget. Därefter bygger jag vidare med mer tekniska
+        projekt som dokumenteras här.
+      </p>
+    </div>
+
+    <div class="roadmap">
+      <article class="roadmap-item current">
+        <div class="roadmap-marker"></div>
+        <div>
+          <span class="tag">Pågående</span>
+          <h3>Portfolio Website</h3>
+          <p>
+            Färdigställa hemsidans struktur, innehåll, design, projektöversikt och lärandelogg.
+          </p>
+        </div>
+      </article>
+
+      <article class="roadmap-item">
+        <div class="roadmap-marker"></div>
+        <div>
+          <span class="tag">Nästa projekt</span>
+          <h3>Secure Homelab</h3>
+          <p>
+            Planera och bygga en säker lokal labbmiljö med NAS, backup, Linux,
+            nätverk, monitoring och säker åtkomst.
+          </p>
+        </div>
+      </article>
+
+      <article class="roadmap-item">
+        <div class="roadmap-marker"></div>
+        <div>
+          <span class="tag">Planerad</span>
+          <h3>Secure Azure Environment</h3>
+          <p>
+            Skapa en säker Azure-miljö med IAM, logging, monitoring, storage,
+            kostnadskontroll och molnsäkerhet.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div>
+      <p class="eyebrow">Kontakt</p>
+      <h2>Vill du se mer eller komma i kontakt?</h2>
+      <p>
+        Du kan läsa mer om mina projekt, följa min lärandelogg eller kontakta mig
+        via e-post, GitHub, LinkedIn och Credly.
+      </p>
+    </div>
+
+    <div class="buttons">
+      <a class="button" href="/projects">Projekt</a>
+      <a class="button secondary" href="/contact">Kontakt</a>
     </div>
   </section>
 </MainLayout>
+
+<style>
+  .home-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(290px, 0.85fr);
+    gap: 2rem;
+    align-items: end;
+  }
+
+  .hero-content {
+    max-width: 840px;
+  }
+
+  .hero-line {
+    display: block;
+  }
+
+  .hero-subtitle {
+    max-width: 760px;
+    color: var(--text);
+    font-size: clamp(1.18rem, 2vw, 1.45rem);
+    line-height: 1.38;
+    margin: 0 0 1rem;
+  }
+
+  .hero-card {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.018)),
+      var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+  }
+
+  .hero-card-label {
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 850;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    margin: 0 0 0.75rem;
+  }
+
+  .hero-card h2 {
+    font-size: 1.35rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .status-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+  }
+
+  .status-row strong {
+    color: var(--accent);
+  }
+
+  .mini-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+  }
+
+  .mini-list span {
+    padding: 0.35rem 0.65rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text-soft);
+    font-size: 0.82rem;
+    background: rgba(255, 255, 255, 0.025);
+  }
+
+  .overview-grid {
+    display: grid;
+    gap: 0.9rem;
+    margin-top: 1.5rem;
+  }
+
+  .overview-card {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 1rem;
+    padding: 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
+      var(--surface);
+    transition:
+      transform 160ms ease,
+      border-color 160ms ease,
+      background 160ms ease;
+  }
+
+  .overview-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-hover);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
+      var(--surface-soft);
+  }
+
+  .overview-card span {
+    color: var(--accent);
+    font-weight: 850;
+    font-size: 0.95rem;
+  }
+
+  .overview-card h3 {
+    margin-bottom: 0.25rem;
+  }
+
+  .overview-card p {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .focus-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .focus-card {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
+      var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    transition:
+      transform 160ms ease,
+      border-color 160ms ease,
+      background 160ms ease;
+  }
+
+  .focus-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-hover);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
+      var(--surface-soft);
+  }
+
+  .focus-card p {
+    color: var(--muted);
+  }
+
+  .roadmap {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .roadmap-item {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 1rem;
+    padding: 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
+      var(--surface);
+  }
+
+  .roadmap-item.current {
+    border-color: var(--border-hover);
+  }
+
+  .roadmap-marker {
+    width: 11px;
+    height: 11px;
+    margin-top: 0.55rem;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 6px var(--accent-muted);
+  }
+
+  .roadmap-item p {
+    color: var(--muted);
+  }
+
+  .cta-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.018)),
+      var(--surface);
+  }
+
+  .cta-section h2 {
+    margin-bottom: 0.75rem;
+  }
+
+  .cta-section p {
+    max-width: 680px;
+    color: var(--muted);
+  }
+
+  .cta-section .buttons {
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 980px) {
+    .focus-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 860px) {
+    .home-hero {
+      grid-template-columns: 1fr;
+      align-items: start;
+    }
+
+    .cta-section {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .cta-section .buttons {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .focus-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .overview-card {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

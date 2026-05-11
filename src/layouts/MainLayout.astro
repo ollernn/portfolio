@@ -2,7 +2,10 @@
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 
-const { title = "Olle Rönn | Portfolio", description = "Portfolio för projekt inom cloud, cybersäkerhet, infrastruktur, homelab och AI infrastructure." } = Astro.props;
+const {
+  title = "Olle Rönn | Portfolio",
+  description = "Portfolio för projekt inom IT-infrastruktur, cybersäkerhet, cloud, homelab, automation och systemnära teknik."
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -15,6 +18,8 @@ const { title = "Olle Rönn | Portfolio", description = "Portfolio för projekt 
   </head>
 
   <body>
+    <div class="site-bg"></div>
+
     <Navbar />
 
     <main class="page">
@@ -27,24 +32,61 @@ const { title = "Olle Rönn | Portfolio", description = "Portfolio för projekt 
 
 <style is:global>
   :root {
-    --bg: #0f172a;
-    --card: #111827;
-    --text: #e5e7eb;
-    --muted: #9ca3af;
-    --accent: #38bdf8;
-    --border: #1f2937;
+    --bg: #0a0f1c;
+    --bg-soft: #0f172a;
+
+    --surface: rgba(17, 24, 39, 0.82);
+    --surface-soft: rgba(21, 29, 46, 0.94);
+    --surface-light: rgba(255, 255, 255, 0.035);
+
+    --text: #f8fafc;
+    --text-soft: #dbe4ef;
+    --muted: #94a3b8;
+
+    --accent: #93c5fd;
+    --accent-strong: #60a5fa;
+    --accent-muted: rgba(147, 197, 253, 0.12);
+
+    --border: rgba(148, 163, 184, 0.16);
+    --border-hover: rgba(147, 197, 253, 0.30);
+
+    --shadow: 0 20px 55px rgba(0, 0, 0, 0.32);
+    --radius: 18px;
+    --max-width: 1080px;
   }
 
   * {
     box-sizing: border-box;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--bg);
+    min-height: 100vh;
+    font-family:
+      Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
     color: var(--text);
-    line-height: 1.6;
+    background:
+      radial-gradient(circle at 16% 8%, rgba(147, 197, 253, 0.10), transparent 30%),
+      radial-gradient(circle at 85% 0%, rgba(96, 165, 250, 0.06), transparent 28%),
+      linear-gradient(180deg, #0a0f1c 0%, #0b1120 48%, #0a0f1c 100%);
+    line-height: 1.65;
+  }
+
+  .site-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+      linear-gradient(rgba(148, 163, 184, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(148, 163, 184, 0.025) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: linear-gradient(to bottom, black, transparent 78%);
   }
 
   a {
@@ -52,141 +94,266 @@ const { title = "Olle Rönn | Portfolio", description = "Portfolio för projekt 
     text-decoration: none;
   }
 
+  p {
+    color: var(--text-soft);
+    margin: 0.75rem 0;
+  }
+
+  strong {
+    color: var(--text);
+    font-weight: 750;
+  }
+
   .page {
-    width: min(1100px, 92%);
+    width: min(var(--max-width), 92%);
     margin: 0 auto;
-    padding: 3rem 0;
-    min-height: 70vh;
+    padding: 4.5rem 0 5rem;
+    min-height: 72vh;
   }
 
-  .navbar {
-    width: min(1100px, 92%);
-    margin: 0 auto;
-    padding: 1.25rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .logo {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: var(--accent);
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-    font-size: 0.95rem;
-  }
-
-  .nav-links a {
-    color: var(--muted);
-  }
-
-  .nav-links a:hover {
-    color: var(--accent);
-  }
-
-  .footer {
-    width: min(1100px, 92%);
-    margin: 0 auto;
-    padding: 2rem 0;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-    font-size: 0.9rem;
+  section {
+    margin-bottom: 5rem;
   }
 
   .hero {
-    padding: 4rem 0;
+    padding: 0.2rem 0 1.8rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--border);
   }
 
   .eyebrow {
+    display: inline-flex;
+    width: fit-content;
+    margin: 0 0 1rem;
     color: var(--accent);
-    font-weight: 700;
-    margin-bottom: 0.75rem;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: var(--text);
+    letter-spacing: -0.035em;
   }
 
   h1 {
-    font-size: clamp(2.2rem, 5vw, 4rem);
-    line-height: 1.1;
-    margin: 0 0 1rem;
+    max-width: 920px;
+    font-size: clamp(2.4rem, 5.2vw, 4.2rem);
+    line-height: 1.02;
+    margin: 0 0 1.3rem;
+    font-weight: 900;
   }
 
   h2 {
-    font-size: 2rem;
-    margin-top: 0;
+    font-size: clamp(1.55rem, 3vw, 2.25rem);
+    line-height: 1.15;
+    margin: 0 0 1.25rem;
+    font-weight: 850;
   }
 
-  p {
-    color: var(--muted);
+  h3 {
+    font-size: 1.08rem;
+    line-height: 1.3;
+    margin: 0 0 0.65rem;
+    font-weight: 800;
   }
 
   .lead {
-    font-size: 1.15rem;
-    max-width: 750px;
+    max-width: 800px;
+    color: var(--text-soft);
+    font-size: 1.08rem;
+  }
+
+  .muted {
+    color: var(--muted);
+  }
+
+  .accent {
+    color: var(--accent);
+  }
+
+  .text-glow {
+  color: var(--accent);
+  text-shadow:
+    0 0 6px rgba(147, 197, 253, 0.16),
+    0 0 14px rgba(147, 197, 253, 0.08);
+  }
+
+  .text-gradient {
+    background: linear-gradient(90deg, #f8fafc 0%, #bfdbfe 48%, #93c5fd 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   .buttons {
     display: flex;
-    gap: 1rem;
     flex-wrap: wrap;
+    gap: 0.75rem;
     margin-top: 2rem;
   }
 
   .button {
-    display: inline-block;
-    padding: 0.8rem 1rem;
-    border-radius: 0.75rem;
-    background: var(--accent);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 0.72rem 1rem;
+    border-radius: 999px;
+    background: var(--text);
     color: #020617;
+    font-size: 0.92rem;
     font-weight: 700;
+    border: 1px solid transparent;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.28);
+    transition:
+      transform 160ms ease,
+      background 160ms ease,
+      border-color 160ms ease,
+      box-shadow 160ms ease,
+      color 160ms ease;
+  }
+
+  .button:hover {
+    transform: translateY(-1px);
+    background: var(--accent);
+    box-shadow: 0 16px 36px rgba(96, 165, 250, 0.18);
   }
 
   .button.secondary {
-    background: transparent;
-    color: var(--text);
-    border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.045);
+  color: var(--text);
+  border-color: rgba(148, 163, 184, 0.24);
+  box-shadow: none;
+  }
+
+  .button.secondary:hover {
+  background: rgba(147, 197, 253, 0.08);
+  border-color: var(--border-hover);
+  color: var(--text);
+  box-shadow: 0 0 22px rgba(147, 197, 253, 0.06);
   }
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 
   .card {
-    background: var(--card);
+    position: relative;
+    overflow: hidden;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
+      var(--surface);
     border: 1px solid var(--border);
-    border-radius: 1rem;
-    padding: 1.25rem;
+    border-radius: var(--radius);
+    padding: 1.35rem;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(14px);
+    transition:
+      transform 170ms ease,
+      border-color 170ms ease,
+      background 170ms ease,
+      box-shadow 170ms ease;
   }
 
-  .card h3 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at top left, rgba(147, 197, 253, 0.10), transparent 38%),
+      linear-gradient(135deg, rgba(147, 197, 253, 0.055), transparent 48%);
+    opacity: 0;
+    transition: opacity 170ms ease;
+    pointer-events: none;
+  }
+
+  .card:hover {
+    transform: translateY(-3px);
+    border-color: var(--border-hover);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
+      var(--surface-soft);
+    box-shadow:
+      0 24px 70px rgba(0, 0, 0, 0.38),
+      0 0 26px rgba(147, 197, 253, 0.08);
+  }
+
+  .card:hover::before {
+    opacity: 1;
+  }
+
+  .card > * {
+    position: relative;
+    z-index: 1;
   }
 
   .tag {
-    display: inline-block;
-    font-size: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 0.85rem;
+    padding: 0.26rem 0.62rem;
+    border-radius: 999px;
+    background: var(--accent-muted);
+    border: 1px solid rgba(147, 197, 253, 0.16);
     color: var(--accent);
-    margin-bottom: 0.5rem;
+    font-size: 0.76rem;
+    font-weight: 800;
   }
 
-  @media (max-width: 800px) {
-    .navbar {
-      align-items: flex-start;
-      flex-direction: column;
-      gap: 1rem;
+  .section-heading {
+    max-width: 760px;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-heading p {
+    color: var(--muted);
+  }
+
+  .card p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 760px) {
+    .page {
+      width: min(100% - 1.25rem, var(--max-width));
+      padding: 2.5rem 0 4rem;
     }
 
-    .nav-links {
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    .hero {
+      padding: 2.6rem 0 2.4rem;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: clamp(2.25rem, 13vw, 3.4rem);
+    }
+
+    .lead {
+      font-size: 1rem;
+    }
+
+    .buttons {
       flex-direction: column;
-      gap: 0.5rem;
+    }
+
+    .button {
+      width: 100%;
+    }
+
+    .grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>

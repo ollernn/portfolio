@@ -2,9 +2,10 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="CV | Olle Rönn">
-  <section class="hero">
+<MainLayout title="Olle Rönn | CV">
+  <section class="hero cv-hero">
     <p class="eyebrow">CV</p>
+
     <h1>CV</h1>
 
     <p class="lead">
@@ -16,43 +17,64 @@ import MainLayout from "../layouts/MainLayout.astro";
   </section>
 
   <section>
-    <h2>Relevant erfarenhet</h2>
+    <div class="section-heading">
+      <p class="eyebrow">Erfarenhet</p>
+      <h2>Relevant erfarenhet</h2>
+    </div>
 
-    <div class="grid">
-      <article class="card">
-        <span class="tag">Nov 2025 – Jan 2026</span>
-        <h3>Stena Group IT</h3>
-        <p><strong>Identity & Access Management · Göteborg</strong></p>
-        <p>
-          Arbetade med IAM i en större företagsmiljö med hantering av användare,
-          behörigheter och privilegierade konton i Active Directory, Entra ID och Azure.
-        </p>
-        <p>
-          Utförde accessgranskningar och kontoanalyser för att bidra till säker och
-          korrekt behörighetsstyrning. Använde även PowerShell för datainsamling,
-          automatisering och processstöd.
-        </p>
+    <div class="experience-list">
+      <article class="card experience-card">
+        <div class="experience-meta">
+          <span class="tag">Nov 2025 – Jan 2026</span>
+          <p>Göteborg</p>
+        </div>
+
+        <div>
+          <h3>Stena Group IT</h3>
+          <p class="role">Identity & Access Management</p>
+
+          <p>
+            Arbetade med IAM i en större företagsmiljö med hantering av användare,
+            behörigheter och privilegierade konton i Active Directory, Entra ID och Azure.
+          </p>
+
+          <ul>
+            <li>Utförde accessgranskningar och kontoanalyser.</li>
+            <li>Analyserade säkerhetsrisker och attackmetoder i en verklig IT-miljö.</li>
+            <li>Använde PowerShell för datainsamling, automatisering och processstöd.</li>
+          </ul>
+        </div>
       </article>
 
-      <article class="card">
-        <span class="tag">Sep 2018</span>
-        <h3>Telia Company AB</h3>
-        <p><strong>IT-service · Göteborg</strong></p>
-        <p>
-          Assisterade inom IT-service och support.
-        </p>
+      <article class="card experience-card">
+        <div class="experience-meta">
+          <span class="tag">Sep 2018</span>
+          <p>Göteborg</p>
+        </div>
+
+        <div>
+          <h3>Telia Company AB</h3>
+          <p class="role">IT-service</p>
+
+          <p>
+            Assisterade inom IT-service och support under en kortare praktikperiod.
+          </p>
+        </div>
       </article>
     </div>
   </section>
 
   <section>
-    <h2>Utbildning</h2>
+    <div class="section-heading">
+      <p class="eyebrow">Utbildning</p>
+      <h2>Utbildning</h2>
+    </div>
 
     <div class="grid">
       <article class="card">
         <span class="tag">Aug 2026 – Jun 2028</span>
         <h3>Chalmers tekniska högskola</h3>
-        <p><strong>Masterprogram i High Performance Computer Systems, 120 hp</strong></p>
+        <p class="role">Masterprogram i High Performance Computer Systems, 120 hp</p>
         <p>
           Fördjupning inom högpresterande datorsystem, parallell programmering,
           systemarkitektur och distribuerade system.
@@ -62,7 +84,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       <article class="card">
         <span class="tag">Aug 2023 – Jun 2026</span>
         <h3>Högskolan i Borås</h3>
-        <p><strong>IT-ingenjör – Digital infrastruktur och cybersäkerhet, 180 hp</strong></p>
+        <p class="role">IT-ingenjör – Digital infrastruktur och cybersäkerhet, 180 hp</p>
         <p>
           Treårig ingenjörsutbildning med fokus på digital infrastruktur, nätverk,
           system och cybersäkerhet.
@@ -73,101 +95,112 @@ import MainLayout from "../layouts/MainLayout.astro";
         <span class="tag">Aug 2019 – Jun 2022</span>
         <h3>Lindholmens Tekniska Gymnasium</h3>
         <p>
-          Information och media med inriktning mot design, programmering
-          och datorkunskap.
+          Information och media med inriktning mot design, programmering och datorkunskap.
         </p>
       </article>
     </div>
   </section>
 
   <section>
-    <h2>Tekniska kunskaper</h2>
+    <div class="section-heading">
+      <p class="eyebrow">Teknik</p>
+      <h2>Tekniska kunskaper</h2>
+    </div>
 
-    <div class="grid">
+    <div class="skills-grid">
       <article class="card">
         <h3>IT-infrastruktur & nätverk</h3>
-        <p>
-          Windows-miljöer, systemadministration, TCP/IP, routing, switching,
-          nätverksfelsökning och nätverksgrunder på CCNA-nivå.
-        </p>
+        <ul>
+          <li>Windows-miljöer och grundläggande systemadministration</li>
+          <li>TCP/IP, routing och switching på CCNA-nivå</li>
+          <li>Nätverksfelsökning och nätverksgrunder</li>
+        </ul>
       </article>
 
       <article class="card">
         <h3>Identity & Access Management</h3>
-        <p>
-          Active Directory, Entra ID, Azure, användarhantering, behörigheter,
-          privilegierade konton, accessgranskningar och kontoanalyser.
-        </p>
+        <ul>
+          <li>Active Directory, Entra ID och Azure</li>
+          <li>Användare, behörigheter och privilegierade konton</li>
+          <li>Accessgranskningar och kontoanalyser</li>
+        </ul>
       </article>
 
       <article class="card">
         <h3>Cybersäkerhet</h3>
-        <p>
-          Säkerhetsgrunder, analys av attackmetoder, nätverkstrafikanalys,
-          Wireshark, PCAP, säkerhetsövervakning och incidenthantering på grundnivå.
-        </p>
+        <ul>
+          <li>Säkerhetsgrunder och analys av attackmetoder</li>
+          <li>Nätverkstrafikanalys med Wireshark och PCAP</li>
+          <li>Grundläggande säkerhetsövervakning och incidenthantering</li>
+        </ul>
       </article>
 
       <article class="card">
         <h3>Scripting & automation</h3>
-        <p>
-          PowerShell för administration, automatisering och datainsamling.
-          Grundläggande kunskaper i Python och SQL.
-        </p>
+        <ul>
+          <li>PowerShell för administration, automatisering och datainsamling</li>
+          <li>Grundläggande Python</li>
+          <li>Grundläggande SQL</li>
+        </ul>
       </article>
 
       <article class="card">
         <h3>Verktyg & teknologier</h3>
-        <p>
-          Azure, Wireshark, Kali Linux, CyberChef, GitHub och grundläggande molntjänster.
-        </p>
+        <ul>
+          <li>Azure och grundläggande molntjänster</li>
+          <li>Wireshark, Kali Linux och CyberChef</li>
+          <li>GitHub och teknisk dokumentation</li>
+        </ul>
       </article>
 
       <article class="card">
         <h3>Standarder & ramverk</h3>
-        <p>
-          Grundläggande förståelse för NIS2 och ISO/IEC 27001.
-        </p>
+        <ul>
+          <li>Grundläggande förståelse för NIS2</li>
+          <li>Grundläggande förståelse för ISO/IEC 27001</li>
+        </ul>
       </article>
     </div>
   </section>
 
   <section>
-    <h2>Certifikat</h2>
+    <div class="section-heading">
+      <p class="eyebrow">Certifikat & kurser</p>
+      <h2>Certifikat och relevanta kurser</h2>
+    </div>
 
-    <div class="grid">
+    <div class="cv-two-column">
       <article class="card">
-        <h3>Cisco</h3>
-        <p>
-          Cisco IT Essentials, Cisco Introduction to Cybersecurity,
-          Cisco Cybersecurity Essentials, Cisco CCNA ITN, SRWE och ENSA,
-          Cisco Ethical Hacker samt Cisco CyberOps Associate.
-        </p>
+        <h3>Certifikat</h3>
+
+        <ul>
+          <li>Cisco IT Essentials</li>
+          <li>Cisco Introduction to Cybersecurity</li>
+          <li>Cisco Cybersecurity Essentials</li>
+          <li>Cisco CCNA: ITN, SRWE och ENSA</li>
+          <li>Cisco Ethical Hacker</li>
+          <li>Cisco CyberOps Associate</li>
+        </ul>
       </article>
 
       <article class="card">
-        <h3>Körkort & behörigheter</h3>
+        <h3>Relevanta kurser</h3>
+
         <p>
-          Körkort B och truckkort A1–A4, B1–B3.
+          Nätverk, operativsystem, serversystem och infrastruktur, databaser och
+          dataanalys, IoT och molntjänster, cybersäkerhet för uppkopplade enheter,
+          Python-programmering, projektledning, teknisk rapportering, taktisk
+          cybersäkerhet och incidenthantering.
         </p>
       </article>
     </div>
   </section>
 
   <section>
-    <h2>Kurser</h2>
-
-    <div class="card">
-      <p>
-        Nätverk, operativsystem, serversystem och infrastruktur, databaser och dataanalys,
-        IoT och molntjänster, cybersäkerhet för uppkopplade enheter, Python-programmering,
-        projektledning, teknisk rapportering, taktisk cybersäkerhet och incidenthantering.
-      </p>
+    <div class="section-heading">
+      <p class="eyebrow">Övrigt</p>
+      <h2>Övrig erfarenhet</h2>
     </div>
-  </section>
-
-  <section>
-    <h2>Övrig erfarenhet</h2>
 
     <div class="grid">
       <article class="card">
@@ -197,18 +230,96 @@ import MainLayout from "../layouts/MainLayout.astro";
   </section>
 
   <section>
-    <h2>Språk</h2>
+    <div class="section-heading">
+      <p class="eyebrow">Språk & behörigheter</p>
+      <h2>Språk och behörigheter</h2>
+    </div>
 
-    <div class="grid">
+    <div class="cv-two-column">
       <article class="card">
-        <h3>Svenska</h3>
-        <p>Modersmål</p>
+        <h3>Språk</h3>
+        <ul>
+          <li>Svenska – modersmål</li>
+          <li>Engelska – flytande i tal och skrift</li>
+        </ul>
       </article>
 
       <article class="card">
-        <h3>Engelska</h3>
-        <p>Flytande i tal och skrift</p>
+        <h3>Körkort & behörigheter</h3>
+        <ul>
+          <li>Körkort B</li>
+          <li>Truckkort A1–A4, B1–B3</li>
+        </ul>
       </article>
     </div>
   </section>
 </MainLayout>
+
+<style>
+  .cv-hero h1 {
+    font-size: clamp(2.4rem, 5.2vw, 4.2rem);
+  }
+
+  .experience-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .experience-card {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 1.5rem;
+  }
+
+  .experience-meta p {
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+
+  .role {
+    color: var(--accent);
+    font-weight: 700;
+    margin-top: -0.25rem;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .cv-two-column {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  ul {
+    margin: 0.75rem 0 0;
+    padding-left: 1.2rem;
+    color: var(--text-soft);
+  }
+
+  li {
+    margin-bottom: 0.45rem;
+  }
+
+  li::marker {
+    color: var(--accent);
+  }
+
+  @media (max-width: 860px) {
+    .experience-card {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+
+    .skills-grid,
+    .cv-two-column {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

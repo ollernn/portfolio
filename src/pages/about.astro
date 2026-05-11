@@ -2,50 +2,89 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Om mig | Olle Rönn">
-  <section class="hero">
-  <p class="eyebrow">Om mig</p>
+<MainLayout title="Olle Rönn | Om mig">
+  <section class="hero about-hero">
+    <p class="eyebrow">Om mig</p>
 
-  <h1>Om mig</h1>
+    <h1>Om mig</h1>
 
-  <p class="lead">
-    Jag heter Olle Rönn och jag studerar IT-ingenjör med inriktning mot
-    cybersäkerhet och digital infrastruktur vid Högskolan i Borås, och ska fortsätta
-    med en master inom High Performance Computer Systems på Chalmers.
-  </p>
+    <p class="lead">
+      Jag heter Olle Rönn och studerar IT-ingenjör med inriktning mot
+      cybersäkerhet och digital infrastruktur vid Högskolan i Borås.
+      Efter examen ska jag fortsätta med en master inom High Performance
+      Computer Systems på Chalmers.
+    </p>
 
-  <p class="lead">
-    Jag är nyfiken på teknik, infrastruktur och hur system fungerar på djupet.
-    Jag gillar att förstå hur saker är uppbyggda, optimera lösningar och lära mig
-    genom praktiska projekt.
-  </p>
-</section>
+    <p class="lead">
+      Jag är nyfiken på teknik, infrastruktur och hur system fungerar på djupet.
+      Jag gillar att förstå hur saker är uppbyggda, optimera lösningar och lära mig
+      genom praktiska projekt.
+    </p>
+  </section>
 
   <section>
-    <h2>Vem jag är</h2>
+    <div class="section-heading">
+      <p class="eyebrow">Profil</p>
+      <h2>Vem jag är</h2>
+    </div>
 
-    <div class="card">
-      <p>
-        Jag är en person som gillar att förstå hur saker fungerar, både på en teknisk
-        och praktisk nivå. Jag tycker om att lära mig nya saker, testa lösningar själv
-        och förbättra sådant som redan finns. Ett återkommande intresse för mig är
-        optimering, att göra system, arbetssätt eller lösningar mer effektiva,
-        tydliga och genomtänkta.
-      </p>
+    <div class="about-grid">
+      <article class="card about-main">
+        <p>
+          Jag är en person som gillar att förstå hur saker fungerar, både på en teknisk
+          och praktisk nivå. Jag tycker om att lära mig nya saker, testa lösningar själv
+          och förbättra sådant som redan finns.
+        </p>
 
-      <p>
-        Mitt tekniska intresse ligger framför allt inom IT-infrastruktur, cybersäkerhet,
-        cloud, systemnära teknik och hårdvara. Jag gillar även datorhårdvara,
-        tangentbord, möss och hur olika tekniska komponenter är uppbyggda och fungerar.
-      </p>
+        <p>
+          Ett återkommande intresse för mig är optimering: att göra system, arbetssätt
+          eller lösningar mer effektiva, tydliga och genomtänkta.
+        </p>
+
+        <p>
+          Mitt tekniska intresse ligger framför allt inom IT-infrastruktur, cybersäkerhet,
+          cloud, systemnära teknik och hårdvara. Jag gillar även datorhårdvara,
+          tangentbord, möss och hur olika tekniska komponenter är uppbyggda och fungerar.
+        </p>
+      </article>
+
+      <aside class="card quick-facts">
+        <h3>Snabbt om mig</h3>
+
+        <div class="fact-list">
+          <div>
+            <span>Studerar</span>
+            <p>IT-ingenjör - cybersäkerhet och digital infrastruktur på Högskolan i Borås</p>
+          </div>
+
+          <div>
+            <span>Nästa steg</span>
+            <p>Master inom High Performance Computer Systems på Chalmers</p>
+          </div>
+
+          <div>
+            <span>Tekniskt fokus</span>
+            <p>Infrastruktur, säkerhet, cloud, automation och systemnära teknik</p>
+          </div>
+
+          <div>
+            <span>Fritid</span>
+            <p>Golf, gym, gaming, resor och teknik</p>
+          </div>
+        </div>
+      </aside>
     </div>
   </section>
 
   <section>
-    <h2>Studier och tekniskt fokus</h2>
+    <div class="section-heading">
+      <p class="eyebrow">Studier</p>
+      <h2>Studier och tekniskt fokus</h2>
+    </div>
 
     <div class="grid">
       <article class="card">
+        <span class="tag">Nuvarande utbildning</span>
         <h3>Digital infrastruktur & cybersäkerhet</h3>
         <p>
           Min nuvarande utbildning har gett mig en grund inom nätverk, system,
@@ -54,6 +93,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       </article>
 
       <article class="card">
+        <span class="tag">Kommande master</span>
         <h3>High Performance Computer Systems</h3>
         <p>
           Min kommande master på Chalmers kopplar till mitt intresse för prestanda,
@@ -62,6 +102,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       </article>
 
       <article class="card">
+        <span class="tag">Portfolio</span>
         <h3>Projekt och lärande</h3>
         <p>
           Genom den här portfolion vill jag dokumentera projekt där jag bygger,
@@ -73,7 +114,10 @@ import MainLayout from "../layouts/MainLayout.astro";
   </section>
 
   <section>
-    <h2>Utanför tekniken</h2>
+    <div class="section-heading">
+      <p class="eyebrow">Fritid</p>
+      <h2>Utanför tekniken</h2>
+    </div>
 
     <div class="grid">
       <article class="card">
@@ -85,7 +129,7 @@ import MainLayout from "../layouts/MainLayout.astro";
       </article>
 
       <article class="card">
-        <h3>Gaming</h3>
+        <h3>Gaming & hårdvara</h3>
         <p>
           Jag spelar också dator, vilket länge har varit en del av mitt teknikintresse
           och min nyfikenhet kring hårdvara, prestanda och digitala miljöer.
@@ -103,7 +147,10 @@ import MainLayout from "../layouts/MainLayout.astro";
   </section>
 
   <section>
-    <h2>Vad jag vill utvecklas inom</h2>
+    <div class="section-heading">
+      <p class="eyebrow">Framåt</p>
+      <h2>Vad jag vill utvecklas inom</h2>
+    </div>
 
     <div class="card">
       <p>
@@ -115,3 +162,61 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
   </section>
 </MainLayout>
+
+<style>
+  .about-hero h1 {
+    font-size: clamp(2.4rem, 5.2vw, 4.2rem);
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(280px, 0.8fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .about-main p {
+    max-width: 760px;
+  }
+
+  .quick-facts {
+    height: fit-content;
+  }
+
+  .fact-list {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .fact-list div {
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .fact-list div:first-child {
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .fact-list span {
+    display: block;
+    color: var(--accent);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+  }
+
+  .fact-list p {
+    margin: 0;
+    color: var(--text-soft);
+  }
+
+  @media (max-width: 860px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
