@@ -25,7 +25,48 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
 
     <div class="log-list">
-  <article class="log-entry current">
+    <article class="log-entry current">
+  <div class="log-date">
+    <span>2026-05-12</span>
+    <p>Session 4</p>
+  </div>
+
+  <div class="log-content">
+    <h3>Startade Secure Homelab med Ubuntu Server och SSH</h3>
+
+    <p>
+      Idag påbörjade jag mitt Secure Homelab-projekt. Jag skapade ett GitHub-repo
+      med dokumentationsstruktur och installerade Ubuntu Server i en virtuell maskin
+      med VirtualBox.
+    </p>
+
+    <p>
+      Servern konfigurerades med RAM, CPU, virtuell disk, NAT-nätverk, hostname
+      och användare. Efter installationen uppdaterade jag systemet, installerade
+      grundverktyg och kontrollerade serverns nätverksinformation.
+    </p>
+
+    <p>
+      Jag stötte på ett problem där SSH från Windows till VM:ens IP-adress gav
+      timeout. Genom att kontrollera SSH-status på servern kunde jag se att SSH
+      fungerade, och att problemet låg i VirtualBox NAT. Lösningen blev att skapa
+      port forwarding från Windows till Ubuntu-servern.
+    </p>
+
+    <p>
+      <strong>Lärt mig:</strong> Jag fick bättre förståelse för skillnaden mellan
+      host och guest, hur NAT fungerar i VirtualBox, varför port forwarding behövs
+      för SSH samt hur man felsöker SSH med systemctl.
+    </p>
+
+    <p>
+      <strong>Resultat:</strong> Första checkpointen är klar. Ubuntu Server är
+      installerad, uppdaterad och nåbar via SSH från Windows.
+    </p>
+  </div>
+</article>
+
+  <article class="log-entry">
     <div class="log-date">
       <span>2026-05-11</span>
       <p>Session 3</p>
@@ -131,20 +172,20 @@ import MainLayout from "../layouts/MainLayout.astro";
   <section class="learning-focus">
   <div>
     <p class="eyebrow">Nuvarande fokus</p>
-    <h2>Nuvarande riktning</h2>
+    <h2>Secure Homelab</h2>
     <p>
-  Första versionen av portfolion är nu live. Framåt kommer jag använda sidan
-  för att dokumentera nya projekt, tekniska förbättringar och min fortsatta
-  lärandeprocess.
-</p>
+      Första versionen av portfolion är live. Just nu används sidan för att
+      dokumentera nästa större projekt: Secure Homelab, där jag bygger en säker
+      och dokumenterad servermiljö steg för steg.
+    </p>
   </div>
 
-  <a class="focus-card" href="/projects">
-    <span class="tag">Aktuellt projektområde</span>
-    <h3>Portfolio och tekniska projekt</h3>
+  <a class="focus-card" href="/homelab">
+    <span class="tag">Aktivt projekt</span>
+    <h3>Följ Secure Homelab</h3>
     <p>
-      Se roadmap, tidigare projekt och planerade projekt inom homelab,
-      cloud, säkerhet, automation och systemnära teknik.
+      Läs mer om projektets syfte, nuvarande status, första checkpoint och
+      kommande säkerhetskonfiguration.
     </p>
   </a>
 </section>

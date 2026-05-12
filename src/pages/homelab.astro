@@ -4,22 +4,61 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 <MainLayout title="Olle Rönn | Homelab">
   <section class="hero homelab-hero">
-    <p class="eyebrow">Homelab</p>
+  <p class="eyebrow">Homelab</p>
 
-    <h1>Secure Homelab</h1>
+  <h1>Secure Homelab</h1>
 
-    <p class="lead">
-      Secure Homelab är ett planerat projekt där jag bygger en egen praktisk
-      labbmiljö för IT-infrastruktur, nätverk, Linux, säkerhet, backup,
-      monitoring, automation och cloud-kopplingar.
+  <p class="lead">
+    Secure Homelab är ett aktivt projekt där jag bygger en egen säker och
+    dokumenterad servermiljö för att träna på Linux, nätverk, SSH, säker
+    serverkonfiguration, Docker och teknisk dokumentation.
+  </p>
+
+  <p class="lead">
+    Projektet används som ett praktiskt labb för att bygga erfarenhet inom
+    IT-infrastruktur, cybersäkerhet, drift, felsökning och automation.
+  </p>
+</section>
+
+<section>
+  <div class="section-heading">
+    <p class="eyebrow">Checkpoint</p>
+    <h2>Första checkpointen är klar</h2>
+    <p>
+      Projektet är nu påbörjat. Den första versionen av servermiljön är installerad,
+      uppdaterad och nåbar via SSH från Windows.
     </p>
+  </div>
 
-    <p class="lead">
-      Målet är att skapa en miljö där jag kan testa tekniker, dokumentera
-      lösningar och bygga praktisk erfarenhet som kopplar till cloud,
-      cybersäkerhet, systemnära teknik och framtida HPCS-relaterade projekt.
-    </p>
-  </section>
+  <div class="checkpoint-grid">
+    <article class="card">
+      <span class="tag">Miljö</span>
+      <h3>Ubuntu Server i VirtualBox</h3>
+      <p>
+        Servern körs som en virtuell maskin i Oracle VirtualBox med hostname
+        secure-homelab och användaren olle.
+      </p>
+    </article>
+
+    <article class="card">
+      <span class="tag">Nätverk</span>
+      <h3>NAT och port forwarding</h3>
+      <p>
+        VM:en körs bakom VirtualBox NAT. SSH-åtkomst från Windows löstes genom
+        port forwarding från 127.0.0.1:2222 till port 22 på Ubuntu-servern.
+      </p>
+    </article>
+
+    <article class="card">
+      <span class="tag">Status</span>
+      <h3>SSH fungerar</h3>
+      <p>
+        Servern är uppdaterad, grundverktyg är installerade och SSH fungerar
+        från Windows med kommandot ssh -p 2222 olle@127.0.0.1.
+      </p>
+    </article>
+  </div>
+</section>
 
   <section>
     <div class="section-heading">
@@ -248,18 +287,18 @@ import MainLayout from "../layouts/MainLayout.astro";
     <p class="eyebrow">Status</p>
     <h2>Nuvarande status</h2>
     <p>
-      Projektet är planerat men inte påbörjat tekniskt ännu. Första versionen
-      kommer troligen fokusera på lagring, backup, användarrättigheter och en
-      tydlig grundstruktur.
+      Secure Homelab är nu aktivt. Den första servermiljön är installerad i
+      VirtualBox, systemet är uppdaterat och SSH-åtkomst fungerar från Windows
+      via port forwarding.
     </p>
   </div>
 
   <a class="status-card clickable-card" href="/learning-log">
-    <span class="tag">Följ utvecklingen</span>
-    <h3>Se lärandeloggen</h3>
+    <span class="tag">Senaste framsteg</span>
+    <h3>Ubuntu Server och SSH</h3>
     <p>
-      När homelabbet börjar byggas kommer jag dokumentera viktiga steg,
-      tekniska beslut och lärdomar i lärandeloggen.
+      Läs lärandeloggen där jag sammanfattar installationen, SSH-problemet,
+      felsökningen och lösningen med VirtualBox port forwarding.
     </p>
   </a>
 </section>
@@ -424,6 +463,13 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 .clickable-card p {
   color: var(--muted);
+}
+
+.checkpoint-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
   @media (max-width: 980px) {
