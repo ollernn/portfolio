@@ -9,163 +9,90 @@ import MainLayout from "../layouts/MainLayout.astro";
     <h1>Projekt</h1>
 
     <p class="lead">
-      Här samlar jag projekt inom IT-infrastruktur, cloud, cybersäkerhet,
-      IAM, automation, homelab och systemnära teknik. Sidan innehåller både
-      projekt jag bygger just nu, större tidigare projekt och mindre lärandeprojekt.
+      Här samlar jag projekt som visar praktisk erfarenhet inom IT-infrastruktur,
+      cybersäkerhet, cloud, Linux, servermiljöer, systemutveckling och teknisk
+      dokumentation.
     </p>
   </section>
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Roadmap</p>
-      <h2>Aktiva och planerade projekt</h2>
+      <p class="eyebrow">Aktuella projekt</p>
+      <h2>Aktiva projekt</h2>
       <p>
-        Dessa projekt bygger min långsiktiga tekniska profil inom infrastruktur,
-        säkerhet, cloud, automation och framtida AI infrastructure.
+        Projekt som är live, pågående eller nyligen uppdaterade. Fokus ligger på
+        konkreta resultat, dokumentation och länkar till GitHub.
       </p>
     </div>
 
     <div class="project-grid">
-      <article class="project-card featured">
-  <div class="project-top">
-    <span class="tag">Projekt 0 · Live</span>
-    <span class="project-status">Live</span>
-  </div>
-
-  <h3>Portfolio Website</h3>
-
-  <p>
-    En personlig portfolio byggd med Astro och modern webbutveckling.
-    Sidan används för att dokumentera projekt, lärande och teknisk utveckling
-    på ett strukturerat och offentligt sätt.
-  </p>
-
-  <div class="tech-list">
-    <span>Astro</span>
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>GitHub</span>
-    <span>Vercel</span>
-    <span>Dokumentation</span>
-  </div>
-</article>
-
-      <article class="project-card featured">
-  <div class="project-top">
-    <span class="tag">Projekt 1 · Aktiv</span>
-    <span class="project-status">Aktiv</span>
-  </div>
-
-  <h3>Secure Homelab</h3>
-
-  <p>
-    Ett aktivt homelab-projekt där jag bygger en säker och dokumenterad
-    servermiljö för att träna på Linux, nätverk, SSH, serverhärdning,
-    Docker och teknisk dokumentation.
-  </p>
-
-  <p>
-    Första checkpointen är klar: Ubuntu Server är installerad i VirtualBox,
-    systemet är uppdaterat och servern är nåbar via SSH från Windows med
-    port forwarding.
-  </p>
-
-  <div class="tech-list">
-    <span>Ubuntu Server</span>
-    <span>VirtualBox</span>
-    <span>SSH</span>
-    <span>Linux</span>
-    <span>NAT</span>
-    <span>GitHub Docs</span>
-  </div>
-</article>
-
-      <article class="project-card">
+      <a
+        class="project-card featured clickable-project"
+        href="https://github.com/ollernn/portfolio"
+        target="_blank"
+        rel="noreferrer"
+      >
         <div class="project-top">
-          <span class="tag">Projekt 2 · Planerad</span>
-          <span class="project-status planned">Planerad</span>
+          <span class="tag">Astro · Portfolio</span>
+          <span class="project-status live">Live</span>
         </div>
 
-        <h3>Secure Azure Environment</h3>
+        <h3>Portfolio Website</h3>
 
         <p>
-          En molnbaserad miljö i Azure med fokus på säker åtkomst, IAM, logging,
-          monitoring, storage och kostnadskontroll.
+          En personlig portfolio byggd med Astro och deployad med Vercel.
+          Sidan används för att visa projekt, CV, lärandelogg och teknisk
+          utveckling på ett strukturerat sätt.
+        </p>
+
+        <p>
+          Projektet är live och uppdateras löpande när nya projekt, förbättringar
+          och dokumentation läggs till.
         </p>
 
         <div class="tech-list">
-          <span>Azure</span>
-          <span>Entra ID</span>
-          <span>IAM</span>
-          <span>Logging</span>
-          <span>Cloud Security</span>
+          <span>Astro</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>GitHub</span>
+          <span>Vercel</span>
         </div>
-      </article>
+      </a>
 
-      <article class="project-card">
+      <a
+        class="project-card featured clickable-project"
+        href="https://github.com/ollernn/secure-homelab"
+        target="_blank"
+        rel="noreferrer"
+      >
         <div class="project-top">
-          <span class="tag">Projekt 3 · Planerad</span>
-          <span class="project-status planned">Planerad</span>
+          <span class="tag">Linux · Security Lab</span>
+          <span class="project-status active">Aktiv</span>
         </div>
 
-        <h3>Automation & Infrastructure as Code</h3>
+        <h3>Secure Homelab</h3>
 
         <p>
-          Projekt där infrastruktur skapas och hanteras med kod för att minska
-          manuella fel och skapa ett mer professionellt arbetssätt.
+          Ett aktivt homelab-projekt där jag bygger en säker och dokumenterad
+          servermiljö för att träna på Linux, nätverk, SSH, serverkonfiguration,
+          Docker och teknisk dokumentation.
+        </p>
+
+        <p>
+          Första checkpointen är klar: Ubuntu Server är installerad i VirtualBox,
+          systemet är uppdaterat och servern är nåbar via SSH från Windows med
+          port forwarding från <code>127.0.0.1:2222</code> till port <code>22</code>.
         </p>
 
         <div class="tech-list">
-          <span>Terraform</span>
-          <span>Ansible</span>
-          <span>GitHub Actions</span>
-          <span>PowerShell</span>
+          <span>Ubuntu Server</span>
+          <span>VirtualBox</span>
+          <span>SSH</span>
+          <span>Linux</span>
+          <span>NAT</span>
+          <span>GitHub Docs</span>
         </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-top">
-          <span class="tag">Projekt 4 · Planerad</span>
-          <span class="project-status planned">Planerad</span>
-        </div>
-
-        <h3>Monitoring / Mini-SOC Dashboard</h3>
-
-        <p>
-          En dashboard för loggning, övervakning och larm från lokala system,
-          cloud-resurser eller labbmiljöer.
-        </p>
-
-        <div class="tech-list">
-          <span>Grafana</span>
-          <span>Prometheus</span>
-          <span>Logs</span>
-          <span>Alerts</span>
-          <span>Security Monitoring</span>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <div class="project-top">
-          <span class="tag">Projekt 5 · Planerad</span>
-          <span class="project-status planned">Planerad</span>
-        </div>
-
-        <h3>AI Infrastructure Lab</h3>
-
-        <p>
-          Ett framtida projekt kopplat till HPCS och AI infrastructure, med fokus
-          på prestanda, containers, resursanvändning, latency och optimering.
-        </p>
-
-        <div class="tech-list">
-          <span>Docker</span>
-          <span>Cloud</span>
-          <span>Performance</span>
-          <span>AI Infrastructure</span>
-          <span>HPCS</span>
-        </div>
-      </article>
+      </a>
     </div>
   </section>
 
@@ -175,12 +102,17 @@ import MainLayout from "../layouts/MainLayout.astro";
       <h2>Större tidigare projekt</h2>
       <p>
         Projekt från studier och tidigare arbete som visar praktisk erfarenhet av
-        system, nätverk, säkerhet, cloud och programmering.
+        systemutveckling, molntjänster, nätverk, säkerhet och infrastruktur.
       </p>
     </div>
 
     <div class="project-list">
-      <article class="project-row">
+      <a
+        class="project-row clickable-project"
+        href="https://github.com/ollernn/OOPC-VT25-Grupp-07"
+        target="_blank"
+        rel="noreferrer"
+      >
         <div>
           <span class="tag">C# · WPF · MVVM</span>
           <h3>Sport Club Management System</h3>
@@ -189,15 +121,20 @@ import MainLayout from "../layouts/MainLayout.astro";
         <div>
           <p>
             Ett större C#- och WPF-projekt där vi byggde ett sportklubbssystem med
-            separata vyer för medlemmar, tränare och administratörer. Systemet stödjer
-            registrering, inloggning, bokning och avbokning av träningspass,
-            profilhantering, historik, poäng, kalorier och utrustningshantering.
+            separata vyer för medlemmar, tränare och administratörer.
           </p>
 
           <p>
-            Projektet byggdes med MVVM och tydlig lagerindelning med presentationslager,
-            affärslager, datalager och entitetslager. Systemet använde serviceklasser,
-            repositories och Unit of Work för att hantera affärslogik och databasåtkomst.
+            Systemet stödjer registrering, inloggning, bokning och avbokning av
+            träningspass, profilhantering, historik, poäng, kalorier och
+            utrustningshantering.
+          </p>
+
+          <p>
+            Projektet byggdes med MVVM och tydlig lagerindelning med
+            presentationslager, affärslager, datalager och entitetslager.
+            Det använde serviceklasser, repositories och Unit of Work för
+            affärslogik och databasåtkomst.
           </p>
 
           <div class="tech-list">
@@ -210,7 +147,7 @@ import MainLayout from "../layouts/MainLayout.astro";
             <span>Unit of Work</span>
           </div>
         </div>
-      </article>
+      </a>
 
       <article class="project-row">
         <div>
@@ -222,7 +159,7 @@ import MainLayout from "../layouts/MainLayout.astro";
           <p>
             Designade och implementerade en säkerhetslösning med kamera, sensor
             och molntjänster. Lösningen använde händelsestyrd automation där
-            videodata sparades i Azure baserat på dörrsensorhändelser.
+            bild- eller videodata kopplades till dörrsensorhändelser.
           </p>
 
           <div class="tech-list">
@@ -288,7 +225,7 @@ import MainLayout from "../layouts/MainLayout.astro";
   <section>
     <div class="section-heading">
       <p class="eyebrow">Learning projects</p>
-      <h2>Mini learning projects</h2>
+      <h2>Mindre lärandeprojekt</h2>
       <p>
         Mindre projekt som används för att testa tekniker, förstå säkerhetskoncept
         och bygga praktisk erfarenhet steg för steg.
@@ -296,7 +233,12 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
 
     <div class="project-grid compact">
-      <article class="project-card">
+      <a
+        class="project-card clickable-project"
+        href="https://github.com/ollernn/Security-project"
+        target="_blank"
+        rel="noreferrer"
+      >
         <div class="project-top">
           <span class="tag">Python · Flask · API Security</span>
           <span class="project-status learning">Learning</span>
@@ -320,6 +262,63 @@ import MainLayout from "../layouts/MainLayout.astro";
           <span>Environment Variables</span>
           <span>Access Control</span>
         </div>
+      </a>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <p class="eyebrow">Kommande projekt</p>
+      <h2>Planerade projektområden</h2>
+      <p>
+        Idéer som kan byggas vidare efter hand när portfolion växer med fler
+        tekniska projekt och mer dokumentation.
+      </p>
+    </div>
+
+    <div class="project-grid planned-grid">
+      <article class="project-card">
+        <div class="project-top">
+          <span class="tag">Cloud · Azure</span>
+          <span class="project-status planned">Planerad</span>
+        </div>
+
+        <h3>Secure Azure Environment</h3>
+
+        <p>
+          En framtida Azure-miljö med fokus på IAM, logging, monitoring,
+          storage, kostnadskontroll och molnsäkerhet.
+        </p>
+
+        <div class="tech-list">
+          <span>Azure</span>
+          <span>Entra ID</span>
+          <span>IAM</span>
+          <span>Logging</span>
+          <span>Cloud Security</span>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="tag">Monitoring · Security</span>
+          <span class="project-status planned">Planerad</span>
+        </div>
+
+        <h3>Monitoring / Mini-SOC Dashboard</h3>
+
+        <p>
+          Ett framtida projekt för loggning, övervakning, alerts och dashboards
+          från lokala system, cloud-resurser eller labbmiljöer.
+        </p>
+
+        <div class="tech-list">
+          <span>Grafana</span>
+          <span>Prometheus</span>
+          <span>Logs</span>
+          <span>Alerts</span>
+          <span>Security Monitoring</span>
+        </div>
       </article>
     </div>
   </section>
@@ -340,6 +339,10 @@ import MainLayout from "../layouts/MainLayout.astro";
   .project-grid.compact {
     grid-template-columns: minmax(0, 1fr);
     max-width: 720px;
+  }
+
+  .planned-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .project-card,
@@ -369,6 +372,45 @@ import MainLayout from "../layouts/MainLayout.astro";
     border-color: var(--border-hover);
   }
 
+  .clickable-project {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .clickable-project h3 {
+    transition: color 160ms ease;
+  }
+
+  .clickable-project:hover h3 {
+    color: var(--accent);
+  }
+
+  .clickable-project::after {
+    content: "Öppna GitHub ↗";
+    display: inline-flex;
+    width: fit-content;
+    margin-top: 1rem;
+    padding: 0.34rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.025);
+    font-size: 0.78rem;
+    font-weight: 750;
+    transition:
+      color 160ms ease,
+      border-color 160ms ease,
+      background 160ms ease;
+  }
+
+  .clickable-project:hover::after {
+    color: var(--accent);
+    border-color: var(--border-hover);
+    background: rgba(147, 197, 253, 0.08);
+  }
+
   .project-top {
     display: flex;
     justify-content: space-between;
@@ -378,27 +420,35 @@ import MainLayout from "../layouts/MainLayout.astro";
   }
 
   .project-status {
-    display: inline-flex;
-    align-items: center;
-    width: fit-content;
-    padding: 0.25rem 0.55rem;
-    border-radius: 999px;
-    background: rgba(34, 197, 94, 0.12);
-    color: #86efac;
-    font-size: 0.72rem;
-    font-weight: 800;
-    white-space: nowrap;
-  }
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
 
-  .project-status.planned {
-    background: rgba(147, 197, 253, 0.12);
-    color: var(--accent);
-  }
+.project-status.live {
+  background: rgba(34, 197, 94, 0.12);
+  color: #86efac;
+}
 
-  .project-status.learning {
-    background: rgba(250, 204, 21, 0.12);
-    color: #fde68a;
-  }
+.project-status.active {
+  background: rgba(147, 197, 253, 0.14);
+  color: var(--accent);
+}
+
+.project-status.planned {
+  background: rgba(168, 85, 247, 0.12);
+  color: #d8b4fe;
+}
+
+.project-status.learning {
+  background: rgba(250, 204, 21, 0.12);
+  color: #fde68a;
+}
 
   .project-list {
     display: grid;
@@ -432,8 +482,18 @@ import MainLayout from "../layouts/MainLayout.astro";
     font-weight: 650;
   }
 
+  code {
+    color: var(--accent);
+    background: rgba(147, 197, 253, 0.08);
+    border: 1px solid rgba(147, 197, 253, 0.14);
+    padding: 0.08rem 0.28rem;
+    border-radius: 0.35rem;
+    font-size: 0.9em;
+  }
+
   @media (max-width: 900px) {
-    .project-grid {
+    .project-grid,
+    .planned-grid {
       grid-template-columns: 1fr;
     }
 

@@ -9,91 +9,195 @@ import MainLayout from "../layouts/MainLayout.astro";
 
       <h1>
         Olle Rönn
-        <span class="hero-line text-glow">IT, säkerhet och systemnära teknik.</span>
+        <span class="hero-line text-glow">IT, säkerhet och infrastruktur.</span>
       </h1>
 
       <p class="hero-subtitle">
-        IT-ingenjörsstudent med fokus på cybersäkerhet, digital infrastruktur,
-        cloud och högpresterande datorsystem.
+        IT-ingenjörsstudent med praktisk erfarenhet av IAM, Active Directory,
+        Entra ID, Azure och PowerShell.
       </p>
 
       <p class="lead">
-        Här samlar jag mina projekt, mitt CV och min lärandeprocess. Målet med
-        portfolion är att visa hur jag bygger, dokumenterar och utvecklas genom
-        praktiska projekt inom infrastruktur, säkerhet, homelab, automation och
-        framtida AI infrastructure.
+        Här samlar jag projekt, tekniska färdigheter och dokumenterat lärande
+        inom cybersäkerhet, IT-infrastruktur, cloud, Linux, nätverk och
+        systemnära teknik.
       </p>
 
       <div class="buttons">
         <a class="button" href="/projects">Se projekt</a>
-        <a class="button secondary" href="/learning-log">Följ lärandeloggen</a>
         <a class="button secondary" href="/cv">Se CV</a>
+        <a class="button secondary" href="/learning-log">Lärandelogg</a>
         <a class="button secondary" href="/contact">Kontakt</a>
       </div>
     </div>
 
     <aside class="hero-card">
-      <p class="hero-card-label">Nuvarande fokus</p>
-      <h2>Portfolio Website</h2>
+      <p class="hero-card-label">Aktuellt projekt</p>
+      <h2>Secure Homelab</h2>
+
       <p>
-        Jag bygger just nu grunden för min portfolio innan jag går vidare till
-        nästa större projekt: Secure Homelab.
+        Jag bygger just nu en säker och dokumenterad servermiljö med Ubuntu Server,
+        VirtualBox, SSH, Linux och teknisk dokumentation.
       </p>
 
       <div class="status-row">
         <span>Status</span>
-        <strong>Pågående</strong>
+        <strong>Aktiv</strong>
       </div>
 
       <div class="mini-list">
-        <span>Astro</span>
-        <span>HTML/CSS</span>
-        <span>Komponenter</span>
-        <span>Dokumentation</span>
+        <span>Ubuntu Server</span>
+        <span>SSH</span>
+        <span>VirtualBox</span>
+        <span>Linux</span>
+        <span>GitHub Docs</span>
       </div>
     </aside>
   </section>
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Översikt</p>
-      <h2>Vad du hittar här</h2>
+      <p class="eyebrow">Snabb överblick</p>
+      <h2>Kort överblick</h2>
       <p>
-        Portfolion är uppdelad i tydliga delar: vem jag är, vad jag kan,
-        vad jag har byggt och vad jag lär mig längs vägen.
+        En snabb sammanfattning av min erfarenhet, mina projekt och de tekniska
+        områden jag arbetar med.
       </p>
     </div>
 
-    <div class="overview-grid">
-      <a class="overview-card" href="/about">
-        <span>01</span>
-        <div>
-          <h3>Om mig</h3>
-          <p>En personlig introduktion till mig, mina studier och mina tekniska intressen.</p>
+    <div class="proof-grid">
+      <article class="card">
+        <span class="tag">Erfarenhet</span>
+        <h3>IAM i företagsmiljö</h3>
+        <p>
+          Praktisk erfarenhet av Identity & Access Management, Active Directory,
+          Entra ID, Azure och PowerShell från Stena Group IT.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Aktivt projekt</span>
+        <h3>Secure Homelab</h3>
+        <p>
+          Ubuntu Server är installerad i VirtualBox, uppdaterad och nåbar via SSH
+          från Windows med NAT port forwarding.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Systemutveckling</span>
+        <h3>C# och WPF-projekt</h3>
+        <p>
+          Byggt ett sportklubbssystem med MVVM, flera lager, SQL Server,
+          repositories och Unit of Work.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Dokumentation</span>
+        <h3>GitHub och lärandelogg</h3>
+        <p>
+          Dokumenterar projekt, tekniska beslut, problem, lösningar och lärdomar
+          steg för steg.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <p class="eyebrow">Utvalda projekt</p>
+      <h2>Projekt med konkret resultat</h2>
+      <p>
+        Några av de viktigaste projekten just nu. Korten är klickbara och leder
+        till respektive GitHub-repo.
+      </p>
+    </div>
+
+    <div class="featured-projects">
+      <a
+        class="featured-project-card clickable-card"
+        href="https://github.com/ollernn/secure-homelab"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div class="project-top">
+          <span class="tag">Linux · Security Lab</span>
+          <span class="project-status active">Aktiv</span>
+        </div>
+
+        <h3>Secure Homelab</h3>
+
+        <p>
+          Säker och dokumenterad servermiljö för Linux, SSH, nätverk,
+          serverhärdning, Docker och teknisk dokumentation.
+        </p>
+
+        <p>
+          <strong>Checkpoint:</strong> Ubuntu Server installerad, uppdaterad och
+          nåbar via SSH från Windows.
+        </p>
+
+        <div class="tech-list">
+          <span>Ubuntu Server</span>
+          <span>VirtualBox</span>
+          <span>SSH</span>
+          <span>Linux</span>
+          <span>NAT</span>
         </div>
       </a>
 
-      <a class="overview-card" href="/cv">
-        <span>02</span>
-        <div>
-          <h3>CV</h3>
-          <p>Utbildning, erfarenhet, tekniska kunskaper, certifikat och relevanta kurser.</p>
+      <a
+        class="featured-project-card clickable-card"
+        href="https://github.com/ollernn/portfolio"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div class="project-top">
+          <span class="tag">Astro · Portfolio</span>
+          <span class="project-status live">Live</span>
+        </div>
+
+        <h3>Portfolio Website</h3>
+
+        <p>
+          Personlig portfolio byggd med Astro och publicerad med Vercel.
+          Används för projekt, CV, lärandelogg och teknisk dokumentation.
+        </p>
+
+        <div class="tech-list">
+          <span>Astro</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>GitHub</span>
+          <span>Vercel</span>
         </div>
       </a>
 
-      <a class="overview-card" href="/projects">
-        <span>03</span>
-        <div>
-          <h3>Projekt</h3>
-          <p>Roadmap-projekt, tidigare skolprojekt och mindre lärandeprojekt.</p>
+      <a
+        class="featured-project-card clickable-card"
+        href="https://github.com/ollernn/OOPC-VT25-Grupp-07"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <div class="project-top">
+          <span class="tag">C# · WPF · MVVM</span>
+          <span class="project-status completed">Avslutat</span>
         </div>
-      </a>
 
-      <a class="overview-card" href="/learning-log">
-        <span>04</span>
-        <div>
-          <h3>Lärandelogg</h3>
-          <p>Korta sammanfattningar av vad jag bygger, lär mig och förbättrar.</p>
+        <h3>Sport Club Management System</h3>
+
+        <p>
+          Större skolprojekt med inloggning, roller, träningspass,
+          medlemsfunktioner, utrustningshantering, databas och tydlig lagerstruktur.
+        </p>
+
+        <div class="tech-list">
+          <span>C#</span>
+          <span>WPF</span>
+          <span>MVVM</span>
+          <span>SQL Server</span>
+          <span>Entity Framework</span>
         </div>
       </a>
     </div>
@@ -101,20 +205,21 @@ import MainLayout from "../layouts/MainLayout.astro";
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Fokusområden</p>
-      <h2>Teknisk riktning</h2>
+      <p class="eyebrow">Teknisk riktning</p>
+      <h2>Områden jag fokuserar på</h2>
       <p>
-        Mina projekt och min utveckling rör sig framför allt kring säkra,
-        strukturerade och effektiva IT-miljöer.
+        Mina projekt och min erfarenhet rör sig främst kring praktiska IT-miljöer,
+        säkerhet och drift.
       </p>
     </div>
 
     <div class="focus-grid">
       <article class="focus-card">
         <span class="tag">Infrastructure</span>
-        <h3>IT-infrastruktur & cloud</h3>
+        <h3>IT-infrastruktur</h3>
         <p>
-          Servrar, nätverk, Azure, identitet, åtkomst, drift och strukturerade IT-miljöer.
+          Servrar, nätverk, Windows-miljöer, Linux, grundläggande drift och
+          strukturerade IT-miljöer.
         </p>
       </article>
 
@@ -122,23 +227,26 @@ import MainLayout from "../layouts/MainLayout.astro";
         <span class="tag">Security</span>
         <h3>Cybersäkerhet & IAM</h3>
         <p>
-          Behörigheter, least privilege, Active Directory, Entra ID, logging och säkerhetsanalys.
+          Behörigheter, accessgranskning, Active Directory, Entra ID,
+          säkerhetsgrunder och riskanalys.
         </p>
       </article>
 
       <article class="focus-card">
-        <span class="tag">Homelab</span>
-        <h3>Praktiskt lärande</h3>
+        <span class="tag">Cloud</span>
+        <h3>Azure & cloud</h3>
         <p>
-          NAS, Linux, Docker, backup, monitoring, scriptning och säkra labbmiljöer.
+          Molntjänster, identitet, storage, logging, kostnadskontroll och
+          säkra cloud-miljöer.
         </p>
       </article>
 
       <article class="focus-card">
-        <span class="tag">HPCS</span>
-        <h3>Prestanda & optimering</h3>
+        <span class="tag">Automation</span>
+        <h3>Scripting & dokumentation</h3>
         <p>
-          Systemarkitektur, distribuerade system, containers, optimering och AI infrastructure.
+          PowerShell, GitHub, teknisk dokumentation och automatisering av
+          återkommande arbetsflöden.
         </p>
       </article>
     </div>
@@ -146,64 +254,48 @@ import MainLayout from "../layouts/MainLayout.astro";
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Roadmap</p>
-      <h2>Projekt framåt</h2>
+      <p class="eyebrow">Kort om mig</p>
+      <h2>Lite mer om mig</h2>
       <p>
-        Portfolion är första steget. Därefter bygger jag vidare med mer tekniska
-        projekt som dokumenteras här.
+        Jag gillar att förstå hur tekniska system fungerar i praktiken. När jag
+        lär mig något nytt vill jag testa det själv, bygga något av det och
+        dokumentera vad jag gjorde, vad som fungerade och vad som kan förbättras.
       </p>
     </div>
 
-    <div class="roadmap">
-      <article class="roadmap-item current">
-        <div class="roadmap-marker"></div>
-        <div>
-          <span class="tag">Pågående</span>
-          <h3>Portfolio Website</h3>
-          <p>
-            Färdigställa hemsidans struktur, innehåll, design, projektöversikt och lärandelogg.
-          </p>
-        </div>
+    <div class="personal-grid">
+      <article class="card">
+        <h3>Teknikintresse</h3>
+        <p>
+          Jag är intresserad av IT-infrastruktur, cybersäkerhet, cloud,
+          systemnära teknik och hårdvara.
+        </p>
       </article>
 
-      <article class="roadmap-item">
-        <div class="roadmap-marker"></div>
-        <div>
-          <span class="tag">Nästa projekt</span>
-          <h3>Secure Homelab</h3>
-          <p>
-            Planera och bygga en säker lokal labbmiljö med NAS, backup, Linux,
-            nätverk, monitoring och säker åtkomst.
-          </p>
-        </div>
-      </article>
-
-      <article class="roadmap-item">
-        <div class="roadmap-marker"></div>
-        <div>
-          <span class="tag">Planerad</span>
-          <h3>Secure Azure Environment</h3>
-          <p>
-            Skapa en säker Azure-miljö med IAM, logging, monitoring, storage,
-            kostnadskontroll och molnsäkerhet.
-          </p>
-        </div>
+      <article class="card">
+        <h3>Utanför studier och projekt</h3>
+        <p>
+          På fritiden spelar jag golf, gymmar, spelar dator, reser gärna och är
+          intresserad av datorhårdvara, tangentbord, möss och hur tekniska
+          komponenter fungerar.
+        </p>
       </article>
     </div>
   </section>
 
   <section class="cta-section">
     <div>
-      <p class="eyebrow">Kontakt</p>
-      <h2>Vill du se mer eller komma i kontakt?</h2>
+      <p class="eyebrow">Utforska mer</p>
+      <h2>Vill du se mer?</h2>
       <p>
-        Du kan läsa mer om mina projekt, följa min lärandelogg eller kontakta mig
-        via e-post, GitHub, LinkedIn och Credly.
+        Se projekten på GitHub, läs CV:t eller följ lärandeloggen där jag
+        sammanfattar vad jag bygger och lär mig.
       </p>
     </div>
 
     <div class="buttons">
       <a class="button" href="/projects">Projekt</a>
+      <a class="button secondary" href="/cv">CV</a>
       <a class="button secondary" href="/contact">Kontakt</a>
     </div>
   </section>
@@ -228,7 +320,7 @@ import MainLayout from "../layouts/MainLayout.astro";
   .hero-subtitle {
     max-width: 760px;
     color: var(--text);
-    font-size: clamp(1.18rem, 2vw, 1.45rem);
+    font-size: clamp(1.15rem, 2vw, 1.38rem);
     line-height: 1.38;
     margin: 0 0 1rem;
   }
@@ -271,87 +363,57 @@ import MainLayout from "../layouts/MainLayout.astro";
     color: var(--accent);
   }
 
-  .mini-list {
+  .mini-list,
+  .tech-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1.25rem;
+    gap: 0.45rem;
+    margin-top: 1rem;
   }
 
-  .mini-list span {
-    padding: 0.35rem 0.65rem;
+  .mini-list span,
+  .tech-list span {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0.28rem 0.58rem;
     border: 1px solid var(--border);
     border-radius: 999px;
     color: var(--text-soft);
-    font-size: 0.82rem;
     background: rgba(255, 255, 255, 0.025);
+    font-size: 0.78rem;
+    font-weight: 650;
   }
 
-  .overview-grid {
+  .proof-grid {
     display: grid;
-    gap: 0.9rem;
-    margin-top: 1.5rem;
-  }
-
-  .overview-card {
-    display: grid;
-    grid-template-columns: 52px 1fr;
-    gap: 1rem;
-    padding: 1.2rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
-      var(--surface);
-    transition:
-      transform 160ms ease,
-      border-color 160ms ease,
-      background 160ms ease;
-  }
-
-  .overview-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--border-hover);
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
-      var(--surface-soft);
-  }
-
-  .overview-card span {
-    color: var(--accent);
-    font-weight: 850;
-    font-size: 0.95rem;
-  }
-
-  .overview-card h3 {
-    margin-bottom: 0.25rem;
-  }
-
-  .overview-card p {
-    margin: 0;
-    color: var(--muted);
-  }
-
-  .focus-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
     margin-top: 1.5rem;
   }
 
+  .featured-projects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+
+  .featured-project-card,
   .focus-card {
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
       var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 1.25rem;
+    padding: 1.35rem;
     transition:
       transform 160ms ease,
       border-color 160ms ease,
       background 160ms ease;
   }
 
+  .featured-project-card:hover,
   .focus-card:hover {
     transform: translateY(-2px);
     border-color: var(--border-hover);
@@ -360,43 +422,77 @@ import MainLayout from "../layouts/MainLayout.astro";
       var(--surface-soft);
   }
 
-  .focus-card p {
-    color: var(--muted);
+  .clickable-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
   }
 
-  .roadmap {
+  .clickable-card h3 {
+    transition: color 160ms ease;
+  }
+
+  .clickable-card:hover h3 {
+    color: var(--accent);
+  }
+
+  .project-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-status {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0.25rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .project-status.live {
+    background: rgba(34, 197, 94, 0.12);
+    color: #86efac;
+  }
+
+  .project-status.active {
+    background: rgba(147, 197, 253, 0.14);
+    color: var(--accent);
+  }
+
+  .project-status.completed {
+  background: rgba(148, 163, 184, 0.12);
+  color: #cbd5e1;
+}
+
+.project-status.planned {
+  background: rgba(168, 85, 247, 0.12);
+  color: #d8b4fe;
+}
+
+  .focus-grid {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     margin-top: 1.5rem;
   }
 
-  .roadmap-item {
-    display: grid;
-    grid-template-columns: 24px 1fr;
-    gap: 1rem;
-    padding: 1.2rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
-      var(--surface);
-  }
-
-  .roadmap-item.current {
-    border-color: var(--border-hover);
-  }
-
-  .roadmap-marker {
-    width: 11px;
-    height: 11px;
-    margin-top: 0.55rem;
-    border-radius: 50%;
-    background: var(--accent);
-    box-shadow: 0 0 0 6px var(--accent-muted);
-  }
-
-  .roadmap-item p {
+  .focus-card p,
+  .featured-project-card p {
     color: var(--muted);
+  }
+
+  .personal-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
   }
 
   .cta-section {
@@ -426,9 +522,23 @@ import MainLayout from "../layouts/MainLayout.astro";
     flex-shrink: 0;
   }
 
-  @media (max-width: 980px) {
+  code {
+    color: var(--accent);
+    background: rgba(147, 197, 253, 0.08);
+    border: 1px solid rgba(147, 197, 253, 0.14);
+    padding: 0.08rem 0.28rem;
+    border-radius: 0.35rem;
+    font-size: 0.9em;
+  }
+
+  @media (max-width: 1050px) {
+    .proof-grid,
     .focus-grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-projects {
+      grid-template-columns: 1fr;
     }
   }
 
@@ -446,15 +556,21 @@ import MainLayout from "../layouts/MainLayout.astro";
     .cta-section .buttons {
       width: 100%;
     }
+
+    .personal-grid {
+      grid-template-columns: 1fr;
+    }
   }
 
   @media (max-width: 640px) {
+    .proof-grid,
     .focus-grid {
       grid-template-columns: 1fr;
     }
 
-    .overview-card {
-      grid-template-columns: 1fr;
+    .project-top {
+      flex-direction: column;
+      gap: 0.5rem;
     }
   }
 </style>
