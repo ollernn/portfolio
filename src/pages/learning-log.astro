@@ -2,194 +2,244 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Olle Rönn | Lärandelogg">
+<MainLayout title="Olle Rönn | Learning Log">
   <section class="hero learning-hero">
-    <p class="eyebrow">Lärandelogg</p>
+    <p class="eyebrow">Learning Log</p>
 
-    <h1>Lärandelogg</h1>
+    <h1>Learning Log</h1>
 
     <p class="lead">
-      Här sammanfattar jag kort vad jag har gjort i mina projekt, vad jag har
-      lärt mig och vad nästa steg är. Loggen fungerar som en enkel dagbok över
-      min tekniska utveckling.
+      This page summarizes what I have worked on, what I have learned and how my
+      technical projects develop over time. It works as a short learning journal
+      for my portfolio, GitHub projects and practical technical development.
     </p>
   </section>
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Logg</p>
-      <h2>Senaste sessioner</h2>
+      <p class="eyebrow">Log</p>
+      <h2>Latest sessions</h2>
       <p>
-        Korta sammanfattningar av arbetet med portfolion och kommande tekniska projekt.
+        Short summaries of recent work on my portfolio, Secure Homelab and other
+        technical projects.
       </p>
     </div>
 
     <div class="log-list">
-    <article class="log-entry current">
-  <div class="log-date">
-    <span>2026-05-12</span>
-    <p>Session 4</p>
-  </div>
+      <article class="log-entry current">
+        <div class="log-date">
+          <span>2026-05-14</span>
+          <p>Session 5</p>
+        </div>
 
-  <div class="log-content">
-    <h3>Startade Secure Homelab med Ubuntu Server och SSH</h3>
+        <div class="log-content">
+          <h3>Completed Secure Homelab version 1</h3>
 
-    <p>
-      Idag påbörjade jag mitt Secure Homelab-projekt. Jag skapade ett GitHub-repo
-      med dokumentationsstruktur och installerade Ubuntu Server i en virtuell maskin
-      med VirtualBox.
-    </p>
+          <p>
+            I completed the first version of my Secure Homelab project. The final
+            setup is a Linux-based server environment running Ubuntu Server inside
+            VirtualBox, with secure SSH access, firewall rules, fail2ban, Docker
+            and several internal services.
+          </p>
 
-    <p>
-      Servern konfigurerades med RAM, CPU, virtuell disk, NAT-nätverk, hostname
-      och användare. Efter installationen uppdaterade jag systemet, installerade
-      grundverktyg och kontrollerade serverns nätverksinformation.
-    </p>
+          <p>
+            I installed and verified Docker and Docker Compose, created a shared
+            Docker network and configured Portainer, Uptime Kuma, Homepage and
+            Nginx as internal Docker-based services. Uptime Kuma was configured
+            to monitor the internal services through Docker container names.
+          </p>
 
-    <p>
-      Jag stötte på ett problem där SSH från Windows till VM:ens IP-adress gav
-      timeout. Genom att kontrollera SSH-status på servern kunde jag se att SSH
-      fungerade, och att problemet låg i VirtualBox NAT. Lösningen blev att skapa
-      port forwarding från Windows till Ubuntu-servern.
-    </p>
+          <p>
+            I also cleaned up the GitHub documentation, added architecture
+            diagrams, organized screenshots and wrote a final version 1 summary.
+            The documentation now covers the VM setup, networking, installation,
+            security configuration, Docker services, lessons learned and the final
+            project status.
+          </p>
 
-    <p>
-      <strong>Lärt mig:</strong> Jag fick bättre förståelse för skillnaden mellan
-      host och guest, hur NAT fungerar i VirtualBox, varför port forwarding behövs
-      för SSH samt hur man felsöker SSH med systemctl.
-    </p>
+          <p>
+            <strong>Learned:</strong> I gained practical experience with Linux
+            server administration, SSH hardening, UFW, fail2ban, Docker networking,
+            service monitoring and technical documentation.
+          </p>
 
-    <p>
-      <strong>Resultat:</strong> Första checkpointen är klar. Ubuntu Server är
-      installerad, uppdaterad och nåbar via SSH från Windows.
-    </p>
-  </div>
-</article>
+          <p>
+            <strong>Result:</strong> Secure Homelab v1 is complete, documented and
+            ready to be presented as a portfolio project.
+          </p>
+        </div>
+      </article>
 
-  <article class="log-entry">
-    <div class="log-date">
-      <span>2026-05-11</span>
-      <p>Session 3</p>
+      <article class="log-entry">
+        <div class="log-date">
+          <span>2026-05-12</span>
+          <p>Session 4</p>
+        </div>
+
+        <div class="log-content">
+          <h3>Started Secure Homelab with Ubuntu Server and SSH</h3>
+
+          <p>
+            I started my Secure Homelab project by creating a GitHub repository
+            with a documentation structure and installing Ubuntu Server in a
+            VirtualBox virtual machine.
+          </p>
+
+          <p>
+            The server was configured with RAM, CPU, virtual disk, NAT networking,
+            hostname and a local user. After installation, I updated the system,
+            installed basic tools and checked the server networking information.
+          </p>
+
+          <p>
+            I ran into an issue where SSH from Windows to the VM IP address timed
+            out. By checking the SSH service status on the server, I could see
+            that SSH itself was running and that the issue was caused by VirtualBox
+            NAT. The solution was to configure port forwarding from Windows to the
+            Ubuntu server.
+          </p>
+
+          <p>
+            <strong>Learned:</strong> I gained a better understanding of the
+            difference between host and guest systems, how NAT works in VirtualBox,
+            why port forwarding is needed for SSH and how to troubleshoot SSH with
+            systemctl.
+          </p>
+
+          <p>
+            <strong>Result:</strong> The first checkpoint was completed. Ubuntu
+            Server was installed, updated and reachable via SSH from Windows.
+          </p>
+        </div>
+      </article>
+
+      <article class="log-entry">
+        <div class="log-date">
+          <span>2026-05-11</span>
+          <p>Session 3</p>
+        </div>
+
+        <div class="log-content">
+          <h3>Tested, deployed and published the portfolio</h3>
+
+          <p>
+            I performed the final checks of the portfolio, tested the pages in
+            both desktop and mobile views and made sure that links, layout and
+            content worked as intended.
+          </p>
+
+          <p>
+            I also deployed the website with Vercel and connected the project to
+            GitHub, so the site automatically updates when new changes are pushed
+            to the main branch.
+          </p>
+
+          <p>
+            <strong>Learned:</strong> I gained a better understanding of how GitHub,
+            Vercel, the build process and deployment work together in a real web
+            project.
+          </p>
+
+          <p>
+            <strong>Result:</strong> The first version of the portfolio went live
+            and can now be updated continuously with new projects, improvements
+            and learning logs.
+          </p>
+        </div>
+      </article>
+
+      <article class="log-entry">
+        <div class="log-date">
+          <span>2026-05-11</span>
+          <p>Session 2</p>
+        </div>
+
+        <div class="log-content">
+          <h3>Refined the portfolio design and content</h3>
+
+          <p>
+            I continued improving the portfolio to make it more complete and
+            professional. The focus was on improving the overall feel, making the
+            design more minimal and consistent, and making the pages work better
+            together.
+          </p>
+
+          <p>
+            I updated several pages, including the homepage, CV, projects,
+            homelab and contact pages. The pages received clearer structure,
+            better content and a more consistent presentation of my profile,
+            projects and technical direction.
+          </p>
+
+          <p>
+            <strong>Learned:</strong> I gained a better understanding of how
+            content, layout, components and CSS work together in Astro to create
+            a more professional and coherent portfolio.
+          </p>
+
+          <p>
+            <strong>Result:</strong> The portfolio received a clearer design,
+            more refined content and a more consistent structure between pages.
+          </p>
+        </div>
+      </article>
+
+      <article class="log-entry">
+        <div class="log-date">
+          <span>2026-05-08</span>
+          <p>Session 1</p>
+        </div>
+
+        <div class="log-content">
+          <h3>Started the portfolio project with Astro</h3>
+
+          <p>
+            I set up the foundation for the portfolio website with Astro and
+            created the main pages: homepage, CV, projects, learning log, homelab
+            and contact.
+          </p>
+
+          <p>
+            I also started building a shared structure with layout, navigation,
+            footer and reusable parts, so the site can grow with more projects
+            and documentation over time.
+          </p>
+
+          <p>
+            <strong>Learned:</strong> I gained a clearer understanding of how
+            Astro projects are structured with pages, layouts, components and
+            HTML-like structure in `.astro` files.
+          </p>
+
+          <p>
+            <strong>Result:</strong> The foundation for the portfolio was in
+            place and the project could continue with improved design and content.
+          </p>
+        </div>
+      </article>
     </div>
-
-    <div class="log-content">
-      <h3>Testade, deployade och publicerade portfolion</h3>
-
-      <p>
-        Idag gjorde jag sista kontrollen av portfolion, testade sidorna i både
-        desktop och mobilvy och såg till att länkar, layout och innehåll fungerade
-        som tänkt.
-      </p>
-
-      <p>
-        Jag deployade även hemsidan med Vercel och kopplade projektet till GitHub,
-        så att sidan automatiskt uppdateras när nya ändringar pushas till main-branchen.
-      </p>
-
-      <p>
-        <strong>Lärt mig:</strong> Jag fick bättre förståelse för hur GitHub, Vercel,
-        build-processen och deployment hänger ihop i ett riktigt webbprojekt.
-      </p>
-
-      <p>
-        <strong>Resultat:</strong> Första versionen av portfolion är nu live och kan
-        uppdateras löpande med nya projekt, förbättringar och lärandeloggar.
-      </p>
-    </div>
-  </article>
-
-  <article class="log-entry">
-    <div class="log-date">
-      <span>2026-05-11</span>
-      <p>Session 2</p>
-    </div>
-
-    <div class="log-content">
-      <h3>Finslipade design och innehåll på portfolion</h3>
-
-      <p>
-        Jag arbetade vidare med att göra portfolion mer färdig och professionell.
-        Fokus låg på att förbättra helhetskänslan, göra designen mer minimalistisk
-        och stilren samt se till att sidorna hänger ihop bättre.
-      </p>
-
-      <p>
-        Jag uppdaterade flera undersidor, bland annat startsidan, Om mig, CV,
-        Projekt, Homelab och Kontakt. Sidorna fick tydligare struktur, bättre
-        innehåll och mer konsekvent presentation av min profil, mina projekt
-        och min tekniska riktning.
-      </p>
-
-      <p>
-        <strong>Lärt mig:</strong> Jag fick bättre förståelse för hur innehåll,
-        layout, komponenter och CSS samverkar i Astro för att skapa en mer
-        professionell och sammanhängande portfolio.
-      </p>
-
-      <p>
-        <strong>Resultat:</strong> Portfolion fick en tydligare design, mer genomarbetat
-        innehåll och en mer enhetlig struktur mellan sidorna.
-      </p>
-    </div>
-  </article>
-
-  <article class="log-entry">
-    <div class="log-date">
-      <span>2026-05-08</span>
-      <p>Session 1</p>
-    </div>
-
-    <div class="log-content">
-      <h3>Startade portfolio-projektet med Astro</h3>
-
-      <p>
-        Jag satte upp grunden för portfolio-hemsidan med Astro och skapade
-        de viktigaste sidorna: startsida, Om mig, CV, Projekt, Lärandelogg,
-        Homelab och Kontakt.
-      </p>
-
-      <p>
-        Jag började även bygga en gemensam struktur med layout, navigation,
-        footer och återanvändbara delar, så att sidan kan växa med fler projekt
-        och mer dokumentation över tid.
-      </p>
-
-      <p>
-        <strong>Lärt mig:</strong> Jag fick en tydligare bild av hur Astro-projekt
-        är uppbyggda med sidor, layouts, komponenter och HTML-liknande struktur
-        i `.astro`-filer.
-      </p>
-
-      <p>
-        <strong>Resultat:</strong> Grunden för portfolion var på plats och projektet
-        kunde fortsätta utvecklas med bättre design och innehåll.
-      </p>
-    </div>
-  </article>
-</div>
   </section>
 
   <section class="learning-focus">
-  <div>
-    <p class="eyebrow">Nuvarande fokus</p>
-    <h2>Secure Homelab</h2>
-    <p>
-      Första versionen av portfolion är live. Just nu används sidan för att
-      dokumentera mitt aktiva Secure Homelab-projekt och andra tekniska projekt
-      när de utvecklas.
-    </p>
-  </div>
+    <div>
+      <p class="eyebrow">Current focus</p>
+      <h2>Portfolio and technical projects</h2>
+      <p>
+        Secure Homelab v1 is complete and documented. The portfolio is now used
+        to present finished projects, ongoing improvements and future technical
+        work within infrastructure, cybersecurity, cloud and systems engineering.
+      </p>
+    </div>
 
-  <a class="focus-card" href="/projects">
-    <span class="tag">Aktivt projekt</span>
-    <h3>Se projektöversikten</h3>
-    <p>
-      Gå vidare till projekt-sidan för att se Secure Homelab, GitHub-länkar,
-      status, tekniker och tidigare projekt.
-    </p>
-  </a>
-</section>
-
+    <a class="focus-card" href="/projects">
+      <span class="tag">Project overview</span>
+      <h3>View projects</h3>
+      <p>
+        Go to the projects page to see Secure Homelab, GitHub links, project
+        status, technologies and previous technical projects.
+      </p>
+    </a>
+  </section>
 </MainLayout>
 
 <style>
@@ -264,6 +314,18 @@ import MainLayout from "../layouts/MainLayout.astro";
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.018)),
       var(--surface);
+    transition:
+      transform 160ms ease,
+      border-color 160ms ease,
+      background 160ms ease;
+  }
+
+  .learning-focus:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-hover);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
+      var(--surface-soft);
   }
 
   .learning-focus p {
@@ -272,29 +334,41 @@ import MainLayout from "../layouts/MainLayout.astro";
   }
 
   .focus-card {
-  display: block;
-  padding: 1.2rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.025);
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  transition:
-    transform 160ms ease,
-    border-color 160ms ease,
-    background 160ms ease;
-}
+    display: block;
+    padding: 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
+      var(--surface);
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition:
+      transform 160ms ease,
+      border-color 160ms ease,
+      background 160ms ease;
+  }
 
-.focus-card:hover {
-  transform: translateY(-2px);
-  border-color: var(--border-hover);
-  background: rgba(255, 255, 255, 0.04);
-}
+  .focus-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-hover);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
+      var(--surface-soft);
+  }
 
-.focus-card p {
-  color: var(--muted);
-}
+  .focus-card h3 {
+    transition: color 160ms ease;
+  }
+
+  .focus-card:hover h3 {
+    color: var(--accent);
+  }
+
+  .focus-card p {
+    color: var(--muted);
+  }
 
   @media (max-width: 860px) {
     .log-entry {

@@ -2,101 +2,112 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Olle Rönn | Homelab">
+<MainLayout title="Olle Rönn | Secure Homelab">
   <section class="hero homelab-hero">
-  <p class="eyebrow">Homelab</p>
+    <p class="eyebrow">Project Case Study</p>
 
-  <h1>Secure Homelab</h1>
+    <h1>Secure Homelab</h1>
 
-  <p class="lead">
-    Secure Homelab är ett aktivt projekt där jag bygger en egen säker och
-    dokumenterad servermiljö för att träna på Linux, nätverk, SSH, säker
-    serverkonfiguration, Docker och teknisk dokumentation.
-  </p>
-
-  <p class="lead">
-    Projektet används som ett praktiskt labb för att bygga erfarenhet inom
-    IT-infrastruktur, cybersäkerhet, drift, felsökning och automation.
-  </p>
-</section>
-
-<section>
-  <div class="section-heading">
-    <p class="eyebrow">Checkpoint</p>
-    <h2>Första checkpointen är klar</h2>
-    <p>
-      Projektet är nu påbörjat. Den första versionen av servermiljön är installerad,
-      uppdaterad och nåbar via SSH från Windows.
+    <p class="lead">
+      Secure Homelab is a practical infrastructure and cybersecurity project where
+      I built, secured and documented a small Linux-based server environment using
+      Ubuntu Server, SSH key authentication, UFW, fail2ban, Docker, Portainer,
+      Uptime Kuma, Homepage and Nginx.
     </p>
-  </div>
 
-  <div class="checkpoint-grid">
-    <article class="card">
-      <span class="tag">Miljö</span>
-      <h3>Ubuntu Server i VirtualBox</h3>
-      <p>
-        Servern körs som en virtuell maskin i Oracle VirtualBox med hostname
-        secure-homelab och användaren olle.
-      </p>
-    </article>
+    <div class="hero-actions">
+      <a
+        class="button"
+        href="https://github.com/ollernn/secure-homelab"
+        target="_blank"
+        rel="noreferrer"
+      >
+        View GitHub
+      </a>
 
-    <article class="card">
-      <span class="tag">Nätverk</span>
-      <h3>NAT och port forwarding</h3>
-      <p>
-        VM:en körs bakom VirtualBox NAT. SSH-åtkomst från Windows löstes genom
-        port forwarding från 127.0.0.1:2222 till port 22 på Ubuntu-servern.
-      </p>
-    </article>
-
-    <article class="card">
-      <span class="tag">Status</span>
-      <h3>SSH fungerar</h3>
-      <p>
-        Servern är uppdaterad, grundverktyg är installerade och SSH fungerar
-        från Windows med kommandot ssh -p 2222 olle@127.0.0.1.
-      </p>
-    </article>
-  </div>
-</section>
+      <a class="button secondary" href="/projects">
+        Back to projects
+      </a>
+    </div>
+  </section>
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Syfte</p>
-      <h2>Varför jag bygger ett homelab</h2>
+      <p class="eyebrow">Status</p>
+      <h2>Version 1 complete</h2>
       <p>
-        Homelabbet ska fungera som en praktisk miljö där jag kan lära mig genom
-        att bygga, testa, felsöka och förbättra riktiga lösningar.
+        The first version of the homelab is complete. The environment is installed,
+        hardened, documented and running internal Docker-based services for
+        management, monitoring and dashboard access.
+      </p>
+    </div>
+
+    <div class="status-grid">
+      <article class="card">
+        <span class="tag">Environment</span>
+        <h3>Ubuntu Server VM</h3>
+        <p>
+          The server runs as a virtual machine in Oracle VirtualBox on a Windows
+          host machine.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Security</span>
+        <h3>Hardened access</h3>
+        <p>
+          SSH was hardened with key-based authentication, disabled root login and
+          disabled password authentication.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Services</span>
+        <h3>Docker-based services</h3>
+        <p>
+          Portainer, Uptime Kuma, Homepage and Nginx are running as internal
+          Docker services.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <p class="eyebrow">Purpose</p>
+      <h2>Why I built this project</h2>
+      <p>
+        The purpose of Secure Homelab v1 was to create a practical learning
+        environment for Linux administration, server hardening, secure remote
+        access, Docker, monitoring and technical documentation.
       </p>
     </div>
 
     <div class="purpose-grid">
       <article class="card">
         <span class="tag">01</span>
-        <h3>Praktisk erfarenhet</h3>
+        <h3>Build practical infrastructure skills</h3>
         <p>
-          Jag vill förstå hur IT-miljöer fungerar i praktiken, inte bara teoretiskt.
-          Därför bygger jag en egen miljö där jag kan testa nätverk, servrar,
-          säkerhet och drift.
+          I wanted to go beyond theory and build a real server environment where
+          I could install, configure, secure and troubleshoot services myself.
         </p>
       </article>
 
       <article class="card">
         <span class="tag">02</span>
-        <h3>Säkerhet från början</h3>
+        <h3>Apply security from the start</h3>
         <p>
-          Fokus ligger på säker åtkomst, rättigheter, backup, loggning och
-          tydlig struktur. Målet är att bygga en miljö som är både användbar
-          och genomtänkt.
+          The project focuses on secure SSH access, firewall rules, fail2ban,
+          internal-only services and careful documentation without exposing secrets.
         </p>
       </article>
 
       <article class="card">
         <span class="tag">03</span>
-        <h3>Dokumenterat lärande</h3>
+        <h3>Document the full process</h3>
         <p>
-          Varje större steg ska dokumenteras i portfolion och på GitHub, så att
-          projektet visar både resultat, lärdomar och tekniska beslut.
+          The goal was not only to build the environment, but also to document
+          decisions, problems, fixes and lessons learned in a clear GitHub structure.
         </p>
       </article>
     </div>
@@ -104,77 +115,301 @@ import MainLayout from "../layouts/MainLayout.astro";
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Innehåll</p>
-      <h2>Planerade delar</h2>
+      <p class="eyebrow">Architecture</p>
+      <h2>Final version 1 architecture</h2>
       <p>
-        Homelabbet är större än bara en NAS. NAS och backup är en del av grunden,
-        men projektet ska växa till en bredare labbmiljö för infrastruktur och säkerhet.
+        The environment runs locally in VirtualBox and uses Docker to host internal
+        services on a shared Docker network.
       </p>
     </div>
 
-    <div class="homelab-list">
-      <article class="homelab-item">
+    <div class="architecture-card">
+      <pre><code>Windows Host PC
+   |
+Oracle VirtualBox
+   |
+Ubuntu Server 26.04 LTS VM
+   |
+Security Layer
+   |-- SSH key authentication
+   |-- UFW firewall
+   |-- fail2ban
+   |
+Docker Engine
+   |
+Shared Docker Network: homelab
+   |-- Portainer
+   |-- Uptime Kuma
+   |-- Homepage
+   |-- Nginx</code></pre>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <p class="eyebrow">Environment</p>
+      <h2>Virtual machine setup</h2>
+      <p>
+        The homelab was built as a local virtual server environment using Ubuntu
+        Server inside Oracle VirtualBox.
+      </p>
+    </div>
+
+    <div class="spec-grid">
+      <article class="spec-item">
+        <span>OS</span>
+        <strong>Ubuntu Server 26.04 LTS</strong>
+      </article>
+
+      <article class="spec-item">
+        <span>Virtualization</span>
+        <strong>Oracle VirtualBox</strong>
+      </article>
+
+      <article class="spec-item">
+        <span>RAM</span>
+        <strong>4096 MB</strong>
+      </article>
+
+      <article class="spec-item">
+        <span>CPU</span>
+        <strong>2 cores</strong>
+      </article>
+
+      <article class="spec-item">
+        <span>Disk</span>
+        <strong>80 GB</strong>
+      </article>
+
+      <article class="spec-item">
+        <span>Network mode</span>
+        <strong>NAT</strong>
+      </article>
+
+      <article class="spec-item">
+        <span>Hostname</span>
+        <strong>secure-homelab</strong>
+      </article>
+
+      <article class="spec-item">
+        <span>Local user</span>
+        <strong>olle</strong>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <p class="eyebrow">Security</p>
+      <h2>Security configuration</h2>
+      <p>
+        The server was hardened by securing SSH access, enabling a firewall and
+        using fail2ban to protect against repeated failed login attempts.
+      </p>
+    </div>
+
+    <div class="security-grid">
+      <article class="card">
+        <span class="tag">SSH</span>
+        <h3>Key-based authentication</h3>
+        <p>
+          SSH keys were created on Windows and used to authenticate securely to
+          the Ubuntu server.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Hardening</span>
+        <h3>Root and password login disabled</h3>
+        <p>
+          Root login and password authentication were disabled to reduce the risk
+          of unauthorized access.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Firewall</span>
+        <h3>UFW enabled</h3>
+        <p>
+          UFW was configured to allow only the required ports for SSH and internal
+          homelab services.
+        </p>
+      </article>
+
+      <article class="card">
+        <span class="tag">Protection</span>
+        <h3>fail2ban installed</h3>
+        <p>
+          fail2ban was installed and verified to add basic protection against
+          repeated failed SSH login attempts.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <p class="eyebrow">Docker Services</p>
+      <h2>Services running in version 1</h2>
+      <p>
+        Docker and Docker Compose were installed and verified. The homelab uses a
+        shared Docker network so services can communicate internally by container name.
+      </p>
+    </div>
+
+    <div class="service-list">
+      <article class="service-item">
+        <div>
+          <span class="tag">Docker management</span>
+          <h3>Portainer</h3>
+        </div>
+
+        <p>
+          Used as a graphical interface for managing Docker containers, volumes
+          and the local Docker environment.
+        </p>
+      </article>
+
+      <article class="service-item">
+        <div>
+          <span class="tag">Monitoring</span>
+          <h3>Uptime Kuma</h3>
+        </div>
+
+        <p>
+          Used to monitor internal services such as Portainer, Homepage and Nginx.
+          All monitored services were verified as up.
+        </p>
+      </article>
+
+      <article class="service-item">
+        <div>
+          <span class="tag">Dashboard</span>
+          <h3>Homepage</h3>
+        </div>
+
+        <p>
+          Used as an internal homelab dashboard with links to Portainer, Uptime
+          Kuma and Nginx.
+        </p>
+      </article>
+
+      <article class="service-item">
+        <div>
+          <span class="tag">Web server</span>
+          <h3>Nginx</h3>
+        </div>
+
+        <p>
+          Used as a basic test web server to verify Docker networking, port
+          mappings and service monitoring.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <p class="eyebrow">Networking</p>
+      <h2>Networking and port forwarding</h2>
+      <p>
+        Because the VM runs behind VirtualBox NAT, port forwarding is used from
+        the Windows host to the Ubuntu VM.
+      </p>
+    </div>
+
+    <div class="port-grid">
+      <article class="port-item">
+        <span>127.0.0.1:2222</span>
+        <strong>SSH</strong>
+      </article>
+
+      <article class="port-item">
+        <span>127.0.0.1:9443</span>
+        <strong>Portainer</strong>
+      </article>
+
+      <article class="port-item">
+        <span>127.0.0.1:3001</span>
+        <strong>Uptime Kuma</strong>
+      </article>
+
+      <article class="port-item">
+        <span>127.0.0.1:3000</span>
+        <strong>Homepage</strong>
+      </article>
+
+      <article class="port-item">
+        <span>127.0.0.1:8080</span>
+        <strong>Nginx</strong>
+      </article>
+    </div>
+
+    <div class="note-card">
+      <h3>Important networking lesson</h3>
+      <p>
+        One key lesson was that <code>127.0.0.1</code> inside a Docker container
+        refers to the container itself, not the Windows host or another container.
+        To monitor internal services correctly, Uptime Kuma was configured to use
+        Docker container names such as <code>portainer</code>, <code>homepage</code>
+        and <code>nginx</code>.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-heading">
+      <p class="eyebrow">Problems solved</p>
+      <h2>Technical problems I solved</h2>
+      <p>
+        Several issues came up during the build. These were documented and fixed
+        as part of the project.
+      </p>
+    </div>
+
+    <div class="problem-list">
+      <article class="problem-item">
         <span>01</span>
         <div>
-          <h3>NAS, lagring och backup</h3>
+          <h3>SSH timeout through VirtualBox NAT</h3>
           <p>
-            Strukturera lagring, användare, rättigheter och backupflöden.
-            Detta blir grunden för säker datahantering i labbmiljön.
+            SSH to the VM IP address timed out because NAT did not expose the SSH
+            port directly. I solved this with port forwarding from
+            <code>127.0.0.1:2222</code> to port <code>22</code> on the VM.
           </p>
         </div>
       </article>
 
-      <article class="homelab-item">
+      <article class="problem-item">
         <span>02</span>
         <div>
-          <h3>Linux och servrar</h3>
+          <h3>Password authentication did not disable correctly</h3>
           <p>
-            Sätta upp Linux-baserade servrar eller virtuella maskiner för att
-            testa tjänster, säkerhetsinställningar och serveradministration.
+            The setting was overridden by a cloud-init SSH configuration file. I
+            updated the relevant configuration and verified the final SSH settings.
           </p>
         </div>
       </article>
 
-      <article class="homelab-item">
+      <article class="problem-item">
         <span>03</span>
         <div>
-          <h3>Nätverk och säker åtkomst</h3>
+          <h3>Container monitoring with localhost failed</h3>
           <p>
-            Arbeta med nätverksstruktur, brandväggsregler, fjärråtkomst,
-            segmentering och grundläggande säkerhetsprinciper.
+            Uptime Kuma could not monitor services through <code>127.0.0.1</code>
+            from inside its container. I solved this by creating a shared Docker
+            network and using container names for internal monitoring.
           </p>
         </div>
       </article>
 
-      <article class="homelab-item">
+      <article class="problem-item">
         <span>04</span>
         <div>
-          <h3>Docker och containers</h3>
+          <h3>Portainer self-signed certificate</h3>
           <p>
-            Köra tjänster i containers för att förstå modern applikationsdrift,
-            isolering, deployment och enklare driftmiljöer.
-          </p>
-        </div>
-      </article>
-
-      <article class="homelab-item">
-        <span>05</span>
-        <div>
-          <h3>Monitoring och loggning</h3>
-          <p>
-            Samla in loggar och metrics från labbmiljön för att skapa dashboards,
-            alerts och bättre insyn i systemens hälsa.
-          </p>
-        </div>
-      </article>
-
-      <article class="homelab-item">
-        <span>06</span>
-        <div>
-          <h3>Cloud-koppling</h3>
-          <p>
-            Koppla delar av homelabbet till Azure för exempelvis backup,
-            logging, monitoring eller säkra molnresurser.
+            Portainer uses a self-signed certificate in this local setup. For the
+            internal Uptime Kuma monitor, TLS/SSL certificate errors were ignored.
           </p>
         </div>
       </article>
@@ -183,125 +418,100 @@ import MainLayout from "../layouts/MainLayout.astro";
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Tekniker</p>
-      <h2>Tekniker jag vill använda</h2>
+      <p class="eyebrow">Documentation</p>
+      <h2>GitHub documentation</h2>
       <p>
-        Teknikvalen kan förändras när projektet byggs, men riktningen är att
-        arbeta med praktiska verktyg som används inom infrastruktur, drift,
-        säkerhet och cloud.
+        The project was documented in a structured GitHub repository with separate
+        files for overview, VM setup, networking, installation, security, Docker
+        services, lessons learned and a final version 1 summary.
       </p>
     </div>
 
-    <div class="tech-sections">
-      <article class="card">
-        <h3>Infrastruktur</h3>
-        <div class="tech-list">
-          <span>Linux</span>
-          <span>Windows Server</span>
-          <span>NAS</span>
-          <span>DNS</span>
-          <span>DHCP</span>
-          <span>Firewall</span>
-          <span>Backup</span>
-        </div>
-      </article>
+    <div class="documentation-card">
+      <div>
+        <h3>Repository structure</h3>
+        <p>
+          The documentation includes Markdown files, Docker configuration folders,
+          architecture diagrams and screenshots.
+        </p>
+      </div>
 
-      <article class="card">
-        <h3>Cloud & automation</h3>
-        <div class="tech-list">
-          <span>Azure</span>
-          <span>GitHub</span>
-          <span>PowerShell</span>
-          <span>Bash</span>
-          <span>Terraform</span>
-          <span>Ansible</span>
-          <span>GitHub Actions</span>
-        </div>
-      </article>
-
-      <article class="card">
-        <h3>Monitoring & säkerhet</h3>
-        <div class="tech-list">
-          <span>Logging</span>
-          <span>Alerts</span>
-          <span>Dashboards</span>
-          <span>Least Privilege</span>
-          <span>Secure Remote Access</span>
-          <span>Monitoring</span>
-        </div>
-      </article>
+      <a
+        class="button secondary"
+        href="https://github.com/ollernn/secure-homelab"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Open GitHub repository
+      </a>
     </div>
   </section>
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Koppling</p>
-      <h2>Hur homelabbet kopplas till andra projekt</h2>
+      <p class="eyebrow">Lessons learned</p>
+      <h2>What I learned</h2>
       <p>
-        Secure Homelab är tänkt att bli en grund för flera kommande projekt i
-        portfolion.
+        The project gave me practical experience in building, securing,
+        troubleshooting and documenting a small server environment from start to
+        finished version 1.
       </p>
     </div>
 
-    <div class="connection-grid">
-      <article class="connection-card">
-        <span class="tag">Cloud</span>
-        <h3>Secure Azure Environment</h3>
+    <div class="learning-grid">
+      <article class="card">
+        <h3>Linux server administration</h3>
         <p>
-          Homelabbet kan senare kopplas till Azure för att testa säker
-          molninfrastruktur, IAM, logging och monitoring.
+          Installing Ubuntu Server, updating packages, installing tools, checking
+          services and working without a graphical interface.
         </p>
       </article>
 
-      <article class="connection-card">
-        <span class="tag">Automation</span>
-        <h3>Infrastructure as Code</h3>
+      <article class="card">
+        <h3>Secure remote access</h3>
         <p>
-          Delar av labbmiljön kan automatiseras med Terraform, Ansible,
-          GitHub Actions och scriptning.
+          Configuring SSH keys, disabling insecure login methods and verifying
+          the final SSH configuration.
         </p>
       </article>
 
-      <article class="connection-card">
-        <span class="tag">Security</span>
-        <h3>Mini-SOC Dashboard</h3>
+      <article class="card">
+        <h3>Docker operations</h3>
         <p>
-          Homelabbet blir en bra källa för loggar och säkerhetshändelser som
-          senare kan visualiseras i en dashboard.
+          Running services in containers, creating volumes, using Docker Compose
+          and connecting services through a shared Docker network.
         </p>
       </article>
 
-      <article class="connection-card">
-        <span class="tag">HPCS</span>
-        <h3>AI Infrastructure Lab</h3>
+      <article class="card">
+        <h3>Monitoring and troubleshooting</h3>
         <p>
-          På längre sikt kan labbmiljön användas för tester inom containers,
-          prestandamätning, resursanvändning och systemnära optimering.
+          Setting up service monitoring, understanding container networking and
+          solving real issues during the build.
         </p>
       </article>
     </div>
   </section>
 
-  <section class="status-section">
-  <div>
-    <p class="eyebrow">Status</p>
-    <h2>Nuvarande status</h2>
-    <p>
-      Secure Homelab är nu aktivt. Den första servermiljön är installerad i
-      VirtualBox, systemet är uppdaterat och SSH-åtkomst fungerar från Windows
-      via port forwarding.
-    </p>
-  </div>
+  <section class="next-section">
+    <div>
+      <p class="eyebrow">Future improvements</p>
+      <h2>Possible version 2 improvements</h2>
+      <p>
+        Version 1 is complete, but the homelab can be extended further with more
+        security, automation, logging and cloud integration.
+      </p>
+    </div>
 
-  <a class="status-card clickable-card" href="/learning-log">
-    <span class="tag">Senaste framsteg</span>
-    <h3>Ubuntu Server och SSH</h3>
-    <p>
-      Läs lärandeloggen där jag sammanfattar installationen, SSH-problemet,
-      felsökningen och lösningen med VirtualBox port forwarding.
-    </p>
-  </a>
-</section>
+    <div class="next-list">
+      <span>Reverse proxy</span>
+      <span>HTTPS for internal services</span>
+      <span>Centralized logging</span>
+      <span>Grafana dashboards</span>
+      <span>Automated backups</span>
+      <span>Azure integration</span>
+    </div>
+  </section>
 </MainLayout>
 
 <style>
@@ -309,183 +519,298 @@ import MainLayout from "../layouts/MainLayout.astro";
     font-size: clamp(2.4rem, 5.2vw, 4.2rem);
   }
 
-  .purpose-grid {
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+
+  .status-grid,
+  .purpose-grid,
+  .security-grid,
+  .learning-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
     margin-top: 1.5rem;
   }
 
-  .homelab-list {
-    display: grid;
-    gap: 0.9rem;
-    margin-top: 1.5rem;
-  }
-
-  .homelab-item {
-    display: grid;
-    grid-template-columns: 52px 1fr;
-    gap: 1rem;
-    padding: 1.2rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
-      var(--surface);
-    transition:
-      transform 160ms ease,
-      border-color 160ms ease,
-      background 160ms ease;
-  }
-
-  .homelab-item:hover {
-    transform: translateY(-2px);
-    border-color: var(--border-hover);
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
-      var(--surface-soft);
-  }
-
-  .homelab-item > span {
-    color: var(--accent);
-    font-weight: 850;
-    font-size: 0.95rem;
-  }
-
-  .homelab-item h3 {
-    margin-bottom: 0.25rem;
-  }
-
-  .homelab-item p {
-    margin: 0;
-    color: var(--muted);
-  }
-
-  .tech-sections {
-    display: grid;
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
-
-  .tech-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.45rem;
-    margin-top: 1rem;
-  }
-
-  .tech-list span {
-    display: inline-flex;
-    align-items: center;
-    width: fit-content;
-    padding: 0.28rem 0.58rem;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    color: var(--text-soft);
-    background: rgba(255, 255, 255, 0.025);
-    font-size: 0.78rem;
-    font-weight: 650;
-  }
-
-  .connection-grid {
-    display: grid;
+  .security-grid,
+  .learning-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .architecture-card,
+  .note-card,
+  .documentation-card,
+  .next-section {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015)),
+      var(--surface);
+    box-shadow: var(--shadow);
+  }
+
+  .architecture-card {
+    margin-top: 1.5rem;
+    padding: 1.35rem;
+    overflow-x: auto;
+  }
+
+  pre {
+    margin: 0;
+    white-space: pre;
+  }
+
+  pre code {
+    display: block;
+    color: var(--text-soft);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    background: transparent;
+    border: 0;
+    padding: 0;
+  }
+
+  .spec-grid,
+  .port-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     gap: 1rem;
     margin-top: 1.5rem;
   }
 
-  .connection-card {
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
-      var(--surface);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    padding: 1.25rem;
-    transition:
-      transform 160ms ease,
-      border-color 160ms ease,
-      background 160ms ease;
-  }
-
-  .connection-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--border-hover);
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
-      var(--surface-soft);
-  }
-
-  .connection-card p {
-    color: var(--muted);
-  }
-
-  .status-section {
-    display: grid;
-    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.8fr);
-    gap: 1rem;
-    align-items: stretch;
-    padding: 1.5rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.018)),
-      var(--surface);
-  }
-
-  .status-section p {
-    max-width: 720px;
-    color: var(--muted);
-  }
-
-  .status-card {
-    padding: 1.2rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background: rgba(255, 255, 255, 0.025);
-  }
-
-  .clickable-card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
+  .spec-item,
+.port-item {
+  padding: 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
+    var(--surface);
   transition:
     transform 160ms ease,
     border-color 160ms ease,
     background 160ms ease;
 }
 
-.clickable-card:hover {
+.spec-item:hover,
+.port-item:hover {
   transform: translateY(-2px);
   border-color: var(--border-hover);
-  background: rgba(255, 255, 255, 0.04);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
+    var(--surface-soft);
 }
 
-.clickable-card p {
-  color: var(--muted);
+  .spec-item span,
+  .port-item span {
+    display: block;
+    color: var(--muted);
+    font-size: 0.82rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .spec-item strong,
+  .port-item strong {
+    color: var(--text);
+    font-size: 0.95rem;
+  }
+
+  .service-list,
+  .problem-list {
+    display: grid;
+    gap: 0.9rem;
+    margin-top: 1.5rem;
+  }
+
+  .service-item,
+  .problem-item {
+    display: grid;
+    grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+    gap: 1.25rem;
+    padding: 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.015)),
+      var(--surface);
+    transition:
+      transform 160ms ease,
+      border-color 160ms ease,
+      background 160ms ease;
+  }
+
+  .problem-item {
+    grid-template-columns: 52px 1fr;
+  }
+
+  .service-item:hover,
+  .problem-item:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-hover);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
+      var(--surface-soft);
+  }
+
+  .service-item h3,
+  .problem-item h3 {
+    margin-bottom: 0.25rem;
+  }
+
+  .service-item p,
+  .problem-item p {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .problem-item > span {
+    color: var(--accent);
+    font-weight: 850;
+    font-size: 0.95rem;
+  }
+
+  .note-card {
+    margin-top: 1rem;
+    padding: 1.25rem;
+  }
+
+  .note-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-hover);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
+    var(--surface-soft);
 }
 
-.checkpoint-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
-  margin-top: 1.5rem;
+  .note-card p {
+    color: var(--muted);
+  }
+
+  code {
+    color: var(--accent);
+    background: rgba(147, 197, 253, 0.08);
+    border: 1px solid rgba(147, 197, 253, 0.14);
+    padding: 0.08rem 0.28rem;
+    border-radius: 0.35rem;
+    font-size: 0.9em;
+  }
+
+  .documentation-card {
+    margin-top: 1.5rem;
+    padding: 1.35rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .documentation-card {
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.documentation-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-hover);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
+    var(--surface-soft);
+}
+
+  .documentation-card p {
+    color: var(--muted);
+    max-width: 720px;
+  }
+
+  .next-section {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 0.9fr);
+    gap: 1.5rem;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .next-section:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-hover);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.02)),
+    var(--surface-soft);
+}
+
+  .next-section p {
+    color: var(--muted);
+  }
+
+  .next-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+  }
+
+  .next-list span {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0.34rem 0.7rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-soft);
+  background: rgba(255, 255, 255, 0.025);
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.next-list span:hover {
+  color: var(--accent);
+  border-color: var(--border-hover);
+  background: rgba(147, 197, 253, 0.08);
+  transform: translateY(-1px);
 }
 
   @media (max-width: 980px) {
+    .status-grid,
     .purpose-grid,
-    .connection-grid {
-      grid-template-columns: 1fr;
+    .security-grid,
+    .learning-grid,
+    .spec-grid,
+    .port-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .status-section {
+    .documentation-card,
+    .next-section {
       grid-template-columns: 1fr;
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
 
   @media (max-width: 640px) {
-    .homelab-item {
+    .status-grid,
+    .purpose-grid,
+    .security-grid,
+    .learning-grid,
+    .spec-grid,
+    .port-grid {
       grid-template-columns: 1fr;
+    }
+
+    .service-item,
+    .problem-item {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
     }
   }
 </style>

@@ -2,70 +2,83 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Olle Rönn | Kontakt">
+<MainLayout title="Olle Rönn | Contact">
   <section class="hero contact-hero">
-    <p class="eyebrow">Kontakt</p>
+    <p class="eyebrow">Contact</p>
 
-    <h1>Kontakt</h1>
+    <h1>Contact</h1>
 
     <p class="lead">
-      Hör gärna av dig om projekt, extrajobb, praktik, juniora roller eller
-      möjligheter inom IT-infrastruktur, cloud, cybersäkerhet, IAM, automation
-      och systemnära teknik.
+      Feel free to reach out about projects, part-time roles, internships, junior
+      positions or opportunities within IT infrastructure, cloud, cybersecurity,
+      IAM, automation and systems engineering.
     </p>
   </section>
 
   <section>
     <div class="contact-layout">
       <article class="card contact-card">
-        <p class="eyebrow">Kontaktuppgifter</p>
-        <h2>Ta kontakt</h2>
+        <p class="eyebrow">Contact details</p>
+        <h2>Get in touch</h2>
 
         <p>
-          Jag är främst intresserad av möjligheter där jag får arbeta praktiskt
-          med IT, infrastruktur, säkerhet, cloud, automation eller tekniska
-          systemmiljöer.
+          I am mainly interested in opportunities where I can work practically
+          with IT, infrastructure, security, cloud, automation or technical system
+          environments.
         </p>
 
         <div class="contact-details">
           <div>
-            <span>E-post</span>
+            <span>Email</span>
             <a href="mailto:olle.d.ronn@gmail.com">olle.d.ronn@gmail.com</a>
           </div>
 
           <div>
-            <span>Plats</span>
-            <p>Göteborg, Sverige</p>
+            <span>Location</span>
+            <p>Gothenburg, Sweden</p>
           </div>
         </div>
       </article>
 
       <aside class="card links-card">
-        <p class="eyebrow">Länkar</p>
-        <h2>Profiler</h2>
+        <p class="eyebrow">Links</p>
+        <h2>Profiles</h2>
 
         <p>
-          Här hittar du mina projekt, professionella profil och certifikat.
+          Here you can find my projects, professional profile and certifications.
         </p>
 
         <div class="profile-links">
-          <a class="button secondary" href="https://github.com/ollernn" target="_blank">
-  GitHub
-</a>
+          <a
+            class="button secondary"
+            href="https://github.com/ollernn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
 
-          <a class="button secondary" href="https://www.linkedin.com/in/olle-r%C3%B6nn-81822b278/" target="_blank">
+          <a
+            class="button secondary"
+            href="https://www.linkedin.com/in/olle-r%C3%B6nn-81822b278/"
+            target="_blank"
+            rel="noreferrer"
+          >
             LinkedIn
           </a>
 
-          <a class="button secondary" href="https://www.credly.com/users/olle-ronn" target="_blank">
+          <a
+            class="button secondary"
+            href="https://www.credly.com/users/olle-ronn"
+            target="_blank"
+            rel="noreferrer"
+          >
             Credly
           </a>
         </div>
       </aside>
     </div>
   </section>
-
- 
 </MainLayout>
 
 <style>
@@ -130,50 +143,8 @@ import MainLayout from "../layouts/MainLayout.astro";
     width: 100%;
   }
 
-  .contact-focus {
-    display: grid;
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-    gap: 1.5rem;
-    align-items: start;
-    padding: 1.5rem;
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.018)),
-      var(--surface);
-  }
-
-  .interest-grid {
-    display: grid;
-    gap: 0.75rem;
-  }
-
-  .interest-item {
-    display: grid;
-    grid-template-columns: 42px 1fr;
-    gap: 0.75rem;
-    align-items: center;
-    padding: 0.85rem 0;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .interest-item:last-child {
-    border-bottom: none;
-  }
-
-  .interest-item span {
-    color: var(--accent);
-    font-weight: 850;
-  }
-
-  .interest-item p {
-    margin: 0;
-    color: var(--text-soft);
-  }
-
   @media (max-width: 860px) {
-    .contact-layout,
-    .contact-focus {
+    .contact-layout {
       grid-template-columns: 1fr;
     }
   }

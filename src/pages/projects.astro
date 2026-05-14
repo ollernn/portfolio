@@ -2,107 +2,121 @@
 import MainLayout from "../layouts/MainLayout.astro";
 ---
 
-<MainLayout title="Olle Rönn | Projekt">
+<MainLayout title="Olle Rönn | Projects">
   <section class="hero projects-hero">
-    <p class="eyebrow">Projekt</p>
+    <p class="eyebrow">Projects</p>
 
-    <h1>Projekt</h1>
+    <h1>Projects</h1>
 
     <p class="lead">
-      Här samlar jag projekt som visar praktisk erfarenhet inom IT-infrastruktur,
-      cybersäkerhet, cloud, Linux, servermiljöer, systemutveckling och teknisk
-      dokumentation.
+      A collection of projects that show practical experience in IT infrastructure,
+      cybersecurity, cloud, Linux, server environments, system development and
+      technical documentation.
     </p>
   </section>
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Aktuella projekt</p>
-      <h2>Aktiva projekt</h2>
+      <p class="eyebrow">Featured projects</p>
+      <h2>Projects with concrete results</h2>
       <p>
-        Projekt som är live, pågående eller nyligen uppdaterade. Fokus ligger på
-        konkreta resultat, dokumentation och länkar till GitHub.
+        Projects that are live, completed or recently updated. The focus is on
+        practical results, documentation and links to GitHub.
       </p>
     </div>
 
     <div class="project-grid">
-      <a
-        class="project-card featured clickable-project"
-        href="https://github.com/ollernn/portfolio"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <div class="project-top">
-          <span class="tag">Astro · Portfolio</span>
-          <span class="project-status live">Live</span>
-        </div>
-
-        <h3>Portfolio Website</h3>
-
-        <p>
-          En personlig portfolio byggd med Astro och deployad med Vercel.
-          Sidan används för att visa projekt, CV, lärandelogg och teknisk
-          utveckling på ett strukturerat sätt.
-        </p>
-
-        <p>
-          Projektet är live och uppdateras löpande när nya projekt, förbättringar
-          och dokumentation läggs till.
-        </p>
-
-        <div class="tech-list">
-          <span>Astro</span>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>GitHub</span>
-          <span>Vercel</span>
-        </div>
-      </a>
-
-      <a
-        class="project-card featured clickable-project"
-        href="https://github.com/ollernn/secure-homelab"
-        target="_blank"
-        rel="noreferrer"
-      >
+      <article class="project-card featured">
         <div class="project-top">
           <span class="tag">Linux · Security Lab</span>
-          <span class="project-status active">Aktiv</span>
+          <span class="project-status completed">v1 Complete</span>
         </div>
 
         <h3>Secure Homelab</h3>
 
         <p>
-          Ett aktivt homelab-projekt där jag bygger en säker och dokumenterad
-          servermiljö för att träna på Linux, nätverk, SSH, serverkonfiguration,
-          Docker och teknisk dokumentation.
+          A practical infrastructure and cybersecurity project where I built,
+          secured and documented a small Linux-based server environment.
         </p>
 
         <p>
-          Första checkpointen är klar: Ubuntu Server är installerad i VirtualBox,
-          systemet är uppdaterat och servern är nåbar via SSH från Windows med
-          port forwarding från <code>127.0.0.1:2222</code> till port <code>22</code>.
-        </p>
+  The environment runs Ubuntu Server inside VirtualBox and includes SSH hardening,
+  UFW, fail2ban, Docker, Portainer, Uptime Kuma, Homepage and Nginx.
+</p>
 
         <div class="tech-list">
           <span>Ubuntu Server</span>
           <span>VirtualBox</span>
           <span>SSH</span>
-          <span>Linux</span>
-          <span>NAT</span>
-          <span>GitHub Docs</span>
+          <span>UFW</span>
+          <span>fail2ban</span>
+          <span>Docker</span>
+          <span>Monitoring</span>
         </div>
-      </a>
+
+        <div class="project-actions">
+          <a class="project-button" href="/homelab">Read case study</a>
+          <a
+            class="project-button secondary"
+            href="https://github.com/ollernn/secure-homelab"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View GitHub
+          </a>
+        </div>
+      </article>
+
+     <article class="project-card featured">
+  <div class="project-top">
+    <span class="tag">Astro · Portfolio</span>
+    <span class="project-status live">Live</span>
+  </div>
+
+  <h3>Portfolio Website</h3>
+
+  <p>
+    A personal portfolio built with Astro and deployed with Vercel. The site
+    presents my projects, CV information, learning logs and technical development
+    in a structured way.
+  </p>
+
+  <p>
+    The project is live and continuously updated as new projects, improvements
+    and documentation are added.
+  </p>
+
+  <div class="tech-list">
+    <span>Astro</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>GitHub</span>
+    <span>Vercel</span>
+  </div>
+
+  <div class="project-actions">
+    <a
+      class="project-button"
+      href="https://github.com/ollernn/portfolio"
+      target="_blank"
+      rel="noreferrer"
+    >
+      View GitHub
+    </a>
+  </div>
+</article>
+
     </div>
   </section>
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Tidigare projekt</p>
-      <h2>Större tidigare projekt</h2>
+      <p class="eyebrow">Previous projects</p>
+      <h2>Larger previous projects</h2>
       <p>
-        Projekt från studier och tidigare arbete som visar praktisk erfarenhet av
-        systemutveckling, molntjänster, nätverk, säkerhet och infrastruktur.
+        Projects from studies and previous work that demonstrate practical
+        experience in system development, cloud services, networking, security
+        and infrastructure.
       </p>
     </div>
 
@@ -120,21 +134,21 @@ import MainLayout from "../layouts/MainLayout.astro";
 
         <div>
           <p>
-            Ett större C#- och WPF-projekt där vi byggde ett sportklubbssystem med
-            separata vyer för medlemmar, tränare och administratörer.
+            A larger C# and WPF project where we built a sport club management
+            system with separate views for members, coaches and administrators.
           </p>
 
           <p>
-            Systemet stödjer registrering, inloggning, bokning och avbokning av
-            träningspass, profilhantering, historik, poäng, kalorier och
-            utrustningshantering.
+            The system supports registration, login, booking and cancellation of
+            training sessions, profile management, training history, points,
+            calories and equipment management.
           </p>
 
           <p>
-            Projektet byggdes med MVVM och tydlig lagerindelning med
-            presentationslager, affärslager, datalager och entitetslager.
-            Det använde serviceklasser, repositories och Unit of Work för
-            affärslogik och databasåtkomst.
+            The project was built with MVVM and a layered architecture with
+            presentation layer, business layer, data layer and entity layer.
+            It used service classes, repositories and Unit of Work for business
+            logic and database access.
           </p>
 
           <div class="tech-list">
@@ -151,22 +165,22 @@ import MainLayout from "../layouts/MainLayout.astro";
 
       <article class="project-row">
         <div>
-          <span class="tag">IoT & Cloud</span>
+          <span class="tag">IoT · Cloud</span>
           <h3>Smart Security System</h3>
         </div>
 
         <div>
           <p>
-            Designade och implementerade en säkerhetslösning med kamera, sensor
-            och molntjänster. Lösningen använde händelsestyrd automation där
-            bild- eller videodata kopplades till dörrsensorhändelser.
+            Designed and implemented a security solution using a camera, sensor
+            data and cloud services. The solution used event-driven automation
+            where image or video data was connected to door sensor events.
           </p>
 
           <div class="tech-list">
             <span>Azure</span>
             <span>Home Assistant</span>
             <span>IoT</span>
-            <span>Kamera</span>
+            <span>Camera</span>
             <span>Sensor</span>
             <span>Automation</span>
           </div>
@@ -175,15 +189,16 @@ import MainLayout from "../layouts/MainLayout.astro";
 
       <article class="project-row">
         <div>
-          <span class="tag">Infrastructure & IAM</span>
+          <span class="tag">Infrastructure · IAM</span>
           <h3>Enterprise Network & Active Directory Environment</h3>
         </div>
 
         <div>
           <p>
-            Simulerade en företagsmiljö med flera servrar och klienter.
-            Projektet omfattade användare, behörigheter, policys, Active Directory,
-            Group Policy, DHCP, delade resurser, brandväggsregler, redundans och failover.
+            Simulated an enterprise environment with multiple servers and clients.
+            The project included users, permissions, policies, Active Directory,
+            Group Policy, DHCP, shared resources, firewall rules, redundancy and
+            failover.
           </p>
 
           <div class="tech-list">
@@ -205,9 +220,9 @@ import MainLayout from "../layouts/MainLayout.astro";
 
         <div>
           <p>
-            Analyserade PCAP-filer i Wireshark för att undersöka nätverksaktivitet,
-            identifiera misstänkt trafik, analysera dataexfiltration och tolka
-            säkerhetsrelaterade händelser.
+            Analyzed PCAP files in Wireshark to investigate network activity,
+            identify suspicious traffic, analyze data exfiltration and interpret
+            security-related events.
           </p>
 
           <div class="tech-list">
@@ -225,10 +240,10 @@ import MainLayout from "../layouts/MainLayout.astro";
   <section>
     <div class="section-heading">
       <p class="eyebrow">Learning projects</p>
-      <h2>Mindre lärandeprojekt</h2>
+      <h2>Smaller learning projects</h2>
       <p>
-        Mindre projekt som används för att testa tekniker, förstå säkerhetskoncept
-        och bygga praktisk erfarenhet steg för steg.
+        Smaller projects used to test technologies, understand security concepts
+        and build practical experience step by step.
       </p>
     </div>
 
@@ -247,13 +262,13 @@ import MainLayout from "../layouts/MainLayout.astro";
         <h3>Simple API Security Demo</h3>
 
         <p>
-          Ett mindre Flask-projekt som demonstrerar hur en API-endpoint kan skyddas
-          med en API-nyckel via request headers och miljövariabler.
+          A smaller Flask project demonstrating how an API endpoint can be
+          protected with an API key using request headers and environment variables.
         </p>
 
         <p>
-          Projektet används som ett lärandeprojekt för att förstå grundläggande
-          API-säkerhet, hantering av miljövariabler och enkel åtkomstkontroll.
+          The project was used as a learning exercise to understand basic API
+          security, environment variable handling and simple access control.
         </p>
 
         <div class="tech-list">
@@ -268,11 +283,11 @@ import MainLayout from "../layouts/MainLayout.astro";
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Kommande projekt</p>
-      <h2>Planerade projektområden</h2>
+      <p class="eyebrow">Future projects</p>
+      <h2>Planned project areas</h2>
       <p>
-        Idéer som kan byggas vidare efter hand när portfolion växer med fler
-        tekniska projekt och mer dokumentation.
+        Ideas that can be developed further as the portfolio grows with more
+        technical projects and documentation.
       </p>
     </div>
 
@@ -280,14 +295,14 @@ import MainLayout from "../layouts/MainLayout.astro";
       <article class="project-card">
         <div class="project-top">
           <span class="tag">Cloud · Azure</span>
-          <span class="project-status planned">Planerad</span>
+          <span class="project-status planned">Planned</span>
         </div>
 
         <h3>Secure Azure Environment</h3>
 
         <p>
-          En framtida Azure-miljö med fokus på IAM, logging, monitoring,
-          storage, kostnadskontroll och molnsäkerhet.
+          A future Azure environment focused on IAM, logging, monitoring, storage,
+          cost control and cloud security.
         </p>
 
         <div class="tech-list">
@@ -302,14 +317,14 @@ import MainLayout from "../layouts/MainLayout.astro";
       <article class="project-card">
         <div class="project-top">
           <span class="tag">Monitoring · Security</span>
-          <span class="project-status planned">Planerad</span>
+          <span class="project-status planned">Planned</span>
         </div>
 
         <h3>Monitoring / Mini-SOC Dashboard</h3>
 
         <p>
-          Ett framtida projekt för loggning, övervakning, alerts och dashboards
-          från lokala system, cloud-resurser eller labbmiljöer.
+          A future project focused on logging, monitoring, alerts and dashboards
+          from local systems, cloud resources or lab environments.
         </p>
 
         <div class="tech-list">
@@ -387,30 +402,6 @@ import MainLayout from "../layouts/MainLayout.astro";
     color: var(--accent);
   }
 
-  .clickable-project::after {
-    content: "Öppna GitHub ↗";
-    display: inline-flex;
-    width: fit-content;
-    margin-top: 1rem;
-    padding: 0.34rem 0.7rem;
-    border: 1px solid var(--border);
-    border-radius: 999px;
-    color: var(--muted);
-    background: rgba(255, 255, 255, 0.025);
-    font-size: 0.78rem;
-    font-weight: 750;
-    transition:
-      color 160ms ease,
-      border-color 160ms ease,
-      background 160ms ease;
-  }
-
-  .clickable-project:hover::after {
-    color: var(--accent);
-    border-color: var(--border-hover);
-    background: rgba(147, 197, 253, 0.08);
-  }
-
   .project-top {
     display: flex;
     justify-content: space-between;
@@ -420,35 +411,40 @@ import MainLayout from "../layouts/MainLayout.astro";
   }
 
   .project-status {
-  display: inline-flex;
-  align-items: center;
-  width: fit-content;
-  padding: 0.25rem 0.55rem;
-  border-radius: 999px;
-  font-size: 0.72rem;
-  font-weight: 800;
-  white-space: nowrap;
-}
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    padding: 0.25rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 800;
+    white-space: nowrap;
+  }
 
-.project-status.live {
-  background: rgba(34, 197, 94, 0.12);
-  color: #86efac;
-}
+  .project-status.live {
+    background: rgba(34, 197, 94, 0.12);
+    color: #86efac;
+  }
 
-.project-status.active {
-  background: rgba(147, 197, 253, 0.14);
-  color: var(--accent);
-}
+  .project-status.active {
+    background: rgba(147, 197, 253, 0.14);
+    color: var(--accent);
+  }
 
-.project-status.planned {
-  background: rgba(168, 85, 247, 0.12);
-  color: #d8b4fe;
-}
+  .project-status.completed {
+    background: rgba(148, 163, 184, 0.12);
+    color: #cbd5e1;
+  }
 
-.project-status.learning {
-  background: rgba(250, 204, 21, 0.12);
-  color: #fde68a;
-}
+  .project-status.planned {
+    background: rgba(168, 85, 247, 0.12);
+    color: #d8b4fe;
+  }
+
+  .project-status.learning {
+    background: rgba(250, 204, 21, 0.12);
+    color: #fde68a;
+  }
 
   .project-list {
     display: grid;
@@ -481,6 +477,52 @@ import MainLayout from "../layouts/MainLayout.astro";
     font-size: 0.78rem;
     font-weight: 650;
   }
+
+  .project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+
+  .project-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--text-soft);
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.project-button:hover {
+  color: var(--accent);
+  border-color: var(--border-hover);
+  background: rgba(147, 197, 253, 0.08);
+  transform: translateY(-1px);
+}
+
+.project-button.secondary {
+  color: var(--text-soft);
+  border-color: var(--border);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.project-button.secondary:hover {
+  color: var(--accent);
+  border-color: var(--border-hover);
+  background: rgba(147, 197, 253, 0.08);
+}
 
   code {
     color: var(--accent);

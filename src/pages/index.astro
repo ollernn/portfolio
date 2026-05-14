@@ -5,100 +5,100 @@ import MainLayout from "../layouts/MainLayout.astro";
 <MainLayout title="Olle Rönn | Portfolio">
   <section class="hero home-hero">
     <div class="hero-content">
-      <p class="eyebrow">Portfolio · Projekt · Lärande</p>
+      <p class="eyebrow">Portfolio · Projects · Learning</p>
 
       <h1>
         Olle Rönn
-        <span class="hero-line text-glow">IT, säkerhet och infrastruktur.</span>
+        <span class="hero-line text-glow">IT, security and infrastructure.</span>
       </h1>
 
       <p class="hero-subtitle">
-        IT-ingenjörsstudent med praktisk erfarenhet av IAM, Active Directory,
-        Entra ID, Azure och PowerShell.
+        IT engineering student with practical experience in IAM, Active Directory,
+        Entra ID, Azure and PowerShell.
       </p>
 
       <p class="lead">
-        Här samlar jag projekt, tekniska färdigheter och dokumenterat lärande
-        inom cybersäkerhet, IT-infrastruktur, cloud, Linux, nätverk och
-        systemnära teknik.
+        This portfolio presents my projects, technical skills and documented
+        learning within cybersecurity, IT infrastructure, cloud, Linux, networking
+        and systems engineering.
       </p>
 
       <div class="buttons">
-        <a class="button" href="/projects">Se projekt</a>
-        <a class="button secondary" href="/cv">Se CV</a>
-        <a class="button secondary" href="/learning-log">Lärandelogg</a>
-        <a class="button secondary" href="/contact">Kontakt</a>
+        <a class="button" href="/projects">View projects</a>
+        <a class="button secondary" href="/cv">View CV</a>
+        <a class="button secondary" href="/learning-log">Learning Log</a>
+        <a class="button secondary" href="/contact">Contact</a>
       </div>
     </div>
 
-    <aside class="hero-card">
-      <p class="hero-card-label">Aktuellt projekt</p>
+    <a class="hero-card clickable-card" href="/projects">
+      <p class="hero-card-label">Latest project</p>
       <h2>Secure Homelab</h2>
 
       <p>
-        Jag bygger just nu en säker och dokumenterad servermiljö med Ubuntu Server,
-        VirtualBox, SSH, Linux och teknisk dokumentation.
+        I built and documented a small Linux-based server environment using
+        Ubuntu Server, SSH key authentication, UFW, fail2ban, Docker, Portainer,
+        Uptime Kuma, Homepage and Nginx.
       </p>
 
       <div class="status-row">
         <span>Status</span>
-        <strong>Aktiv</strong>
+        <strong>Version 1 complete</strong>
       </div>
 
       <div class="mini-list">
         <span>Ubuntu Server</span>
         <span>SSH</span>
-        <span>VirtualBox</span>
-        <span>Linux</span>
-        <span>GitHub Docs</span>
+        <span>UFW</span>
+        <span>fail2ban</span>
+        <span>Docker</span>
       </div>
-    </aside>
+    </a>
   </section>
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Snabb överblick</p>
-      <h2>Kort överblick</h2>
+      <p class="eyebrow">Overview</p>
+      <h2>Quick snapshot</h2>
       <p>
-        En snabb sammanfattning av min erfarenhet, mina projekt och de tekniska
-        områden jag arbetar med.
+        A short summary of my experience, current projects and technical focus areas.
       </p>
     </div>
 
     <div class="proof-grid">
       <article class="card">
-        <span class="tag">Erfarenhet</span>
-        <h3>IAM i företagsmiljö</h3>
+        <span class="tag">Experience</span>
+        <h3>IAM in an enterprise environment</h3>
         <p>
-          Praktisk erfarenhet av Identity & Access Management, Active Directory,
-          Entra ID, Azure och PowerShell från Stena Group IT.
+          Practical experience with Identity & Access Management, Active Directory,
+          Entra ID, Azure and PowerShell from Stena Group IT.
         </p>
       </article>
 
       <article class="card">
-        <span class="tag">Aktivt projekt</span>
+        <span class="tag">Completed v1</span>
         <h3>Secure Homelab</h3>
         <p>
-          Ubuntu Server är installerad i VirtualBox, uppdaterad och nåbar via SSH
-          från Windows med NAT port forwarding.
+          Built, secured and documented a Linux-based homelab with SSH hardening,
+          firewall rules, fail2ban, Docker services and monitoring.
         </p>
       </article>
 
       <article class="card">
-        <span class="tag">Systemutveckling</span>
-        <h3>C# och WPF-projekt</h3>
+        <span class="tag">Software project</span>
+        <h3>C# and WPF application</h3>
         <p>
-          Byggt ett sportklubbssystem med MVVM, flera lager, SQL Server,
-          repositories och Unit of Work.
+          Built a sport club management system using MVVM, layered architecture,
+          SQL Server, repositories and Unit of Work.
         </p>
       </article>
 
       <article class="card">
-        <span class="tag">Dokumentation</span>
-        <h3>GitHub och lärandelogg</h3>
+        <span class="tag">Documentation</span>
+        <h3>GitHub and learning log</h3>
         <p>
-          Dokumenterar projekt, tekniska beslut, problem, lösningar och lärdomar
-          steg för steg.
+          I document projects, technical decisions, problems, solutions and lessons
+          learned step by step.
         </p>
       </article>
     </div>
@@ -106,11 +106,11 @@ import MainLayout from "../layouts/MainLayout.astro";
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Utvalda projekt</p>
-      <h2>Projekt med konkret resultat</h2>
+      <p class="eyebrow">Featured projects</p>
+      <h2>Projects with concrete results</h2>
       <p>
-        Några av de viktigaste projekten just nu. Korten är klickbara och leder
-        till respektive GitHub-repo.
+        A few selected projects. The cards are clickable and open the related
+        GitHub repositories.
       </p>
     </div>
 
@@ -123,27 +123,28 @@ import MainLayout from "../layouts/MainLayout.astro";
       >
         <div class="project-top">
           <span class="tag">Linux · Security Lab</span>
-          <span class="project-status active">Aktiv</span>
+          <span class="project-status completed">v1 Complete</span>
         </div>
 
         <h3>Secure Homelab</h3>
 
         <p>
-          Säker och dokumenterad servermiljö för Linux, SSH, nätverk,
-          serverhärdning, Docker och teknisk dokumentation.
+          A practical infrastructure and cybersecurity project where I built,
+          secured and documented a small Linux-based server environment.
         </p>
 
         <p>
-          <strong>Checkpoint:</strong> Ubuntu Server installerad, uppdaterad och
-          nåbar via SSH från Windows.
+          <strong>Result:</strong> Ubuntu Server, SSH hardening, UFW, fail2ban,
+          Docker services, monitoring and documentation are in place.
         </p>
 
         <div class="tech-list">
           <span>Ubuntu Server</span>
           <span>VirtualBox</span>
           <span>SSH</span>
-          <span>Linux</span>
-          <span>NAT</span>
+          <span>UFW</span>
+          <span>Docker</span>
+          <span>Monitoring</span>
         </div>
       </a>
 
@@ -161,8 +162,8 @@ import MainLayout from "../layouts/MainLayout.astro";
         <h3>Portfolio Website</h3>
 
         <p>
-          Personlig portfolio byggd med Astro och publicerad med Vercel.
-          Används för projekt, CV, lärandelogg och teknisk dokumentation.
+          A personal portfolio built with Astro and deployed with Vercel.
+          It is used to present projects, my CV, learning logs and technical work.
         </p>
 
         <div class="tech-list">
@@ -182,14 +183,14 @@ import MainLayout from "../layouts/MainLayout.astro";
       >
         <div class="project-top">
           <span class="tag">C# · WPF · MVVM</span>
-          <span class="project-status completed">Avslutat</span>
+          <span class="project-status completed">Completed</span>
         </div>
 
         <h3>Sport Club Management System</h3>
 
         <p>
-          Större skolprojekt med inloggning, roller, träningspass,
-          medlemsfunktioner, utrustningshantering, databas och tydlig lagerstruktur.
+          A larger university project with login, roles, training sessions,
+          member features, equipment management, database access and layered architecture.
         </p>
 
         <div class="tech-list">
@@ -205,48 +206,48 @@ import MainLayout from "../layouts/MainLayout.astro";
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Teknisk riktning</p>
-      <h2>Områden jag fokuserar på</h2>
+      <p class="eyebrow">Technical focus</p>
+      <h2>Areas I focus on</h2>
       <p>
-        Mina projekt och min erfarenhet rör sig främst kring praktiska IT-miljöer,
-        säkerhet och drift.
+        My projects and experience are mainly centered around practical IT
+        environments, security, operations and documentation.
       </p>
     </div>
 
     <div class="focus-grid">
       <article class="focus-card">
         <span class="tag">Infrastructure</span>
-        <h3>IT-infrastruktur</h3>
+        <h3>IT Infrastructure</h3>
         <p>
-          Servrar, nätverk, Windows-miljöer, Linux, grundläggande drift och
-          strukturerade IT-miljöer.
+          Servers, networking, Windows environments, Linux, basic operations and
+          structured IT environments.
         </p>
       </article>
 
       <article class="focus-card">
         <span class="tag">Security</span>
-        <h3>Cybersäkerhet & IAM</h3>
+        <h3>Cybersecurity & IAM</h3>
         <p>
-          Behörigheter, accessgranskning, Active Directory, Entra ID,
-          säkerhetsgrunder och riskanalys.
+          Permissions, access reviews, Active Directory, Entra ID, security
+          fundamentals and risk awareness.
         </p>
       </article>
 
       <article class="focus-card">
         <span class="tag">Cloud</span>
-        <h3>Azure & cloud</h3>
+        <h3>Azure & Cloud</h3>
         <p>
-          Molntjänster, identitet, storage, logging, kostnadskontroll och
-          säkra cloud-miljöer.
+          Cloud services, identity, storage, logging, cost awareness and secure
+          cloud environments.
         </p>
       </article>
 
       <article class="focus-card">
         <span class="tag">Automation</span>
-        <h3>Scripting & dokumentation</h3>
+        <h3>Scripting & Documentation</h3>
         <p>
-          PowerShell, GitHub, teknisk dokumentation och automatisering av
-          återkommande arbetsflöden.
+          PowerShell, GitHub, technical documentation and automation of recurring
+          workflows.
         </p>
       </article>
     </div>
@@ -254,30 +255,30 @@ import MainLayout from "../layouts/MainLayout.astro";
 
   <section>
     <div class="section-heading">
-      <p class="eyebrow">Kort om mig</p>
-      <h2>Lite mer om mig</h2>
+      <p class="eyebrow">About</p>
+      <h2>A bit more about me</h2>
       <p>
-        Jag gillar att förstå hur tekniska system fungerar i praktiken. När jag
-        lär mig något nytt vill jag testa det själv, bygga något av det och
-        dokumentera vad jag gjorde, vad som fungerade och vad som kan förbättras.
+        I like understanding how technical systems work in practice. When I learn
+        something new, I prefer to test it myself, build something from it and
+        document what I did and learned.
       </p>
     </div>
 
     <div class="personal-grid">
       <article class="card">
-        <h3>Teknikintresse</h3>
+        <h3>Technical interests</h3>
         <p>
-          Jag är intresserad av IT-infrastruktur, cybersäkerhet, cloud,
-          systemnära teknik och hårdvara.
+          I am interested in IT infrastructure, cybersecurity, cloud, systems
+          engineering and hardware.
         </p>
       </article>
 
       <article class="card">
-        <h3>Utanför studier och projekt</h3>
+        <h3>Outside studies and projects</h3>
         <p>
-          På fritiden spelar jag golf, gymmar, spelar dator, reser gärna och är
-          intresserad av datorhårdvara, tangentbord, möss och hur tekniska
-          komponenter fungerar.
+          Outside of studies and projects, I play golf, go to the gym, play games,
+          enjoy travelling and have an interest in computer hardware, keyboards,
+          mice and how technical components work.
         </p>
       </article>
     </div>
@@ -285,18 +286,18 @@ import MainLayout from "../layouts/MainLayout.astro";
 
   <section class="cta-section">
     <div>
-      <p class="eyebrow">Utforska mer</p>
-      <h2>Vill du se mer?</h2>
+      <p class="eyebrow">Explore more</p>
+      <h2>Want to see more?</h2>
       <p>
-        Se projekten på GitHub, läs CV:t eller följ lärandeloggen där jag
-        sammanfattar vad jag bygger och lär mig.
+        View my projects on GitHub, read my CV or follow the learning log where
+        I summarize what I build and learn.
       </p>
     </div>
 
     <div class="buttons">
-      <a class="button" href="/projects">Projekt</a>
+      <a class="button" href="/projects">Projects</a>
       <a class="button secondary" href="/cv">CV</a>
-      <a class="button secondary" href="/contact">Kontakt</a>
+      <a class="button secondary" href="/contact">Contact</a>
     </div>
   </section>
 </MainLayout>
@@ -335,6 +336,31 @@ import MainLayout from "../layouts/MainLayout.astro";
     box-shadow: var(--shadow);
   }
 
+  .hero-card.clickable-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    transform 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.hero-card.clickable-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-hover);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.026)),
+    var(--surface-soft);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.34);
+}
+
+.hero-card.clickable-card:hover h2 {
+  color: var(--accent);
+}
+
   .hero-card-label {
     color: var(--accent);
     font-size: 0.78rem;
@@ -347,6 +373,10 @@ import MainLayout from "../layouts/MainLayout.astro";
   .hero-card h2 {
     font-size: 1.35rem;
     margin-bottom: 0.75rem;
+  }
+
+  .hero-card p {
+    color: var(--muted);
   }
 
   .status-row {
@@ -414,7 +444,8 @@ import MainLayout from "../layouts/MainLayout.astro";
   }
 
   .featured-project-card:hover,
-  .focus-card:hover {
+  .focus-card:hover,
+  .hero-card.clickable-card:hover {
     transform: translateY(-2px);
     border-color: var(--border-hover);
     background:
@@ -427,13 +458,19 @@ import MainLayout from "../layouts/MainLayout.astro";
     color: inherit;
     text-decoration: none;
     cursor: pointer;
+    transition:
+      transform 160ms ease,
+      border-color 160ms ease,
+      background 160ms ease;
   }
 
-  .clickable-card h3 {
+  .clickable-card h3,
+  .clickable-card h2 {
     transition: color 160ms ease;
   }
 
-  .clickable-card:hover h3 {
+  .clickable-card:hover h3,
+  .clickable-card:hover h2 {
     color: var(--accent);
   }
 
@@ -467,14 +504,14 @@ import MainLayout from "../layouts/MainLayout.astro";
   }
 
   .project-status.completed {
-  background: rgba(148, 163, 184, 0.12);
-  color: #cbd5e1;
-}
+    background: rgba(148, 163, 184, 0.12);
+    color: #cbd5e1;
+  }
 
-.project-status.planned {
-  background: rgba(168, 85, 247, 0.12);
-  color: #d8b4fe;
-}
+  .project-status.planned {
+    background: rgba(168, 85, 247, 0.12);
+    color: #d8b4fe;
+  }
 
   .focus-grid {
     display: grid;
