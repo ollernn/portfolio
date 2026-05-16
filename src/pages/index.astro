@@ -122,8 +122,8 @@ import MainLayout from "../layouts/MainLayout.astro";
   rel="noreferrer"
 >
   <div class="project-top">
-    <span class="tag">FastAPI · Docker · Azure</span>
-    <span class="project-status completed">v2 Complete</span>
+    <span class="tag">Cloud Deployment</span>
+  <span class="project-status completed">Complete</span>
   </div>
 
   <h3>Cloud Homelab v2</h3>
@@ -155,8 +155,8 @@ import MainLayout from "../layouts/MainLayout.astro";
     rel="noreferrer"
   >
     <div class="project-top">
-      <span class="tag">Linux · Security Lab</span>
-      <span class="project-status completed">v1 Complete</span>
+      <span class="tag">Infrastructure Lab</span>
+  <span class="project-status completed">Complete</span>
     </div>
 
     <h3>Secure Homelab</h3>
@@ -601,6 +601,11 @@ import MainLayout from "../layouts/MainLayout.astro";
     border-radius: 0.35rem;
     font-size: 0.9em;
   }
+
+  .tag {
+  max-width: fit-content;
+  white-space: nowrap;
+}
 
   @media (max-width: 1200px) {
   .featured-projects {
