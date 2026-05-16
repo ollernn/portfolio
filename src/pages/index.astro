@@ -32,28 +32,28 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
 
     <a class="hero-card clickable-card" href="/projects">
-      <p class="hero-card-label">Latest project</p>
-      <h2>Secure Homelab</h2>
+  <p class="hero-card-label">Latest project</p>
+  <h2>Cloud Homelab v2</h2>
 
-      <p>
-        I built and documented a small Linux-based server environment using
-        Ubuntu Server, SSH key authentication, UFW, fail2ban, Docker, Portainer,
-        Uptime Kuma, Homepage and Nginx.
-      </p>
+  <p>
+    I am building a secure hybrid cloud deployment that extends my local Secure
+    Homelab v1 into Azure using FastAPI, Docker, Azure Container Registry,
+    Azure Container Apps and GitHub Actions CI.
+  </p>
 
-      <div class="status-row">
-        <span>Status</span>
-        <strong>Version 1 complete</strong>
-      </div>
+  <div class="status-row">
+    <span>Status</span>
+    <strong>Azure deployment live</strong>
+  </div>
 
-      <div class="mini-list">
-        <span>Ubuntu Server</span>
-        <span>SSH</span>
-        <span>UFW</span>
-        <span>fail2ban</span>
-        <span>Docker</span>
-      </div>
-    </a>
+  <div class="mini-list">
+    <span>FastAPI</span>
+    <span>Docker</span>
+    <span>Azure</span>
+    <span>GitHub Actions</span>
+    <span>API Security</span>
+  </div>
+</a>
   </section>
 
   <section>
@@ -115,93 +115,125 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
 
     <div class="featured-projects">
-      <a
-        class="featured-project-card clickable-card"
-        href="https://github.com/ollernn/secure-homelab"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <div class="project-top">
-          <span class="tag">Linux · Security Lab</span>
-          <span class="project-status completed">v1 Complete</span>
-        </div>
-
-        <h3>Secure Homelab</h3>
-
-        <p>
-          A practical infrastructure and cybersecurity project where I built,
-          secured and documented a small Linux-based server environment.
-        </p>
-
-        <p>
-          <strong>Result:</strong> Ubuntu Server, SSH hardening, UFW, fail2ban,
-          Docker services, monitoring and documentation are in place.
-        </p>
-
-        <div class="tech-list">
-          <span>Ubuntu Server</span>
-          <span>VirtualBox</span>
-          <span>SSH</span>
-          <span>UFW</span>
-          <span>Docker</span>
-          <span>Monitoring</span>
-        </div>
-      </a>
-
-      <a
-        class="featured-project-card clickable-card"
-        href="https://github.com/ollernn/portfolio"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <div class="project-top">
-          <span class="tag">Astro · Portfolio</span>
-          <span class="project-status live">Live</span>
-        </div>
-
-        <h3>Portfolio Website</h3>
-
-        <p>
-          A personal portfolio built with Astro and deployed with Vercel.
-          It is used to present projects, my CV, learning logs and technical work.
-        </p>
-
-        <div class="tech-list">
-          <span>Astro</span>
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>GitHub</span>
-          <span>Vercel</span>
-        </div>
-      </a>
-
-      <a
-        class="featured-project-card clickable-card"
-        href="https://github.com/ollernn/OOPC-VT25-Grupp-07"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <div class="project-top">
-          <span class="tag">C# · WPF · MVVM</span>
-          <span class="project-status completed">Completed</span>
-        </div>
-
-        <h3>Sport Club Management System</h3>
-
-        <p>
-          A larger university project with login, roles, training sessions,
-          member features, equipment management, database access and layered architecture.
-        </p>
-
-        <div class="tech-list">
-          <span>C#</span>
-          <span>WPF</span>
-          <span>MVVM</span>
-          <span>SQL Server</span>
-          <span>Entity Framework</span>
-        </div>
-      </a>
+  <a
+    class="featured-project-card clickable-card"
+    href="https://github.com/ollernn/cloud-homelab-v2"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <div class="project-top">
+      <span class="tag">FastAPI · Docker · Azure</span>
+      <span class="project-status active">In Progress</span>
     </div>
+
+    <h3>Cloud Homelab v2</h3>
+
+    <p>
+      A secure hybrid cloud project where I containerized a FastAPI application,
+      added API key protection, automated tests and deployed it to Azure Container Apps.
+    </p>
+
+    <p>
+      <strong>Current result:</strong> Azure deployment is live and GitHub Actions CI is passing.
+    </p>
+
+    <div class="tech-list">
+      <span>FastAPI</span>
+      <span>Docker</span>
+      <span>Azure</span>
+      <span>ACR</span>
+      <span>Container Apps</span>
+      <span>GitHub Actions</span>
+    </div>
+  </a>
+
+  <a
+    class="featured-project-card clickable-card"
+    href="https://github.com/ollernn/secure-homelab"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <div class="project-top">
+      <span class="tag">Linux · Security Lab</span>
+      <span class="project-status completed">v1 Complete</span>
+    </div>
+
+    <h3>Secure Homelab</h3>
+
+    <p>
+      A practical infrastructure and cybersecurity project where I built, secured
+      and documented a small Linux-based server environment.
+    </p>
+
+    <p>
+      <strong>Result:</strong> Ubuntu Server, SSH hardening, UFW, fail2ban,
+      Docker services, monitoring and documentation are in place.
+    </p>
+
+    <div class="tech-list">
+      <span>Ubuntu Server</span>
+      <span>VirtualBox</span>
+      <span>SSH</span>
+      <span>UFW</span>
+      <span>Docker</span>
+      <span>Monitoring</span>
+    </div>
+  </a>
+
+  <a
+    class="featured-project-card clickable-card"
+    href="https://github.com/ollernn/portfolio"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <div class="project-top">
+      <span class="tag">Astro · Portfolio</span>
+      <span class="project-status live">Live</span>
+    </div>
+
+    <h3>Portfolio Website</h3>
+
+    <p>
+      A personal portfolio built with Astro and deployed with Vercel.
+      It is used to present projects, my CV, learning logs and technical work.
+    </p>
+
+    <div class="tech-list">
+      <span>Astro</span>
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>GitHub</span>
+      <span>Vercel</span>
+    </div>
+  </a>
+
+  <a
+    class="featured-project-card clickable-card"
+    href="https://github.com/ollernn/OOPC-VT25-Grupp-07"
+    target="_blank"
+    rel="noreferrer"
+  >
+    <div class="project-top">
+      <span class="tag">C# · WPF · MVVM</span>
+      <span class="project-status completed">Completed</span>
+    </div>
+
+    <h3>Sport Club Management System</h3>
+
+    <p>
+      A larger university project with login, roles, training sessions,
+      member features, equipment management, database access and layered architecture.
+    </p>
+
+    <div class="tech-list">
+      <span>C#</span>
+      <span>WPF</span>
+      <span>MVVM</span>
+      <span>SQL Server</span>
+      <span>Entity Framework</span>
+    </div>
+  </a>
+</div>
   </section>
 
   <section>
@@ -423,11 +455,12 @@ import MainLayout from "../layouts/MainLayout.astro";
   }
 
   .featured-projects {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
-    margin-top: 1.5rem;
-  }
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+  align-items: start;
+}
 
   .featured-project-card,
   .focus-card {
@@ -568,16 +601,18 @@ import MainLayout from "../layouts/MainLayout.astro";
     font-size: 0.9em;
   }
 
-  @media (max-width: 1050px) {
-    .proof-grid,
-    .focus-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    .featured-projects {
-      grid-template-columns: 1fr;
-    }
+  @media (max-width: 1200px) {
+  .featured-projects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+
+@media (max-width: 1050px) {
+  .proof-grid,
+  .focus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
   @media (max-width: 860px) {
     .home-hero {
@@ -600,14 +635,15 @@ import MainLayout from "../layouts/MainLayout.astro";
   }
 
   @media (max-width: 640px) {
-    .proof-grid,
-    .focus-grid {
-      grid-template-columns: 1fr;
-    }
-
-    .project-top {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
+  .proof-grid,
+  .focus-grid,
+  .featured-projects {
+    grid-template-columns: 1fr;
   }
+
+  .project-top {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
 </style>

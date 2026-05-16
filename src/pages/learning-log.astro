@@ -26,7 +26,67 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
 
     <div class="log-list">
-      <article class="log-entry current">
+
+<article class="log-entry current">
+  <div class="log-date">
+    <span>2026-05-15</span>
+    <p>Session 6</p>
+  </div>
+
+  <div class="log-content">
+    <h3>Built and deployed Cloud Homelab v2 to Azure</h3>
+
+    <p>
+      I continued my roadmap project Cloud Homelab v2 - Secure Hybrid Cloud
+      Deployment. The goal of the project is to extend my local Secure Homelab v1
+      into a cloud-based deployment using FastAPI, Docker, Azure, GitHub Actions
+      and monitoring.
+    </p>
+
+    <p>
+      I created a new GitHub repository, structured the project with folders for
+      the application, tests, documentation, diagrams, screenshots and GitHub
+      Actions workflows, and built a FastAPI application with root, health,
+      version and protected API endpoints.
+    </p>
+
+    <p>
+      I added environment-based configuration with APP_NAME, APP_VERSION, APP_ENV
+      and API_KEY, and implemented simple API security where the protected
+      endpoint requires an API key through the <code>x-api-key</code> header.
+    </p>
+
+    <p>
+      I dockerized the application with a Dockerfile, docker-compose.yml and
+      .dockerignore, tested the API locally in Docker and added automated pytest
+      tests for the health, version and secure endpoints. GitHub Actions CI was
+      configured to run the tests automatically on push to main, and the workflow
+      completed successfully.
+    </p>
+
+    <p>
+      I then deployed the application to Azure by creating a resource group,
+      Azure Container Registry, Azure Container App and Container Apps Environment
+      in North Europe. The Docker image was pushed to ACR and the application was
+      deployed with ingress enabled on port 8000.
+    </p>
+
+    <p>
+      <strong>Learned:</strong> I gained practical experience with FastAPI,
+      Docker, API security, environment variables, automated testing, GitHub
+      Actions CI, Azure Container Registry, Azure Container Apps and cloud
+      deployment troubleshooting.
+    </p>
+
+    <p>
+      <strong>Result:</strong> Cloud Homelab v2 now has a working Azure deployment,
+      passing CI, documented local development, Dockerization, testing and Azure
+      deployment, plus screenshots showing the running cloud application.
+    </p>
+  </div>
+</article>
+
+     <article class="log-entry">
         <div class="log-date">
           <span>2026-05-14</span>
           <p>Session 5</p>
@@ -221,25 +281,25 @@ import MainLayout from "../layouts/MainLayout.astro";
   </section>
 
   <section class="learning-focus">
-    <div>
-      <p class="eyebrow">Current focus</p>
-      <h2>Portfolio and technical projects</h2>
-      <p>
-        Secure Homelab v1 is complete and documented. The portfolio is now used
-        to present finished projects, ongoing improvements and future technical
-        work within infrastructure, cybersecurity, cloud and systems engineering.
-      </p>
-    </div>
+  <div>
+    <p class="eyebrow">Current focus</p>
+    <h2>Cloud Homelab v2</h2>
+    <p>
+      Secure Homelab v1 is complete and documented. I am now extending the roadmap
+      into Cloud Homelab v2, where the focus is on secure cloud deployment,
+      containerized APIs, CI/CD, Azure and monitoring.
+    </p>
+  </div>
 
-    <a class="focus-card" href="/projects">
-      <span class="tag">Project overview</span>
-      <h3>View projects</h3>
-      <p>
-        Go to the projects page to see Secure Homelab, GitHub links, project
-        status, technologies and previous technical projects.
-      </p>
-    </a>
-  </section>
+  <a class="focus-card" href="/projects">
+    <span class="tag">Current project</span>
+    <h3>View project overview</h3>
+    <p>
+      Go to the projects page to see Cloud Homelab v2, Secure Homelab v1,
+      GitHub links, project status, technologies and previous technical projects.
+    </p>
+  </a>
+</section>
 </MainLayout>
 
 <style>
