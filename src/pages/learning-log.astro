@@ -27,7 +27,66 @@ import MainLayout from "../layouts/MainLayout.astro";
 
     <div class="log-list">
 
-<article class="log-entry current">
+    <article class="log-entry current">
+  <div class="log-date">
+    <span>2026-05-16</span>
+    <p>Session 7</p>
+  </div>
+
+  <div class="log-content">
+    <h3>Completed Cloud Homelab v2 with monitoring and Azure logs</h3>
+
+    <p>
+      I continued and completed Cloud Homelab v2 as a portfolio-ready hybrid cloud
+      project. The project now connects my local Secure Homelab v1 with an Azure
+      deployment using FastAPI, Docker, GitHub Actions CI, Azure Container Registry
+      and Azure Container Apps.
+    </p>
+
+    <p>
+      I added monitoring by connecting my local Uptime Kuma instance to the Azure
+      API health endpoint. The monitor checks the <code>/health</code> endpoint
+      every 60 seconds and confirmed that the deployed API was reachable and healthy.
+    </p>
+
+    <p>
+      I also verified the deployment through Azure Log Stream. The logs showed
+      successful requests to endpoints such as <code>/health</code> and
+      <code>/version</code>, confirming that the Azure Container App was receiving
+      traffic and responding correctly.
+    </p>
+
+    <p>
+      I finished the project documentation by adding monitoring documentation,
+      Azure logs documentation, a final version 2 summary and a complete README.
+      I also updated earlier documentation files so they matched the finished
+      project status and removed exposed API key examples from the documentation.
+    </p>
+
+    <p>
+      <strong>Learned:</strong> I gained practical experience with hybrid cloud
+      monitoring, Azure Container Apps, Azure Log Stream, GitHub Actions CI,
+      technical documentation, API security and safe handling of secrets in
+      documentation.
+    </p>
+
+    <p>
+      <strong>Result:</strong> Cloud Homelab v2 is complete as Version 2. It now
+      includes a working Azure deployment, passing CI, Uptime Kuma monitoring,
+      Azure log verification, screenshots and full documentation.
+    </p>
+
+    <p>
+      <strong>Limitation:</strong> A planned v2.1 CI/CD deployment step was paused
+      because the Azure for Students tenant did not allow the required app
+      registration or service principal permissions for secure OIDC-based deployment.
+      This was documented as a future improvement instead of using a less secure
+      workaround with long-lived credentials.
+    </p>
+  </div>
+</article>
+
+   <article class="log-entry">
   <div class="log-date">
     <span>2026-05-15</span>
     <p>Session 6</p>
@@ -283,20 +342,21 @@ import MainLayout from "../layouts/MainLayout.astro";
   <section class="learning-focus">
   <div>
     <p class="eyebrow">Current focus</p>
-    <h2>Cloud Homelab v2</h2>
+    <h2>Roadmap continuation</h2>
     <p>
-      Secure Homelab v1 is complete and documented. I am now extending the roadmap
-      into Cloud Homelab v2, where the focus is on secure cloud deployment,
-      containerized APIs, CI/CD, Azure and monitoring.
+      Secure Homelab v1 and Cloud Homelab v2 are now complete and documented.
+      The next roadmap steps are focused on Secure NAS / Home Cloud, monitoring,
+      logging and future CI/CD improvements when the required Azure permissions
+      are available.
     </p>
   </div>
 
   <a class="focus-card" href="/projects">
-    <span class="tag">Current project</span>
-    <h3>View project overview</h3>
+    <span class="tag">Project overview</span>
+    <h3>View projects</h3>
     <p>
-      Go to the projects page to see Cloud Homelab v2, Secure Homelab v1,
-      GitHub links, project status, technologies and previous technical projects.
+      Go to the projects page to see completed projects, planned roadmap areas,
+      GitHub links, project status and the technologies used.
     </p>
   </a>
 </section>

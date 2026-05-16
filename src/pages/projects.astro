@@ -27,32 +27,32 @@ import MainLayout from "../layouts/MainLayout.astro";
 
     <div class="project-grid">
 
-   <article class="project-card featured">
+  <article class="project-card featured">
   <div class="project-top">
     <span class="tag">FastAPI · Docker · Azure</span>
-    <span class="project-status active">In Progress</span>
+    <span class="project-status completed">v2 Complete</span>
   </div>
 
   <h3>Cloud Homelab v2</h3>
 
   <p>
     A secure hybrid cloud deployment project that extends my local Secure Homelab
-    v1 into Azure using FastAPI, Docker, GitHub Actions and Azure Container Apps.
+    v1 into Azure using FastAPI, Docker, GitHub Actions CI and Azure Container Apps.
   </p>
 
   <p>
-    The project currently includes a containerized FastAPI API, API key protection,
-    automated pytest tests, passing GitHub Actions CI and a working Azure deployment.
+    <strong>Result:</strong> The API is deployed to Azure, CI is passing, Uptime
+    Kuma monitors the health endpoint and Azure Log Stream verifies live traffic.
   </p>
 
   <div class="tech-list">
     <span>FastAPI</span>
     <span>Python</span>
     <span>Docker</span>
-    <span>pytest</span>
     <span>GitHub Actions</span>
-    <span>Azure Container Registry</span>
     <span>Azure Container Apps</span>
+    <span>Uptime Kuma</span>
+    <span>Azure Logs</span>
   </div>
 
   <div class="project-actions">
@@ -364,10 +364,11 @@ import MainLayout from "../layouts/MainLayout.astro";
 
       <h3>Monitoring / Mini-SOC Dashboard</h3>
 
-      <p>
-        A planned project focused on logging, monitoring, alerts and dashboards
-        from the local homelab, cloud resources and future infrastructure projects.
-      </p>
+     <p>
+  A planned project focused on expanding monitoring into a more complete
+  security and observability dashboard with logs, alerts and metrics from the
+  local homelab, cloud resources and future infrastructure projects.
+</p>
 
       <div class="tech-list">
         <span>Grafana</span>
