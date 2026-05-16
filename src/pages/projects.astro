@@ -322,62 +322,63 @@ import MainLayout from "../layouts/MainLayout.astro";
     </div>
   </section>
 
-  <section>
-    <div class="section-heading">
-      <p class="eyebrow">Future projects</p>
-      <h2>Planned project areas</h2>
+<section>
+  <div class="section-heading">
+    <p class="eyebrow">Future projects</p>
+    <h2>Planned project areas</h2>
+    <p>
+      Planned next steps in the roadmap, building on the local homelab and cloud
+      deployment projects.
+    </p>
+  </div>
+
+  <div class="project-grid planned-grid">
+    <article class="project-card">
+      <div class="project-top">
+        <span class="tag">Storage · Backup · Home Cloud</span>
+        <span class="project-status planned">Planned</span>
+      </div>
+
+      <h3>Secure NAS / Home Cloud</h3>
+
       <p>
-        Ideas that can be developed further as the portfolio grows with more
-        technical projects and documentation.
+        A planned project focused on turning local server hardware into a secure
+        storage and home cloud environment with users, permissions, backups and
+        remote access considerations.
       </p>
-    </div>
 
-    <div class="project-grid planned-grid">
-      <article class="project-card">
-        <div class="project-top">
-          <span class="tag">Cloud · Azure</span>
-          <span class="project-status planned">Planned</span>
-        </div>
+      <div class="tech-list">
+        <span>NAS</span>
+        <span>Storage</span>
+        <span>Backups</span>
+        <span>Permissions</span>
+        <span>Home Cloud</span>
+      </div>
+    </article>
 
-        <h3>Secure Azure Environment</h3>
+    <article class="project-card">
+      <div class="project-top">
+        <span class="tag">Monitoring · Security</span>
+        <span class="project-status planned">Planned</span>
+      </div>
 
-        <p>
-          A future Azure environment focused on IAM, logging, monitoring, storage,
-          cost control and cloud security.
-        </p>
+      <h3>Monitoring / Mini-SOC Dashboard</h3>
 
-        <div class="tech-list">
-          <span>Azure</span>
-          <span>Entra ID</span>
-          <span>IAM</span>
-          <span>Logging</span>
-          <span>Cloud Security</span>
-        </div>
-      </article>
+      <p>
+        A planned project focused on logging, monitoring, alerts and dashboards
+        from the local homelab, cloud resources and future infrastructure projects.
+      </p>
 
-      <article class="project-card">
-        <div class="project-top">
-          <span class="tag">Monitoring · Security</span>
-          <span class="project-status planned">Planned</span>
-        </div>
-
-        <h3>Monitoring / Mini-SOC Dashboard</h3>
-
-        <p>
-          A future project focused on logging, monitoring, alerts and dashboards
-          from local systems, cloud resources or lab environments.
-        </p>
-
-        <div class="tech-list">
-          <span>Grafana</span>
-          <span>Prometheus</span>
-          <span>Logs</span>
-          <span>Alerts</span>
-          <span>Security Monitoring</span>
-        </div>
-      </article>
-    </div>
-  </section>
+      <div class="tech-list">
+        <span>Grafana</span>
+        <span>Prometheus</span>
+        <span>Logs</span>
+        <span>Alerts</span>
+        <span>Security Monitoring</span>
+      </div>
+    </article>
+  </div>
+</section>
 </MainLayout>
 
 <style>
